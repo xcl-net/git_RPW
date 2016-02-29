@@ -1,0 +1,86 @@
+﻿<!--#include file="/head.html"-->
+<title>忘了密码？</title>
+<script src="/js/jquery-1.4.2.min.js"></script>
+<!--#include file="/link.html"-->
+<script type="text/javascript">
+    function refreshYZM() {//验证码刷新
+        var imgYZM = document.getElementById("verificationCode123");
+        imgYZM.src = "verificationCode.ashx?t=" + new Date();
+    }
+    $(function () {
+        document.getElementById("verificationCode123").style.cursor = "pointer";
+        document.getElementById("kanbuqing").style.cursor = "pointer";
+
+        $("#btnNext").click(function () {
+          
+            var email = $("#email").val();
+            var verificationCode = $("#validCode").val();
+         
+            if (email.length == 0) {
+                alert("邮箱地址不能为空！");
+                return;
+            }
+            if (/^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/.test(email) == false) {
+                $("#emailMsg").text("邮箱格式不正确，请重新填写");
+                $(this).focus();
+                return;
+            }
+            if (verificationCode.length == 0) {
+                alert("验证码不能为空！");
+                return;
+            }
+            $.ajax({
+                type: "post", url: "FrontUserController.ashx",
+                dataType: "json",
+                data: { action: "confirmEmail", email: email, validCode: verificationCode },
+                success: function (data) {
+                    if (data.Status == "ok") {
+                        window.location.href = "FrontUserController.ashx?action=serNext&email="+data.Msg;
+                    } else if (data.Status == "error") {
+                        alert("找回密码失败！" + data.Msg);
+                    }
+                },
+                error: function () {
+                    alert("找回密码请求失败！");
+                }
+            });
+        });
+
+        //鼠标离开邮箱，检查邮箱是否正确
+        $("#email").blur(function () {
+            if ($(this).val() == '') {
+                $("#emailMsg").text("邮箱不能为空");
+                
+            }
+            else {
+                if (/^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/.test($(this).val()) == false) {
+                    $("#emailMsg").text("邮箱格式不正确，请重新填写");
+                    //$(this).focus();
+                }
+                else {
+                    $("#emailMsg").text('');
+                }
+            }
+        });
+
+
+    });
+
+</script>
+<!--#include file="/headend.html"-->
+
+<!--#include file="/navbar.html"-->
+<h1>如鹏安全中心：</h1>
+<h2>确认账号></h2><br />
+<h5>请输入您注册时的邮箱地址：</h5><br />
+<label>邮箱：<input type="email" id="email" /></label><span id="emailMsg"></span>
+<br />
+<br />
+<label>验证码：<input type="text" id="validCode" /></label><img id="verificationCode123" src="verificationCode.ashx" onclick="refreshYZM()" /><span id="validCodeMsg"></span>
+<label for="verificationCode123"><span onclick="refreshYZM()" id="kanbuqing">看不清，点我</span></label>
+<br />
+<br />
+<input type="button" id="btnNext" value="下一步">
+<br />
+<br />
+<!--#include file="/foot.html"-->

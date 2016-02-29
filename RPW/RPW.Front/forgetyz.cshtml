@@ -1,0 +1,113 @@
+﻿
+@RPWRazor.RPRazorHelper.Include("/head.html")
+<title>忘了密码？</title>
+<script src="/js/jquery-1.4.2.min.js"></script>
+@RPWRazor.RPRazorHelper.Include("/link.html")
+<script type="text/javascript">
+    function refreshYZM() {//验证码刷新
+        var imgYZM = document.getElementById("verificationCode123");
+        imgYZM.src = "verificationCode.ashx?t=" + new Date();
+    }
+
+    /** 
+ * 倒计时函数
+ * 需要在按钮上绑定单击事件
+ * 如: <input value="发送短信" data-cke-editable="1" data-cke-pa-onclick="setInterval('countDown(this,30)',1000);" contenteditable="false" type="button">
+ * 30代表秒数，需要倒计时多少秒可以自行更改
+ */
+    function countDown(obj, second) {
+        // 如果秒数还是大于0，则表示倒计时还没结束
+        if (second >= 0) {
+            // 获取默认按钮上的文字
+            if (typeof buttonDefaultValue === 'undefined') {
+                buttonDefaultValue = obj.defaultValue;
+            }
+            // 按钮置为不可点击状态
+            obj.disabled = true;
+            // 按钮里的内容呈现倒计时状态
+            obj.value = buttonDefaultValue + '(' + second + ')';
+            
+            // 时间减一
+            second--;
+            // 一秒后重复执行
+            setTimeout(function () { countDown(obj, second); }, 1000);
+            // 否则，按钮重置为初始状态
+        } else {
+            // 按钮置未可点击状态
+            obj.disabled = false;
+            // 按钮里的内容恢复初始状态
+            obj.value = buttonDefaultValue;
+            $("#YZMsg").text("");
+        }
+    }
+
+    $(function () {
+
+        $("#sentYZM").click(function () {
+            var email = $("#email").text();
+            countDown(this,60);
+            //发送，邮箱激活链接
+          
+            $.ajax({
+
+                type: "post", url: "FrontUserController.ashx",
+                dataType: "json",
+                data: { action: "sentValidCode", email: email },
+                success: function (data) {
+                   
+                    $("#YZMsg").text(data.Msg);
+                },
+                error: function () {
+
+                }
+            });
+
+
+        });
+
+        $("#btnNext").click(function () {
+            var email = $("#email").text();
+            var numValidCode = $("#numValidCode").val();
+            if (numValidCode.length == 0) {
+                alert("验证码不能为空！");
+                return;
+            }
+            $.ajax({
+                type: "post", url: "FrontUserController.ashx",
+                dataType: "json",
+                data: { action: "confirmValidCode", email: email, numValidCode: numValidCode },
+                success: function (data) {
+                    if (data.Status == "ok") {
+                        window.location.href = "FrontUserController.ashx?action=loadSetPwd&email=" + email;
+                    } else if (data.Status == "error") {
+                        alert("找回密码失败！" + data.Msg);
+                    }
+                },
+                error: function () {
+                    alert("找回密码请求失败！");
+                }
+            });
+        });
+
+    });
+
+</script>
+
+@RPWRazor.RPRazorHelper.Include("/headend.html")
+@RPWRazor.RPRazorHelper.Include("/navbar.html")
+
+<h1>如鹏安全中心：</h1>
+<h2>确认账号>安全验证></h2><br />
+<h5>为了您的安全，请完成身份验证</h5><br />
+ 邮箱：<span  id="email">@Model</span>
+<br />
+<br />
+<label>验证码：<input type="text" id="numValidCode" /></label>&nbsp<input type="button" id="sentYZM" value="发送验证码"/>
+<span id="YZMsg"></span>
+<br />
+<br />
+<input type="button" id="btnNext" value="下一步">
+<br />
+<br />
+
+@RPWRazor.RPRazorHelper.Include("/foot.html")

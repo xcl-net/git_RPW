@@ -1,0 +1,147 @@
+﻿
+@RPWRazor.RPRazorHelper.Include("/head.html")
+<title>个人信息</title>
+<script src="/js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript">
+    function Dialog(msg, callback) {
+        $('.modal-body').html(msg);
+        $('#myModal').modal('show');
+        $('#myModal').on('hidden.bs.modal', callback);
+    }
+</script>
+
+@RPWRazor.RPRazorHelper.Include("/link.html")
+
+@RPWRazor.RPRazorHelper.Include("/headend.html")
+@RPWRazor.RPRazorHelper.Include("/navbar.html")
+
+
+    <section>
+        
+<div style="margin-bottom: 80px;"></div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="list-group">
+                <a class="list-group-item" href="/BuyCourse/index.shtml"><span class="glyphicon glyphicon-fire"></span><span>学习卡激活</span></a>
+                <a class="list-group-item" href="/BuyCourse/ActiveCourse.ashx?action=MycourseOfBuy"><span class="glyphicon glyphicon-film"></span><span>我的课程</span></a>
+                <a class="list-group-item" href="/FrontUserController.ashx?action=ShowUserInfo"><span class="glyphicon glyphicon-user"></span><span>个人信息</span></a>
+                <a class="list-group-item" href="/Users/SignedUpActivities"><span class="glyphicon glyphicon-user"></span><span>我报名的公开课</span></a>
+                <a class="list-group-item" href="/forget.shtml"><span class="glyphicon glyphicon-user"></span><span>修改密码</span></a>
+                <a class="list-group-item" href="/BuyCourse/"><span class="glyphicon glyphicon-user"></span><span>购买课程</span></a>
+                 </div>
+        </div>
+        <div class="col-md-9">
+            
+
+<script type="text/javascript">
+    $(function () {
+        $('#btnConfirm').click(function () {
+            if ($("#realname").val() == "") {
+                Dialog("真实姓名必须填写", function () { $("#realname").focus(); });
+                return;
+            }
+            if ($("#enrolYear").val() == "") {
+                Dialog("入学年份必须填写", function () { $("#enrolDate").focus(); });
+                return;
+            }
+            if ($("#school").val() == "") {
+                Dialog("所在学校必须填写", function () { $("#school").focus(); });
+                return;
+            }
+            if ($("#specialty").val() == "") {
+                Dialog("所学专业必须填写", function () { $("#specialty").focus(); });
+                return;
+            }
+            $(this).attr('disabled', 'disabled').val('正在处理...');
+            var data = $('#f1').serialize();
+            $.post('/FrontUserController.ashx?action=CompleteUserInfo', data,
+                function (obj) {
+                    $('#btnConfirm').attr('disabled', false).val('确认');
+                    if (obj.Status == 'ok') {
+                        Dialog("修改成功");
+                    } else {
+                        Dialog(obj.Msg);
+                    }
+                }, 'json');
+        })
+    })
+</script>
+<form id="f1">
+    <div class="form-group" id="g-mail">
+        <div class="col-sm-12"><strong>推荐您完善下面的个人信息，系统会为您推荐符合您的学习资料和相关信息。福利如下（不限于此）：
+            <ul>
+            <li>为大一、大二的同学提供基础知识的学习资料，为大三的同学提供面向就业的课程，为大四的同学提供就业信息等；</li>
+            <li>为非计算机专业同学提供跨专业学习的资料；</li>
+            <li>当如鹏网到您学校所在城市做技术交流活动的时候，也会通知到您；</li>
+            </ul>
+          </strong></div>
+        <div class="clearfix" style="margin-bottom: 10px;"></div>
+        <label for="realname" class="col-sm-2 control-label">姓名:</label>
+        <div class="col-sm-10">
+            <input type="text" name="realname" class="form-control" id="realname" value="@Model.realName">
+        </div>
+        <label for="phoneNum" class="col-sm-2 control-label">手机号:</label>
+        <div class="col-sm-10">
+            <input type="text" readonly="readonly" name="phoneNum" class="form-control" id="phoneNum" value="@Model.teleNum">
+        </div>
+        <label for="Email" class="col-sm-2 control-label">邮箱:</label>
+        <div class="col-sm-10">
+            <input type="text" readonly="readonly" name="Mail" class="form-control" id="Mail" value="@Model.email">
+        </div>
+        <label for="school" class="col-sm-2 control-label">所在学校:</label>
+        <div class="col-sm-10">
+            <input type="text" name="school" class="form-control" id="school" value="@Model.schoolName">
+        </div>
+        <label class="col-sm-2 control-label">入学年份:</label>
+        <div class="col-sm-10">
+            
+             @RPWRazor.RPRazorHelper.DropDownList(Model.enroalYear, "Id", "EnrolYear", Model.defaultYear, 
+             new { id="enrolYear", name="enrolYear",@class="form-control"})
+        </div>
+        <label for="specialty" class="col-sm-2 control-label">所学专业:</label>
+        <div class="col-sm-10">
+            <input type="text" name="specialty" class="form-control" id="specialty" value="@Model.specialty">
+        </div>
+        <label class="col-sm-2 control-label">学历:</label>
+        <div class="col-sm-10">
+            
+             @RPWRazor.RPRazorHelper.DropDownList(Model.graduate, "Id", "Graduate", Model.defaultGraduate,
+             new { id = "graduate", name = "graduate",@class="form-control" })
+        </div>
+        <label for="specialty" class="col-sm-2 control-label">QQ号:</label>
+        <div class="col-sm-10">
+            <input type="text" name="qq" class="form-control" id="QQ" value="@Model.qq">
+        </div>
+        <label class="col-sm-2 control-label"></label>
+        <div class="col-sm-10">
+            <input type="button" name="confirm" id="btnConfirm" class="btn btn-success" value="确认">
+        </div>
+    </div>
+</form>
+
+        </div>
+    </div>
+</div>
+<div style="margin-bottom: 80px;"></div>
+
+    </section>
+   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="myModalLabel">温馨提示</h4>
+                </div>
+                <div class="modal-body">
+                        
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                </div>
+            </div>
+        </div>
+    </div>
+@RPWRazor.RPRazorHelper.Include("/foot.html")
+
+    

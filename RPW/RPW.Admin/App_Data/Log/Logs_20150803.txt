@@ -1,0 +1,373 @@
+2015-08-03 14:18:16,522 [6] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-03 14:22:05,898 [11] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.IO.FileNotFoundException: 未能找到文件“C:\Users\Administrator\Desktop\RPW\RPW.Admin\PowerAddnewEdit.cshtml”。
+文件名:“C:\Users\Administrator\Desktop\RPW\RPW.Admin\PowerAddnewEdit.cshtml”
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   在 System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   在 System.IO.File.ReadAllText(String path)
+   在 RPWRazor.RPRazorHelper.ParseRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 23
+   在 RPWRazor.RPRazorHelper.OutputRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 39
+   在 RPW.Admin.AdminUser.PowerController.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\PowerController.ashx.cs:行号 37
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-03 14:25:01,799 [13] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Exception: action错误！
+   在 RPW.Admin.AdminUser.PowerController.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\PowerController.ashx.cs:行号 62
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-03 14:30:46,138 [12] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Exception: action错误！
+   在 RPW.Admin.AdminUser.PowerController.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\PowerController.ashx.cs:行号 62
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-03 16:07:05,758 [5] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-03 16:08:29,885 [5] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Exception: action错误！
+   在 RPW.Admin.AdminUser.PowerController.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\PowerController.ashx.cs:行号 88
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-03 16:52:20,957 [10] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.FormatException: 输入字符串的格式不正确。
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   在 System.Convert.ToInt64(String value)
+   在 RPW.Admin.AdminUser.PowerController.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\PowerController.ashx.cs:行号 53
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-03 16:53:53,400 [10] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.FormatException: 输入字符串的格式不正确。
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   在 System.Convert.ToInt64(String value)
+   在 RPW.Admin.AdminUser.PowerController.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\PowerController.ashx.cs:行号 53
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-03 16:53:53,400 [6] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.FormatException: 输入字符串的格式不正确。
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   在 System.Convert.ToInt64(String value)
+   在 RPW.Admin.AdminUser.PowerController.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\PowerController.ashx.cs:行号 53
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-03 16:53:53,400 [6] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.FormatException: 输入字符串的格式不正确。
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   在 System.Convert.ToInt64(String value)
+   在 RPW.Admin.AdminUser.PowerController.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\PowerController.ashx.cs:行号 53
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-03 16:53:53,416 [6] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.FormatException: 输入字符串的格式不正确。
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   在 System.Convert.ToInt64(String value)
+   在 RPW.Admin.AdminUser.PowerController.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\PowerController.ashx.cs:行号 53
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-03 16:53:53,416 [6] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.FormatException: 输入字符串的格式不正确。
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   在 System.Convert.ToInt64(String value)
+   在 RPW.Admin.AdminUser.PowerController.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\PowerController.ashx.cs:行号 53
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-03 16:53:53,416 [6] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.FormatException: 输入字符串的格式不正确。
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   在 System.Convert.ToInt64(String value)
+   在 RPW.Admin.AdminUser.PowerController.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\PowerController.ashx.cs:行号 53
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-03 16:53:53,431 [6] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.FormatException: 输入字符串的格式不正确。
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   在 System.Convert.ToInt64(String value)
+   在 RPW.Admin.AdminUser.PowerController.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\PowerController.ashx.cs:行号 53
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-03 16:53:53,431 [6] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.FormatException: 输入字符串的格式不正确。
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   在 System.Convert.ToInt64(String value)
+   在 RPW.Admin.AdminUser.PowerController.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\PowerController.ashx.cs:行号 53
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-03 17:18:48,485 [6] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-03 17:52:19,075 [5] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 RPW.Admin.AdminUser.PowerController.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\PowerController.ashx.cs:行号 103
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-03 17:54:24,592 [5] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 RPW.Admin.AdminUser.PowerController.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\PowerController.ashx.cs:行号 103
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-03 17:54:30,271 [11] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 RPW.Admin.AdminUser.PowerController.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\PowerController.ashx.cs:行号 103
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-03 17:55:52,101 [10] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 RPW.Admin.AdminUser.PowerController.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\PowerController.ashx.cs:行号 103
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-03 17:56:03,936 [6] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 RPW.Admin.AdminUser.PowerController.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\PowerController.ashx.cs:行号 103
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-03 17:57:59,642 [4] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-03 18:04:10,194 [6] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Exception: action错误！
+   在 RPW.Admin.AdminUser.Login.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\Login.ashx.cs:行号 120
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-03 18:04:10,601 [11] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-03 18:07:30,803 [6] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-03 18:28:51,545 [10] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-03 18:30:46,943 [12] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Data.SqlClient.SqlException (0x80131904): “)”附近有语法错误。
+   在 Maticsoft.DBUtility.DbHelperSQL.ExecuteSql(String SQLString) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\DbHelperSQL.cs:行号 147
+   在 RPW.Dal.PowersDal.DeleteList(String Idlist) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\PowersDal.cs:行号 133
+   在 RPW.Bll.PowersBll.DeleteList(String Idlist) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Bll\PowersBll.cs:行号 70
+   在 RPW.Admin.AdminUser.PowerController.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\PowerController.ashx.cs:行号 117
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:cb66c1cf-7a2e-483e-91c5-aad1f0d85cf3
+2015-08-03 18:30:46,944 [13] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Data.SqlClient.SqlException (0x80131904): “)”附近有语法错误。
+   在 Maticsoft.DBUtility.DbHelperSQL.ExecuteSql(String SQLString) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\DbHelperSQL.cs:行号 147
+   在 RPW.Dal.PowersDal.DeleteList(String Idlist) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\PowersDal.cs:行号 133
+   在 RPW.Bll.PowersBll.DeleteList(String Idlist) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Bll\PowersBll.cs:行号 70
+   在 RPW.Admin.AdminUser.PowerController.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\PowerController.ashx.cs:行号 117
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:1e74a1a6-0e6a-4e70-bc7e-e9a7d02ad17c
+2015-08-03 18:30:46,945 [11] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Data.SqlClient.SqlException (0x80131904): “)”附近有语法错误。
+   在 Maticsoft.DBUtility.DbHelperSQL.ExecuteSql(String SQLString) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\DbHelperSQL.cs:行号 147
+   在 RPW.Dal.PowersDal.DeleteList(String Idlist) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\PowersDal.cs:行号 133
+   在 RPW.Bll.PowersBll.DeleteList(String Idlist) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Bll\PowersBll.cs:行号 70
+   在 RPW.Admin.AdminUser.PowerController.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\PowerController.ashx.cs:行号 117
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:bcc28ce3-bed6-4bfe-aae0-7a10d1c79274
+2015-08-03 18:30:46,954 [10] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Data.SqlClient.SqlException (0x80131904): “)”附近有语法错误。
+   在 Maticsoft.DBUtility.DbHelperSQL.ExecuteSql(String SQLString) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\DbHelperSQL.cs:行号 147
+   在 RPW.Dal.PowersDal.DeleteList(String Idlist) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\PowersDal.cs:行号 133
+   在 RPW.Bll.PowersBll.DeleteList(String Idlist) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Bll\PowersBll.cs:行号 70
+   在 RPW.Admin.AdminUser.PowerController.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\PowerController.ashx.cs:行号 117
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:f31aced9-c348-4eb4-b7a0-b786c87d8866
+2015-08-03 18:30:46,953 [5] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Data.SqlClient.SqlException (0x80131904): “)”附近有语法错误。
+   在 Maticsoft.DBUtility.DbHelperSQL.ExecuteSql(String SQLString) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\DbHelperSQL.cs:行号 147
+   在 RPW.Dal.PowersDal.DeleteList(String Idlist) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\PowersDal.cs:行号 133
+   在 RPW.Bll.PowersBll.DeleteList(String Idlist) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Bll\PowersBll.cs:行号 70
+   在 RPW.Admin.AdminUser.PowerController.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\PowerController.ashx.cs:行号 117
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:821fed83-ad79-4a0c-af5d-9fd0b4d8f125
+2015-08-03 18:30:47,036 [13] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Data.SqlClient.SqlException (0x80131904): “)”附近有语法错误。
+   在 Maticsoft.DBUtility.DbHelperSQL.ExecuteSql(String SQLString) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\DbHelperSQL.cs:行号 147
+   在 RPW.Dal.PowersDal.DeleteList(String Idlist) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\PowersDal.cs:行号 133
+   在 RPW.Bll.PowersBll.DeleteList(String Idlist) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Bll\PowersBll.cs:行号 70
+   在 RPW.Admin.AdminUser.PowerController.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\PowerController.ashx.cs:行号 117
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:821fed83-ad79-4a0c-af5d-9fd0b4d8f125
+2015-08-03 18:30:47,047 [11] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Data.SqlClient.SqlException (0x80131904): “)”附近有语法错误。
+   在 Maticsoft.DBUtility.DbHelperSQL.ExecuteSql(String SQLString) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\DbHelperSQL.cs:行号 147
+   在 RPW.Dal.PowersDal.DeleteList(String Idlist) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\PowersDal.cs:行号 133
+   在 RPW.Bll.PowersBll.DeleteList(String Idlist) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Bll\PowersBll.cs:行号 70
+   在 RPW.Admin.AdminUser.PowerController.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\PowerController.ashx.cs:行号 117
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:f31aced9-c348-4eb4-b7a0-b786c87d8866
+2015-08-03 18:30:47,058 [13] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Data.SqlClient.SqlException (0x80131904): “)”附近有语法错误。
+   在 Maticsoft.DBUtility.DbHelperSQL.ExecuteSql(String SQLString) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\DbHelperSQL.cs:行号 147
+   在 RPW.Dal.PowersDal.DeleteList(String Idlist) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\PowersDal.cs:行号 133
+   在 RPW.Bll.PowersBll.DeleteList(String Idlist) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Bll\PowersBll.cs:行号 70
+   在 RPW.Admin.AdminUser.PowerController.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\PowerController.ashx.cs:行号 117
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:f31aced9-c348-4eb4-b7a0-b786c87d8866
+2015-08-03 18:30:47,059 [10] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Data.SqlClient.SqlException (0x80131904): “)”附近有语法错误。
+   在 Maticsoft.DBUtility.DbHelperSQL.ExecuteSql(String SQLString) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\DbHelperSQL.cs:行号 147
+   在 RPW.Dal.PowersDal.DeleteList(String Idlist) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\PowersDal.cs:行号 133
+   在 RPW.Bll.PowersBll.DeleteList(String Idlist) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Bll\PowersBll.cs:行号 70
+   在 RPW.Admin.AdminUser.PowerController.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\PowerController.ashx.cs:行号 117
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:cb66c1cf-7a2e-483e-91c5-aad1f0d85cf3
+2015-08-03 18:30:47,065 [11] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Data.SqlClient.SqlException (0x80131904): “)”附近有语法错误。
+   在 Maticsoft.DBUtility.DbHelperSQL.ExecuteSql(String SQLString) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\DbHelperSQL.cs:行号 147
+   在 RPW.Dal.PowersDal.DeleteList(String Idlist) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\PowersDal.cs:行号 133
+   在 RPW.Bll.PowersBll.DeleteList(String Idlist) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Bll\PowersBll.cs:行号 70
+   在 RPW.Admin.AdminUser.PowerController.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\PowerController.ashx.cs:行号 117
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:cb66c1cf-7a2e-483e-91c5-aad1f0d85cf3
+2015-08-03 18:30:47,068 [12] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Data.SqlClient.SqlException (0x80131904): “)”附近有语法错误。
+   在 Maticsoft.DBUtility.DbHelperSQL.ExecuteSql(String SQLString) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\DbHelperSQL.cs:行号 147
+   在 RPW.Dal.PowersDal.DeleteList(String Idlist) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\PowersDal.cs:行号 133
+   在 RPW.Bll.PowersBll.DeleteList(String Idlist) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Bll\PowersBll.cs:行号 70
+   在 RPW.Admin.AdminUser.PowerController.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\PowerController.ashx.cs:行号 117
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:821fed83-ad79-4a0c-af5d-9fd0b4d8f125
+2015-08-03 18:34:08,425 [11] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Data.SqlClient.SqlException (0x80131904): “)”附近有语法错误。
+   在 Maticsoft.DBUtility.DbHelperSQL.ExecuteSql(String SQLString) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\DbHelperSQL.cs:行号 147
+   在 RPW.Dal.PowersDal.DeleteList(String Idlist) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\PowersDal.cs:行号 133
+   在 RPW.Bll.PowersBll.DeleteList(String Idlist) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Bll\PowersBll.cs:行号 70
+   在 RPW.Admin.AdminUser.PowerController.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\PowerController.ashx.cs:行号 117
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:f31aced9-c348-4eb4-b7a0-b786c87d8866
+2015-08-03 18:34:10,647 [13] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Data.SqlClient.SqlException (0x80131904): “)”附近有语法错误。
+   在 Maticsoft.DBUtility.DbHelperSQL.ExecuteSql(String SQLString) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\DbHelperSQL.cs:行号 147
+   在 RPW.Dal.PowersDal.DeleteList(String Idlist) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\PowersDal.cs:行号 133
+   在 RPW.Bll.PowersBll.DeleteList(String Idlist) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Bll\PowersBll.cs:行号 70
+   在 RPW.Admin.AdminUser.PowerController.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\PowerController.ashx.cs:行号 117
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:f31aced9-c348-4eb4-b7a0-b786c87d8866
+2015-08-03 18:34:17,431 [11] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Data.SqlClient.SqlException (0x80131904): “)”附近有语法错误。
+   在 Maticsoft.DBUtility.DbHelperSQL.ExecuteSql(String SQLString) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\DbHelperSQL.cs:行号 147
+   在 RPW.Dal.PowersDal.DeleteList(String Idlist) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\PowersDal.cs:行号 133
+   在 RPW.Bll.PowersBll.DeleteList(String Idlist) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Bll\PowersBll.cs:行号 70
+   在 RPW.Admin.AdminUser.PowerController.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\PowerController.ashx.cs:行号 117
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:f31aced9-c348-4eb4-b7a0-b786c87d8866
+2015-08-03 18:37:33,047 [11] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件“/Login.ashx”不存在。
+   在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   在 System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-03 18:37:45,774 [19] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件“/Login.ashx”不存在。
+   在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   在 System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-03 18:37:51,238 [11] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件“/Login.ashx”不存在。
+   在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   在 System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-03 18:37:53,738 [11] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件“/Login.ashx”不存在。
+   在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   在 System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-03 18:37:56,619 [11] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件“/Login.ashx”不存在。
+   在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   在 System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-03 18:38:05,444 [11] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件“/Login.ashx”不存在。
+   在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   在 System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-03 18:38:33,771 [11] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)

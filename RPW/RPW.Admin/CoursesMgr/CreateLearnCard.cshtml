@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+   
+    <title>生成学习卡</title>
+     <script src="/js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript">
+        //为了避免js函数的多级嵌套，单独封转一个方法
+        var createFunction = function () {
+              
+            var courseId = $("#CourseList").val();
+            var prefix = $("#txtCardPrefix").val();
+            var expiredays = $("#txtExpDate").val();
+            var startNo = $("#txtBegin").val();
+            var endNo = $("#txtEnd").val();
+            //验证：
+            if (courseId.length==0) {
+                alert("课程号不能为空");
+                return;
+            }
+            if (prefix.length == 0) {
+                alert("学习卡的前缀不能为空");
+                return;
+            }
+            if (expiredays.length == 0) {
+                alert("有效天数不能为空");
+                return;
+            }
+            if (startNo.length == 0) {
+                alert("开始数字不能为空");
+                return;
+            }
+            if (endNo.length == 0) {
+                alert("结束数字不能为空");
+                return;
+            }
+            
+
+            //ajax
+            $.ajax({
+                type: "post", url: "CourseController.ashx",//post请求的好处是，没有缓存的现象
+                dataType: "json",
+                data: {
+                    action: "CreateLearnCardsSubmit",
+                    courseId: courseId,
+                    prefix: prefix,
+                    expiredays: expiredays,
+                    startNo: startNo,
+                    endNo: endNo
+                },
+                success: function (data) {
+                    if (data.Status == "ok") {
+                        var result = "";
+                        var cards = data.Data;
+                        for (var i = 0; i < cards.length; i++) {
+                            var card = cards[i];
+                            result += "课程名称:" + data.Msg + "\r\n" + "学习卡卡号：" + card.CardNum + "\r\n" + "密码：" + card.Password + "\r\n\r\n";
+
+                        }
+                        $("#txtInfo").val(result);
+                    } else if (data.Status == "error") {
+                        alert("失败："+data.Msg);
+                    }
+                },
+                error: function () {
+                    alert("生成学习卡通讯失败");
+                }
+            });
+        };
+
+        $(function () {
+            $("#btnCreate").click(createFunction);
+        });
+
+    </script>
+</head>
+<body>
+    课程：@RPWRazor.RPRazorHelper.DropDownList(Model.Courses, "Id", "CName", Model.selecetValue, new { Id = "CourseList" })  
+    <br />  <br />
+    学习卡号前缀：<input type="text" id="txtCardPrefix" name="txtCardPrefix" />
+    <br />  <br />
+    学习卡号有效期天数:<input type="text" id="txtExpDate" name="txtExpDate" onkeyup="this.value=this.value.replace(/[^\d\.]/g,'')" />天   <br />
+     <br />  <br />
+    学习卡号起始数:<input type="text" id="txtBegin" name="txtBegin" onkeyup="this.value=this.value.replace(/[^\d\.]/g,'')" />     <br />
+     <br />  <br />      
+    学习卡号结束数:<input type="text" id="txtEnd" name="txtEnd" onkeyup="this.value=this.value.replace(/[^\d\.]/g,'')" /><br />       <br />
+     <br />  <br />       
+    
+     <input type="button" name="btnCreate" id="btnCreate" value="生成" /><br />
+     <br />  <br />       
+     <textarea name="txtInfo" id="txtInfo" style="width: 500px; height: 500px;"></textarea>
+
+</body>
+</html>

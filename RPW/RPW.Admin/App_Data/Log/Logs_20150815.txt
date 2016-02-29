@@ -1,0 +1,432 @@
+2015-08-15 16:17:49,094 [7] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-15 16:22:33,761 [13] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpParseException (0x80004005): 未能创建类型“RPW.Admin.Courses.Courses”。
+   在 System.Web.UI.SimpleWebHandlerParser.GetType(String typeName)
+   在 System.Web.UI.SimpleWebHandlerParser.GetTypeToCache(Assembly builtAssembly)
+   在 System.Web.Compilation.SimpleHandlerBuildProvider.GetGeneratedType(CompilerResults results)
+   在 System.Web.Compilation.BuildProvider.CreateBuildResult(CompilerResults results)
+   在 System.Web.Compilation.BuildProvider.GetBuildResult(CompilerResults results)
+   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   在 System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-15 21:22:34,270 [5] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpParseException (0x80004005): 未能创建类型“RPW.Admin.Courses.CourseController”。
+   在 System.Web.UI.SimpleWebHandlerParser.GetType(String typeName)
+   在 System.Web.UI.SimpleWebHandlerParser.GetTypeToCache(Assembly builtAssembly)
+   在 System.Web.Compilation.SimpleHandlerBuildProvider.GetGeneratedType(CompilerResults results)
+   在 System.Web.Compilation.BuildProvider.CreateBuildResult(CompilerResults results)
+   在 System.Web.Compilation.BuildProvider.GetBuildResult(CompilerResults results)
+   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   在 System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-15 21:24:05,271 [5] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpParseException (0x80004005): 未能创建类型“RPW.Admin.Courses.CourseController”。
+   在 System.Web.UI.SimpleWebHandlerParser.GetType(String typeName)
+   在 System.Web.UI.SimpleWebHandlerParser.GetTypeToCache(Assembly builtAssembly)
+   在 System.Web.Compilation.SimpleHandlerBuildProvider.GetGeneratedType(CompilerResults results)
+   在 System.Web.Compilation.BuildProvider.CreateBuildResult(CompilerResults results)
+   在 System.Web.Compilation.BuildProvider.GetBuildResult(CompilerResults results)
+   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   在 System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-15 21:24:07,634 [12] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpParseException (0x80004005): 未能创建类型“RPW.Admin.Courses.CourseController”。
+   在 System.Web.UI.SimpleWebHandlerParser.GetType(String typeName)
+   在 System.Web.UI.SimpleWebHandlerParser.GetTypeToCache(Assembly builtAssembly)
+   在 System.Web.Compilation.SimpleHandlerBuildProvider.GetGeneratedType(CompilerResults results)
+   在 System.Web.Compilation.BuildProvider.CreateBuildResult(CompilerResults results)
+   在 System.Web.Compilation.BuildProvider.GetBuildResult(CompilerResults results)
+   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   在 System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-15 21:24:08,329 [11] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpParseException (0x80004005): 未能创建类型“RPW.Admin.Courses.CourseController”。
+   在 System.Web.UI.SimpleWebHandlerParser.GetType(String typeName)
+   在 System.Web.UI.SimpleWebHandlerParser.GetTypeToCache(Assembly builtAssembly)
+   在 System.Web.Compilation.SimpleHandlerBuildProvider.GetGeneratedType(CompilerResults results)
+   在 System.Web.Compilation.BuildProvider.CreateBuildResult(CompilerResults results)
+   在 System.Web.Compilation.BuildProvider.GetBuildResult(CompilerResults results)
+   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   在 System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-15 21:24:08,588 [9] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpParseException (0x80004005): 未能创建类型“RPW.Admin.Courses.CourseController”。
+   在 System.Web.UI.SimpleWebHandlerParser.GetType(String typeName)
+   在 System.Web.UI.SimpleWebHandlerParser.GetTypeToCache(Assembly builtAssembly)
+   在 System.Web.Compilation.SimpleHandlerBuildProvider.GetGeneratedType(CompilerResults results)
+   在 System.Web.Compilation.BuildProvider.CreateBuildResult(CompilerResults results)
+   在 System.Web.Compilation.BuildProvider.GetBuildResult(CompilerResults results)
+   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   在 System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-15 21:24:09,875 [11] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpParseException (0x80004005): 未能创建类型“RPW.Admin.Courses.CourseController”。
+   在 System.Web.UI.SimpleWebHandlerParser.GetType(String typeName)
+   在 System.Web.UI.SimpleWebHandlerParser.GetTypeToCache(Assembly builtAssembly)
+   在 System.Web.Compilation.SimpleHandlerBuildProvider.GetGeneratedType(CompilerResults results)
+   在 System.Web.Compilation.BuildProvider.CreateBuildResult(CompilerResults results)
+   在 System.Web.Compilation.BuildProvider.GetBuildResult(CompilerResults results)
+   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   在 System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-15 21:24:21,029 [5] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpParseException (0x80004005): 未能创建类型“RPW.Admin.Courses.CourseController”。
+   在 System.Web.UI.SimpleWebHandlerParser.GetType(String typeName)
+   在 System.Web.UI.SimpleWebHandlerParser.GetTypeToCache(Assembly builtAssembly)
+   在 System.Web.Compilation.SimpleHandlerBuildProvider.GetGeneratedType(CompilerResults results)
+   在 System.Web.Compilation.BuildProvider.CreateBuildResult(CompilerResults results)
+   在 System.Web.Compilation.BuildProvider.GetBuildResult(CompilerResults results)
+   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   在 System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-15 21:26:12,242 [6] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件“/Courses/CourseController.ashx”不存在。
+   在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   在 System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-15 21:26:34,383 [6] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.IO.DirectoryNotFoundException: 未能找到路径“C:\Users\Administrator\Desktop\RPW\RPW.Admin\Courses\CourseList.cshtml”的一部分。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   在 System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   在 System.IO.File.ReadAllText(String path)
+   在 RPWRazor.RPRazorHelper.ParseRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 23
+   在 RPWRazor.RPRazorHelper.OutputRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 39
+   在 RPW.Admin.CoursesMgr.CourseController.list(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\CoursesMgr\CourseController.ashx.cs:行号 24
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 35
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-15 21:29:37,254 [15] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件“/Courses/CourseController.ashx”不存在。
+   在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   在 System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-15 21:29:49,799 [14] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.IO.DirectoryNotFoundException: 未能找到路径“C:\Users\Administrator\Desktop\RPW\RPW.Admin\Courses\CourseList.cshtml”的一部分。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   在 System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   在 System.IO.File.ReadAllText(String path)
+   在 RPWRazor.RPRazorHelper.ParseRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 23
+   在 RPWRazor.RPRazorHelper.OutputRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 39
+   在 RPW.Admin.CoursesMgr.CourseController.list(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\CoursesMgr\CourseController.ashx.cs:行号 24
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 35
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-15 21:30:11,296 [11] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件“/Courses/CourseController.ashx”不存在。
+   在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   在 System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-15 21:30:23,962 [5] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.IO.DirectoryNotFoundException: 未能找到路径“C:\Users\Administrator\Desktop\RPW\RPW.Admin\Courses\CourseList.cshtml”的一部分。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   在 System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   在 System.IO.File.ReadAllText(String path)
+   在 RPWRazor.RPRazorHelper.ParseRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 23
+   在 RPWRazor.RPRazorHelper.OutputRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 39
+   在 RPW.Admin.CoursesMgr.CourseController.list(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\CoursesMgr\CourseController.ashx.cs:行号 24
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 35
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-15 22:57:35,717 [11] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.IO.DirectoryNotFoundException: 未能找到路径“C:\Users\Administrator\Desktop\RPW\RPW.Admin\Courses\CourseList.cshtml”的一部分。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   在 System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   在 System.IO.File.ReadAllText(String path)
+   在 RPWRazor.RPRazorHelper.ParseRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 23
+   在 RPWRazor.RPRazorHelper.OutputRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 39
+   在 RPW.Admin.CoursesMgr.CourseController.list(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\CoursesMgr\CourseController.ashx.cs:行号 25
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 40
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-15 22:57:47,537 [10] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.IO.DirectoryNotFoundException: 未能找到路径“C:\Users\Administrator\Desktop\RPW\RPW.Admin\Courses\CourseList.cshtml”的一部分。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   在 System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   在 System.IO.File.ReadAllText(String path)
+   在 RPWRazor.RPRazorHelper.ParseRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 23
+   在 RPWRazor.RPRazorHelper.OutputRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 39
+   在 RPW.Admin.CoursesMgr.CourseController.list(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\CoursesMgr\CourseController.ashx.cs:行号 25
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 40
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-15 23:07:11,725 [11] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> RazorEngine.Templating.TemplateCompilationException: Unable to compile template. “System.Collections.Generic.List<RPW.Model.Courses>”不包含“id”的定义，并且找不到可接受类型为“System.Collections.Generic.List<RPW.Model.Courses>”的第一个参数的扩展方法“id”(是否缺少 using 指令或程序集引用?)
+
+Other compilation errors may have occurred. Check the Errors property for more information.
+   在 RazorEngine.Compilation.DirectCompilerServiceBase.CompileType(TypeContext context)
+   在 RazorEngine.Templating.TemplateService.CreateTemplateType(String razorTemplate, Type modelType)
+   在 RazorEngine.Templating.TemplateService.GetTemplate[T](String razorTemplate, Object model, String cacheName)
+   在 RazorEngine.Templating.TemplateService.GetTemplate(String razorTemplate, Object model, String cacheName)
+   在 RazorEngine.Templating.TemplateService.Parse(String razorTemplate, Object model, DynamicViewBag viewBag, String cacheName)
+   在 RazorEngine.Razor.Parse(String razorTemplate, Object model, String cacheName)
+   在 RPWRazor.RPRazorHelper.ParseRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 27
+   在 RPWRazor.RPRazorHelper.OutputRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 39
+   在 RPW.Admin.CoursesMgr.CourseController.list(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\CoursesMgr\CourseController.ashx.cs:行号 25
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 40
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-15 23:07:12,391 [10] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-15 23:21:50,335 [6] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> RazorEngine.Templating.TemplateCompilationException: Unable to compile template. “System.Collections.Generic.List<RPW.Model.Courses>”不包含“id”的定义，并且找不到可接受类型为“System.Collections.Generic.List<RPW.Model.Courses>”的第一个参数的扩展方法“id”(是否缺少 using 指令或程序集引用?)
+
+Other compilation errors may have occurred. Check the Errors property for more information.
+   在 RazorEngine.Compilation.DirectCompilerServiceBase.CompileType(TypeContext context)
+   在 RazorEngine.Templating.TemplateService.CreateTemplateType(String razorTemplate, Type modelType)
+   在 RazorEngine.Templating.TemplateService.GetTemplate[T](String razorTemplate, Object model, String cacheName)
+   在 RazorEngine.Templating.TemplateService.GetTemplate(String razorTemplate, Object model, String cacheName)
+   在 RazorEngine.Templating.TemplateService.Parse(String razorTemplate, Object model, DynamicViewBag viewBag, String cacheName)
+   在 RazorEngine.Razor.Parse(String razorTemplate, Object model, String cacheName)
+   在 RPWRazor.RPRazorHelper.ParseRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 27
+   在 RPWRazor.RPRazorHelper.OutputRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 39
+   在 RPW.Admin.CoursesMgr.CourseController.list(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\CoursesMgr\CourseController.ashx.cs:行号 25
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 40
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-15 23:26:51,716 [10] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> RazorEngine.Templating.TemplateCompilationException: Unable to compile template. “System.Collections.Generic.List<RPW.Model.Courses>”不包含“id”的定义，并且找不到可接受类型为“System.Collections.Generic.List<RPW.Model.Courses>”的第一个参数的扩展方法“id”(是否缺少 using 指令或程序集引用?)
+
+Other compilation errors may have occurred. Check the Errors property for more information.
+   在 RazorEngine.Compilation.DirectCompilerServiceBase.CompileType(TypeContext context)
+   在 RazorEngine.Templating.TemplateService.CreateTemplateType(String razorTemplate, Type modelType)
+   在 RazorEngine.Templating.TemplateService.GetTemplate[T](String razorTemplate, Object model, String cacheName)
+   在 RazorEngine.Templating.TemplateService.GetTemplate(String razorTemplate, Object model, String cacheName)
+   在 RazorEngine.Templating.TemplateService.Parse(String razorTemplate, Object model, DynamicViewBag viewBag, String cacheName)
+   在 RazorEngine.Razor.Parse(String razorTemplate, Object model, String cacheName)
+   在 RPWRazor.RPRazorHelper.ParseRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 27
+   在 RPWRazor.RPRazorHelper.OutputRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 39
+   在 RPW.Admin.CoursesMgr.CourseController.list(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\CoursesMgr\CourseController.ashx.cs:行号 26
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 40
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-15 23:27:13,095 [5] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> RazorEngine.Templating.TemplateCompilationException: Unable to compile template. “System.Collections.Generic.List<RPW.Model.Courses>”不包含“id”的定义，并且找不到可接受类型为“System.Collections.Generic.List<RPW.Model.Courses>”的第一个参数的扩展方法“id”(是否缺少 using 指令或程序集引用?)
+
+Other compilation errors may have occurred. Check the Errors property for more information.
+   在 RazorEngine.Compilation.DirectCompilerServiceBase.CompileType(TypeContext context)
+   在 RazorEngine.Templating.TemplateService.CreateTemplateType(String razorTemplate, Type modelType)
+   在 RazorEngine.Templating.TemplateService.GetTemplate[T](String razorTemplate, Object model, String cacheName)
+   在 RazorEngine.Templating.TemplateService.GetTemplate(String razorTemplate, Object model, String cacheName)
+   在 RazorEngine.Templating.TemplateService.Parse(String razorTemplate, Object model, DynamicViewBag viewBag, String cacheName)
+   在 RazorEngine.Razor.Parse(String razorTemplate, Object model, String cacheName)
+   在 RPWRazor.RPRazorHelper.ParseRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 27
+   在 RPWRazor.RPRazorHelper.OutputRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 39
+   在 RPW.Admin.CoursesMgr.CourseController.list(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\CoursesMgr\CourseController.ashx.cs:行号 26
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 40
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-15 23:27:14,858 [10] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> RazorEngine.Templating.TemplateCompilationException: Unable to compile template. “System.Collections.Generic.List<RPW.Model.Courses>”不包含“id”的定义，并且找不到可接受类型为“System.Collections.Generic.List<RPW.Model.Courses>”的第一个参数的扩展方法“id”(是否缺少 using 指令或程序集引用?)
+
+Other compilation errors may have occurred. Check the Errors property for more information.
+   在 RazorEngine.Compilation.DirectCompilerServiceBase.CompileType(TypeContext context)
+   在 RazorEngine.Templating.TemplateService.CreateTemplateType(String razorTemplate, Type modelType)
+   在 RazorEngine.Templating.TemplateService.GetTemplate[T](String razorTemplate, Object model, String cacheName)
+   在 RazorEngine.Templating.TemplateService.GetTemplate(String razorTemplate, Object model, String cacheName)
+   在 RazorEngine.Templating.TemplateService.Parse(String razorTemplate, Object model, DynamicViewBag viewBag, String cacheName)
+   在 RazorEngine.Razor.Parse(String razorTemplate, Object model, String cacheName)
+   在 RPWRazor.RPRazorHelper.ParseRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 27
+   在 RPWRazor.RPRazorHelper.OutputRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 39
+   在 RPW.Admin.CoursesMgr.CourseController.list(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\CoursesMgr\CourseController.ashx.cs:行号 26
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 40
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-15 23:28:27,967 [10] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> RazorEngine.Templating.TemplateCompilationException: Unable to compile template. “System.Collections.Generic.List<RPW.Model.Courses>”不包含“id”的定义，并且找不到可接受类型为“System.Collections.Generic.List<RPW.Model.Courses>”的第一个参数的扩展方法“id”(是否缺少 using 指令或程序集引用?)
+
+Other compilation errors may have occurred. Check the Errors property for more information.
+   在 RazorEngine.Compilation.DirectCompilerServiceBase.CompileType(TypeContext context)
+   在 RazorEngine.Templating.TemplateService.CreateTemplateType(String razorTemplate, Type modelType)
+   在 RazorEngine.Templating.TemplateService.GetTemplate[T](String razorTemplate, Object model, String cacheName)
+   在 RazorEngine.Templating.TemplateService.GetTemplate(String razorTemplate, Object model, String cacheName)
+   在 RazorEngine.Templating.TemplateService.Parse(String razorTemplate, Object model, DynamicViewBag viewBag, String cacheName)
+   在 RazorEngine.Razor.Parse(String razorTemplate, Object model, String cacheName)
+   在 RPWRazor.RPRazorHelper.ParseRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 27
+   在 RPWRazor.RPRazorHelper.OutputRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 39
+   在 RPW.Admin.CoursesMgr.CourseController.list(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\CoursesMgr\CourseController.ashx.cs:行号 26
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 40
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-15 23:33:37,542 [5] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> RazorEngine.Templating.TemplateCompilationException: Unable to compile template. “System.Collections.Generic.List<RPW.Model.Courses>”不包含“id”的定义，并且找不到可接受类型为“System.Collections.Generic.List<RPW.Model.Courses>”的第一个参数的扩展方法“id”(是否缺少 using 指令或程序集引用?)
+
+Other compilation errors may have occurred. Check the Errors property for more information.
+   在 RazorEngine.Compilation.DirectCompilerServiceBase.CompileType(TypeContext context)
+   在 RazorEngine.Templating.TemplateService.CreateTemplateType(String razorTemplate, Type modelType)
+   在 RazorEngine.Templating.TemplateService.GetTemplate[T](String razorTemplate, Object model, String cacheName)
+   在 RazorEngine.Templating.TemplateService.GetTemplate(String razorTemplate, Object model, String cacheName)
+   在 RazorEngine.Templating.TemplateService.Parse(String razorTemplate, Object model, DynamicViewBag viewBag, String cacheName)
+   在 RazorEngine.Razor.Parse(String razorTemplate, Object model, String cacheName)
+   在 RPWRazor.RPRazorHelper.ParseRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 27
+   在 RPWRazor.RPRazorHelper.OutputRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 39
+   在 RPW.Admin.CoursesMgr.CourseController.list(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\CoursesMgr\CourseController.ashx.cs:行号 26
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 40
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-15 23:43:50,917 [15] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> RazorEngine.Templating.TemplateCompilationException: Unable to compile template. “System.Collections.Generic.List<RPW.Model.Courses>”不包含“Id”的定义，并且找不到可接受类型为“System.Collections.Generic.List<RPW.Model.Courses>”的第一个参数的扩展方法“Id”(是否缺少 using 指令或程序集引用?)
+
+Other compilation errors may have occurred. Check the Errors property for more information.
+   在 RazorEngine.Compilation.DirectCompilerServiceBase.CompileType(TypeContext context)
+   在 RazorEngine.Templating.TemplateService.CreateTemplateType(String razorTemplate, Type modelType)
+   在 RazorEngine.Templating.TemplateService.GetTemplate[T](String razorTemplate, Object model, String cacheName)
+   在 RazorEngine.Templating.TemplateService.GetTemplate(String razorTemplate, Object model, String cacheName)
+   在 RazorEngine.Templating.TemplateService.Parse(String razorTemplate, Object model, DynamicViewBag viewBag, String cacheName)
+   在 RazorEngine.Razor.Parse(String razorTemplate, Object model, String cacheName)
+   在 RPWRazor.RPRazorHelper.ParseRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 27
+   在 RPWRazor.RPRazorHelper.OutputRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 39
+   在 RPW.Admin.CoursesMgr.CourseController.list(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\CoursesMgr\CourseController.ashx.cs:行号 26
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 40
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-15 23:47:35,278 [17] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Exception: action不存在
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 37
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)

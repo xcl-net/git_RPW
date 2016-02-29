@@ -1,0 +1,16 @@
+﻿@using RPWRazor
+
+@RPRazorHelper.Include("~/head.html")
+<title>@Model.Name</title>
+@RPRazorHelper.Include("~/link.html")
+@RPRazorHelper.Include("~/headend.html")
+@RPRazorHelper.Include("~/navbar.html")
+    <h1>@Model.Name</h1>
+    <br />
+    <br />
+    @RPWRazor.RPRazorHelper.Raw(Model.VideoCode)
+    <br />
+    <br />
+    @RPWRazor.RPRazorHelper.Raw(Model.Note)
+
+@RPRazorHelper.Include("~/foot.html")

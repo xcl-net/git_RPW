@@ -1,0 +1,47 @@
+﻿<!--#include file="/head.html"-->
+	<title>如鹏论坛</title>
+	<!--#include file="/link.html"-->
+	<!--#include file="/headend.html"-->
+	<!--#include file="/navbar.html"-->
+
+		<section>
+	<div style="width:98%">
+		<div style="width:800px;float:left;">
+			<h5>第 1 节： GTKWidget基本操作和命名规则 (本节视频已经播放 <span class="badge">1</span> 次，还剩 <span class="badge">4</span> 次播放机会)</h5>
+			<div class="tab-content over-hide">
+				<script src='http://static.polyv.net/file/polyvplayer_v2.0.min.js'></script>
+<div id='plv_e46d3678048c298766ce6f3271ca5a24_e'></div>
+<script>
+var player = polyvObject('#plv_e46d3678048c298766ce6f3271ca5a24_e').videoPlayer({
+	'width':'800',
+	'height':'600',
+	'vid' : 'e46d3678048c298766ce6f3271ca5a24_e'
+});
+</script>
+				<script type="text/javascript">
+					polyvObject.players[0].params = {
+						"allowNetworking": "all",
+						"allowscriptaccess": "always",
+						"allowfullscreen": true
+					};
+				</script>
+			</div>
+		</div>
+
+		<div style="width:auto;margin-left:805px;height:650px; overflow:auto;">                
+			<ul class="nav nav-tabs">
+				<li class="active"><a href="#doc" data-toggle="tab"><span class="glyphicon glyphicon-file"></span>课程笔记</a></li>
+			</ul>
+			<div class="tab-content" id="tabKeChengBiJi">
+				<div class="tab-pane active" id="doc">
+					<br />
+					<p>视频离线下载地址：<a href="http://pan.baidu.com/s/1dD6GaoL" _src="http://pan.baidu.com/s/1dD6GaoL">http://pan.baidu.com/s/1dD6GaoL</a>&nbsp;</p><p><br/></p><p>void gtk_widget_show(widget)：显示。int整数</p><p>void gtk_widget_hide(widget)：隐藏</p><p>void gtk_widget_set_sensitive(widget, sensitive)：禁用。boolean（布尔类型）只有true（真/是）、false（假/否）两个值。</p><p>void gtk_widget_set_size_request(int widget,int width, int height) 设置“建议的”大小</p><p>void gtk_widget_destroy(widget)销毁</p><p>gtk_window_set_resizable(window, resizable);设置是否可以缩放。</p><p>gtk_window_set_position(window, GTK_WIN_POS_CENTER_ALWAYS)显示在屏幕正中间</p><p>void gtk_window_maximize(window)最大化</p><p>void gtk_container_add(container, widget)：从container继承。比如可以将子控件widget添加到window中，window中只能有一个子控件。</p><p><br/></p>
+				</div>
+			</div>
+		</div>
+	</div>
+   
+<div style="clear:both"></div>
+		</section>
+
+<!--#include file="/foot.html"-->

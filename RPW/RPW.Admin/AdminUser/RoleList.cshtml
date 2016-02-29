@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+        <script src="/js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#batchDelete").click(function () {
+                //获得选中的checkbox的value数组
+                var selectedRoleIds = new Array();
+                if ($(":checkbox[name=selectRoleId]:checked").length == 0) {
+                    alert("您还没选中任何行！");
+                    return;
+                }
+                $(":checkbox[name=selectRoleId]:checked").each(function () {
+                    //选中的存入到数组中
+                    selectedRoleIds.push($(this).val());
+                });
+                $.ajax({
+                    type: "post", url: "RoleController.ashx",
+                    data: { action: "batchDelete", selectedRoleIds: selectedRoleIds.join(",") },
+                    success: function (data) {
+                        if (data.Status == "ok") {
+                            window.location.href = "RoleController.ashx?action=list";
+                        } else if (data.Status == "error") {
+                            alert(data.Msg);
+                            window.location.href = "RoleController.ashx?action=list";//刷新页面
+                        }
+
+                    }
+                    ,
+                    error: function () {
+                        alert("请求失败！");
+                    }
+                });
+            });
+
+        });
+
+
+    </script>
+</head>
+<body>
+       <a href="RoleController.ashx?action=addnew">新增角色</a>
+    <table>
+        <thead>
+            <tr><th>选择</th><th>角色名称</th><th>修改</th><th>删除</th></tr>
+
+        </thead>
+        <tbody>
+            <!--展示代码-->
+            @{
+                List<RPW.Model.Roles> roles = (List<RPW.Model.Roles>)Model;//把Model强制转换为list类型，方便自动提示
+                //遍历model   powers
+                foreach (var role in roles)
+                {
+                    <tr><td><input type="checkbox" name="selectRoleId" value="@role.Id" /></td>
+                        <td>@role.Name</td>
+                        <td><a href="RoleController.ashx?action=edit&id=@role.Id">修改</a></td>
+                        <td><a href="RoleController.ashx?action=delete&id=@role.Id">删除</a></td>
+                        
+
+                    </tr>
+                }
+                
+                
+                
+                }
+        </tbody>
+    </table><br />
+    <input type="button" id="batchDelete" value="批量删除" />
+
+</body>
+</html>

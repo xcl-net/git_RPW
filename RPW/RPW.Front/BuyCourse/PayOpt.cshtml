@@ -1,0 +1,96 @@
+﻿@using RPW.Model
+@using RPW.Front
+
+@using RPWRazor
+
+@RPRazorHelper.Include("~/head.html")
+<title>付款方式</title>
+@RPRazorHelper.Include("~/link.html")
+    <style type="text/css">
+        #fiel {
+            margin:5px;
+          border:solid 1px ;
+          border-color:green;
+          padding-left:20px;
+          padding-top:20px;
+          font-size:18px;
+        }
+        #btnPay {
+        margin:5px;
+        font-size:18px;
+        color:black;
+        }
+    </style>
+<script src="/js/jquery-1.4.2.min.js"></script>
+@*<script type="text/javascript" >
+        //想使用选择界面来做的，但是，问题是，不能正确设置，参数；；；form表单，用一个按钮关联，结果，表单数据并没有提交；；；
+    $(function () {
+        $("#btnPay").click(function () {
+            var alipay = document.getElementById('ALiPay');
+            var wangyin = document.getElementById('WangYin');
+            if (alipay.checked) {
+                var aliUrl = document.getElementById('alipay').action;
+                $("#payUrl").attr("href", aliUrl);
+                $("#btnPay").attr("for", "aliSubmit");
+
+            }
+            if (wangyin.checked) {
+                var wangyinUrl = document.getElementById('wangyin').action;
+                $("#payUrl").attr("href", wangyinUrl);
+            }
+        });
+
+    });
+</script>*@
+  
+@RPRazorHelper.Include("~/headend.html")
+@RPRazorHelper.Include("~/navbar.html")
+<h2>付款方式</h2>
+
+ @*   <label>
+    <input type="radio" name="fukuan" id="ALiPay" />支付宝</label>
+    <br />
+     <label>
+    <input type="radio" name="fukuan"  id="WangYin" />网银在线</label>
+    *@
+    <fieldset id="fiel" >
+   <label> <span >支付宝</span>
+  <form id="alipay" name="alipay" action="/BuyCourse/BuyCourseController.ashx?action=AliPay" method="post" >
+    
+     <input type="hidden" name="partner"  value="@Model.partner"/>
+    <input type="hidden" name="return_url"  value="@Model.return_url" />
+    <input type="hidden" name="subject"  value="@Model.subject" />
+    <input type="hidden" name="body"  value="@Model.body" />
+    <input type="hidden" name="out_trade_no"  value="@Model.out_trade_no" />
+    <input type="hidden" name="total_fee"  value="@Model.total_fee"/>
+    <input type="hidden" name="seller_email"  value="@Model.seller_email" />
+    <input type="hidden" name="sign"  value="@Model.sign" />
+    <input type="submit" value="付款" />
+    
+    </form>
+       </label></fieldset>
+    <fieldset id="fiel" >
+   <label> <span >网银在线</span>
+   <form id="wangyin" name="wangyin" action="/BuyCourse/BuyCourseController.ashx?action=WanYinPay" method="post">
+   
+    <input type="hidden" name="v_mid" value="@Model.v_mid__"/>
+    <input type="hidden" name="v_oid" value="@Model.v_oid__" />
+    <input type="hidden" name="v_amount" value="@Model.v_amount__" />
+    <input type="hidden" name="v_moneytype" value="@Model.v_moneytype__" />
+    <input type="hidden" name="v_url" value="@Model.v_url__" />
+    <input type="hidden" name="v_md5info" value="@Model.v_md5info__" />
+    <input type="hidden" name="style" value="@Model.style" />
+    <input type="hidden" name="remark1" value="@Model.remark1" />
+    <input type="hidden" name="remark2" value="@Model.remark2" />
+    <input type="submit" value="付款" />
+    
+    </form>
+       </label></fieldset>
+
+@*</fieldset>
+    <a href="#" id="payUrl" ><label for="aliSubmit"><input type="button" value="付款" id="btnPay" /></label></a>*@
+<br/><br />
+
+
+
+@RPRazorHelper.Include("~/foot.html")

@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F3BC6165-FAC0-4D80-AD46-50C4E153C92D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RPW.Bll</RootNamespace>
+    <AssemblyName>RPW.Bll</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Maticsoft.Common">
+      <HintPath>lib\Maticsoft.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Maticsoft.DBUtility">
+      <HintPath>lib\Maticsoft.DBUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActiveCodesBll.Ext.cs" />
+    <Compile Include="ActiveCodesBll.cs" />
+    <Compile Include="AdministorOperationLogsBll.cs" />
+    <Compile Include="AdministorOperationLogsBll.Ext.cs" />
+    <Compile Include="AdminUserRolesBll.cs" />
+    <Compile Include="AdminUserRolesBll.Ext.cs" />
+    <Compile Include="AdminUsersBll.cs" />
+    <Compile Include="AdminUsersBll.Ext.cs" />
+    <Compile Include="ApplicationsBll.cs" />
+    <Compile Include="ChaptersBll.cs" />
+    <Compile Include="ChaptersBll.Ext.cs" />
+    <Compile Include="ClassRoomsBll.cs" />
+    <Compile Include="CourseOrdersBll.cs" />
+    <Compile Include="CourseOrdersBll.Ext.cs" />
+    <Compile Include="CoursesBll.cs" />
+    <Compile Include="EnrolYearsBll.cs" />
+    <Compile Include="FrontUserClassRoomsBll.cs" />
+    <Compile Include="FrontUserClassRoomsBll.Ext.cs" />
+    <Compile Include="FrontUsersBll.cs" />
+    <Compile Include="FrontUsersBll.Ext.cs" />
+    <Compile Include="GraduatesBll.cs" />
+    <Compile Include="KeyWordsBll.cs" />
+    <Compile Include="LearningCardsBll.cs" />
+    <Compile Include="LearningCardsBll.Ext.cs" />
+    <Compile Include="NewsBll.cs" />
+    <Compile Include="NewsBll.Ext.cs" />
+    <Compile Include="NewsCategoriesBll.cs" />
+    <Compile Include="NewsCategoriesBll.Ext.cs" />
+    <Compile Include="PowersBll.cs" />
+    <Compile Include="PowersBll.Ext.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RolePowesBll.cs" />
+    <Compile Include="RolePowesBll.Ext.cs" />
+    <Compile Include="RolesBll.cs" />
+    <Compile Include="SegmentsBll.cs" />
+    <Compile Include="SegmentsBll.Ext.cs" />
+    <Compile Include="UserCoursesBll.cs" />
+    <Compile Include="UserCoursesBll.Ext.cs" />
+    <Compile Include="WhoLerningsBll.cs" />
+    <Compile Include="WhoLerningsBll.Ext.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RPW.Dal\RPW.Dal.csproj">
+      <Project>{4aea06fb-9177-4232-9d26-25db7b7c8f53}</Project>
+      <Name>RPW.Dal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RPW.Model\RPW.Model.csproj">
+      <Project>{65cba8c5-803b-4c9c-9be9-147dcc6b6c12}</Project>
+      <Name>RPW.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RPWCommonts\RPWCommonts.csproj">
+      <Project>{cd09a937-26f0-4d1f-b6ce-5e3d6834b90c}</Project>
+      <Name>RPWCommonts</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

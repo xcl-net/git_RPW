@@ -1,0 +1,1331 @@
+2015-08-27 14:33:59,477 [6] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 14:33:59,800 [5] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 14:34:31,637 [6] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.ArgumentNullException: 值不能为 null。
+参数名: name
+   在 System.Type.GetMethod(String name)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 32
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 14:34:44,092 [6] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 RPW.Admin.NewsMgr.NewsController.newsList(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsController.ashx.cs:行号 182
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 40
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 16:03:31,178 [39] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: “System.Dynamic.DynamicObject”未包含“CatId”的定义
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   在 CompiledRazorTemplates.Dynamic.cbadaaeacc.Execute()
+   在 RazorEngine.Templating.TemplateBase.RazorEngine.Templating.ITemplate.Run(ExecuteContext context)
+   在 RazorEngine.Templating.TemplateService.Run(ITemplate template, DynamicViewBag viewBag)
+   在 RazorEngine.Templating.TemplateService.Parse(String razorTemplate, Object model, DynamicViewBag viewBag, String cacheName)
+   在 RazorEngine.Razor.Parse(String razorTemplate, Object model, String cacheName)
+   在 RPWRazor.RPRazorHelper.ParseRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 27
+   在 RPW.Admin.NewsMgr.NewsController.newsList(Int64 catId) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsController.ashx.cs:行号 214
+   在 RPW.Admin.NewsMgr.NewsController.newsSave(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsController.ashx.cs:行号 317
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 40
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 16:03:34,288 [40] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: “System.Dynamic.DynamicObject”未包含“CatId”的定义
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 CompiledRazorTemplates.Dynamic.cbadaaeacc.Execute()
+   在 RazorEngine.Templating.TemplateBase.RazorEngine.Templating.ITemplate.Run(ExecuteContext context)
+   在 RazorEngine.Templating.TemplateService.Run(ITemplate template, DynamicViewBag viewBag)
+   在 RazorEngine.Templating.TemplateService.Parse(String razorTemplate, Object model, DynamicViewBag viewBag, String cacheName)
+   在 RazorEngine.Razor.Parse(String razorTemplate, Object model, String cacheName)
+   在 RPWRazor.RPRazorHelper.ParseRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 27
+   在 RPW.Admin.NewsMgr.NewsController.newsList(Int64 catId) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsController.ashx.cs:行号 214
+   在 RPW.Admin.NewsMgr.NewsController.newsSave(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsController.ashx.cs:行号 317
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 40
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 16:03:56,832 [39] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.ArgumentNullException: 值不能为 null。
+参数名: name
+   在 System.Type.GetMethod(String name)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 32
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 16:04:09,390 [39] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.ArgumentNullException: 值不能为 null。
+参数名: name
+   在 System.Type.GetMethod(String name)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 32
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 16:06:35,277 [11] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.ArgumentException: 类型“System.Web.HttpContext”的对象无法转换为类型“System.Int64”。
+   在 System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   在 System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   在 System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   在 System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 40
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 16:11:19,275 [11] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Reflection.TargetParameterCountException: 参数计数不匹配。
+   在 System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 40
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 16:21:15,331 [16] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: “System.Dynamic.DynamicObject”未包含“CatId”的定义
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   在 CompiledRazorTemplates.Dynamic.fbbeddfaccb.Execute()
+   在 RazorEngine.Templating.TemplateBase.RazorEngine.Templating.ITemplate.Run(ExecuteContext context)
+   在 RazorEngine.Templating.TemplateService.Run(ITemplate template, DynamicViewBag viewBag)
+   在 RazorEngine.Templating.TemplateService.Parse(String razorTemplate, Object model, DynamicViewBag viewBag, String cacheName)
+   在 RazorEngine.Razor.Parse(String razorTemplate, Object model, String cacheName)
+   在 RPWRazor.RPRazorHelper.ParseRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 27
+   在 RPW.Admin.NewsMgr.NewsController.CreteNewsTitleList(Int64 catId) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsController.ashx.cs:行号 470
+   在 RPW.Admin.NewsMgr.NewsController.newsSave(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsController.ashx.cs:行号 275
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 40
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 16:21:28,892 [11] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: “System.Dynamic.DynamicObject”未包含“CatId”的定义
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 CompiledRazorTemplates.Dynamic.fbbeddfaccb.Execute()
+   在 RazorEngine.Templating.TemplateBase.RazorEngine.Templating.ITemplate.Run(ExecuteContext context)
+   在 RazorEngine.Templating.TemplateService.Run(ITemplate template, DynamicViewBag viewBag)
+   在 RazorEngine.Templating.TemplateService.Parse(String razorTemplate, Object model, DynamicViewBag viewBag, String cacheName)
+   在 RazorEngine.Razor.Parse(String razorTemplate, Object model, String cacheName)
+   在 RPWRazor.RPRazorHelper.ParseRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 27
+   在 RPW.Admin.NewsMgr.NewsController.CreteNewsTitleList(Int64 catId) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsController.ashx.cs:行号 470
+   在 RPW.Admin.NewsMgr.NewsController.newsSave(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsController.ashx.cs:行号 275
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 40
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 16:21:31,786 [16] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.ArgumentNullException: 值不能为 null。
+参数名: name
+   在 System.Type.GetMethod(String name)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 32
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 16:25:41,716 [7] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: “System.Dynamic.DynamicObject”未包含“CatId”的定义
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   在 CompiledRazorTemplates.Dynamic.cddaeccadbb.Execute()
+   在 RazorEngine.Templating.TemplateBase.RazorEngine.Templating.ITemplate.Run(ExecuteContext context)
+   在 RazorEngine.Templating.TemplateService.Run(ITemplate template, DynamicViewBag viewBag)
+   在 RazorEngine.Templating.TemplateService.Parse(String razorTemplate, Object model, DynamicViewBag viewBag, String cacheName)
+   在 RazorEngine.Razor.Parse(String razorTemplate, Object model, String cacheName)
+   在 RPWRazor.RPRazorHelper.ParseRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 27
+   在 RPW.Admin.NewsMgr.NewsController.CreteNewsTitleList(Int64 catId) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsController.ashx.cs:行号 470
+   在 RPW.Admin.NewsMgr.NewsController.newsList(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsController.ashx.cs:行号 194
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 40
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 16:49:32,228 [7] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法对 null 引用执行运行时绑定
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   在 ASP._Page_NewsMgr_NewsList_cshtml.Execute() 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsList.cshtml:行号 15
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy(IEnumerable`1 executors)
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.HandleError(Exception e)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.<>c__DisplayClass1.<ProcessRequest>b__0()
+   在 System.Web.WebPages.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   在 System.Web.WebPages.SecurityUtil.ProcessInApplicationTrust(Action action)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 16:54:10,908 [11] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法对 null 引用执行运行时绑定
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   在 ASP._Page_NewsMgr_NewsList_cshtml.Execute() 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsList.cshtml:行号 15
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy(IEnumerable`1 executors)
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.HandleError(Exception e)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.<>c__DisplayClass1.<ProcessRequest>b__0()
+   在 System.Web.WebPages.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   在 System.Web.WebPages.SecurityUtil.ProcessInApplicationTrust(Action action)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 17:02:36,649 [7] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法对 null 引用执行运行时绑定
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   在 ASP._Page_NewsMgr_NewsList_cshtml.Execute() 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsList.cshtml:行号 15
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy(IEnumerable`1 executors)
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.HandleError(Exception e)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.<>c__DisplayClass1.<ProcessRequest>b__0()
+   在 System.Web.WebPages.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   在 System.Web.WebPages.SecurityUtil.ProcessInApplicationTrust(Action action)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 17:02:44,276 [16] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 从客户端(&)中检测到有潜在危险的 Request.Path 值。
+   在 System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   在 System.Web.HttpApplication.ValidateRequestExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 17:03:36,948 [16] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 从客户端(&)中检测到有潜在危险的 Request.Path 值。
+   在 System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   在 System.Web.HttpApplication.ValidateRequestExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 17:03:59,984 [16] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 从客户端(&)中检测到有潜在危险的 Request.Path 值。
+   在 System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   在 System.Web.HttpApplication.ValidateRequestExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 17:04:38,058 [15] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法对 null 引用执行运行时绑定
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   在 ASP._Page_NewsMgr_NewsList_cshtml.Execute() 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsList.cshtml:行号 15
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy(IEnumerable`1 executors)
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.HandleError(Exception e)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.<>c__DisplayClass1.<ProcessRequest>b__0()
+   在 System.Web.WebPages.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   在 System.Web.WebPages.SecurityUtil.ProcessInApplicationTrust(Action action)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 17:06:10,505 [16] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件“/NewsMgr/NewsContentAddnewEdit.ashx”不存在。
+   在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   在 System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 17:06:35,651 [16] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 17:15:39,322 [11] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.ArgumentNullException: 值不能为 null。
+参数名: name
+   在 System.Type.GetMethod(String name)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 32
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 17:15:48,905 [16] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.ArgumentNullException: 值不能为 null。
+参数名: name
+   在 System.Type.GetMethod(String name)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 32
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 17:17:21,431 [11] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 17:18:20,098 [10] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法对 null 引用执行运行时绑定
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   在 ASP._Page_NewsMgr_NewsList_cshtml.Execute() 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsList.cshtml:行号 15
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy(IEnumerable`1 executors)
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.HandleError(Exception e)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.<>c__DisplayClass1.<ProcessRequest>b__0()
+   在 System.Web.WebPages.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   在 System.Web.WebPages.SecurityUtil.ProcessInApplicationTrust(Action action)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 17:19:04,771 [6] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法对 null 引用执行运行时绑定
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 ASP._Page_NewsMgr_NewsList_cshtml.Execute() 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsList.cshtml:行号 15
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy(IEnumerable`1 executors)
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.HandleError(Exception e)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.<>c__DisplayClass1.<ProcessRequest>b__0()
+   在 System.Web.WebPages.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   在 System.Web.WebPages.SecurityUtil.ProcessInApplicationTrust(Action action)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 17:20:01,623 [11] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法对 null 引用执行运行时绑定
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   在 ASP._Page_NewsMgr_NewsList_cshtml.Execute() 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsList.cshtml:行号 15
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy(IEnumerable`1 executors)
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.HandleError(Exception e)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.<>c__DisplayClass1.<ProcessRequest>b__0()
+   在 System.Web.WebPages.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   在 System.Web.WebPages.SecurityUtil.ProcessInApplicationTrust(Action action)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 17:20:38,417 [11] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 17:22:56,586 [12] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 17:23:12,464 [17] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件“/NewsList/86/index_1.ashx”不存在。
+   在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   在 System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 17:23:58,870 [11] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件“/NewsMgr/~/NewsMgr/NewsList/86/index_1.ashx”不存在。
+   在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   在 System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 17:24:34,345 [11] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件“/NewsMgr/~/NewsMgr/NewsList/86/index_1.ashx”不存在。
+   在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   在 System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 17:24:41,730 [17] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件“/NewsList/86/index_1.ashx”不存在。
+   在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   在 System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 17:25:03,715 [18] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件“/NewsList/86/index_1.ashx”不存在。
+   在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   在 System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 17:30:08,746 [18] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpParseException (0x80004005): 该页必须具有 <%@ webhandler class="MyNamespace.MyClass" ... %> 指令。 ---> System.Web.HttpException (0x80004005): 该页必须具有 <%@ webhandler class="MyNamespace.MyClass" ... %> 指令。
+   在 System.Web.UI.SimpleWebHandlerParser.ParseString(String text)
+   在 System.Web.UI.SimpleWebHandlerParser.ParseReader()
+   在 System.Web.UI.SimpleWebHandlerParser.ParseReader()
+   在 System.Web.UI.SimpleWebHandlerParser.Parse(ICollection referencedAssemblies)
+   在 System.Web.Compilation.SimpleHandlerBuildProvider.get_CodeCompilerType()
+   在 System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   在 System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   在 System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   在 System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 17:34:45,854 [5] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpParseException (0x80004005): 该页必须具有 <%@ webhandler class="MyNamespace.MyClass" ... %> 指令。 ---> System.Web.HttpException (0x80004005): 该页必须具有 <%@ webhandler class="MyNamespace.MyClass" ... %> 指令。
+   在 System.Web.UI.SimpleWebHandlerParser.ParseString(String text)
+   在 System.Web.UI.SimpleWebHandlerParser.ParseReader()
+   在 System.Web.UI.SimpleWebHandlerParser.ParseReader()
+   在 System.Web.UI.SimpleWebHandlerParser.Parse(ICollection referencedAssemblies)
+   在 System.Web.Compilation.SimpleHandlerBuildProvider.get_CodeCompilerType()
+   在 System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   在 System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   在 System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   在 System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 17:34:48,220 [17] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpParseException (0x80004005): 该页必须具有 <%@ webhandler class="MyNamespace.MyClass" ... %> 指令。 ---> System.Web.HttpException (0x80004005): 该页必须具有 <%@ webhandler class="MyNamespace.MyClass" ... %> 指令。
+   在 System.Web.UI.SimpleWebHandlerParser.ParseString(String text)
+   在 System.Web.UI.SimpleWebHandlerParser.ParseReader()
+   在 System.Web.UI.SimpleWebHandlerParser.ParseReader()
+   在 System.Web.UI.SimpleWebHandlerParser.Parse(ICollection referencedAssemblies)
+   在 System.Web.Compilation.SimpleHandlerBuildProvider.get_CodeCompilerType()
+   在 System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   在 System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   在 System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   在 System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 17:34:49,528 [13] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpParseException (0x80004005): 该页必须具有 <%@ webhandler class="MyNamespace.MyClass" ... %> 指令。 ---> System.Web.HttpException (0x80004005): 该页必须具有 <%@ webhandler class="MyNamespace.MyClass" ... %> 指令。
+   在 System.Web.UI.SimpleWebHandlerParser.ParseString(String text)
+   在 System.Web.UI.SimpleWebHandlerParser.ParseReader()
+   在 System.Web.UI.SimpleWebHandlerParser.ParseReader()
+   在 System.Web.UI.SimpleWebHandlerParser.Parse(ICollection referencedAssemblies)
+   在 System.Web.Compilation.SimpleHandlerBuildProvider.get_CodeCompilerType()
+   在 System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   在 System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   在 System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   在 System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 17:34:50,157 [18] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpParseException (0x80004005): 该页必须具有 <%@ webhandler class="MyNamespace.MyClass" ... %> 指令。 ---> System.Web.HttpException (0x80004005): 该页必须具有 <%@ webhandler class="MyNamespace.MyClass" ... %> 指令。
+   在 System.Web.UI.SimpleWebHandlerParser.ParseString(String text)
+   在 System.Web.UI.SimpleWebHandlerParser.ParseReader()
+   在 System.Web.UI.SimpleWebHandlerParser.ParseReader()
+   在 System.Web.UI.SimpleWebHandlerParser.Parse(ICollection referencedAssemblies)
+   在 System.Web.Compilation.SimpleHandlerBuildProvider.get_CodeCompilerType()
+   在 System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   在 System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   在 System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   在 System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 17:34:50,612 [10] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpParseException (0x80004005): 该页必须具有 <%@ webhandler class="MyNamespace.MyClass" ... %> 指令。 ---> System.Web.HttpException (0x80004005): 该页必须具有 <%@ webhandler class="MyNamespace.MyClass" ... %> 指令。
+   在 System.Web.UI.SimpleWebHandlerParser.ParseString(String text)
+   在 System.Web.UI.SimpleWebHandlerParser.ParseReader()
+   在 System.Web.UI.SimpleWebHandlerParser.ParseReader()
+   在 System.Web.UI.SimpleWebHandlerParser.Parse(ICollection referencedAssemblies)
+   在 System.Web.Compilation.SimpleHandlerBuildProvider.get_CodeCompilerType()
+   在 System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   在 System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   在 System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   在 System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 17:35:18,911 [12] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpParseException (0x80004005): 该页必须具有 <%@ webhandler class="MyNamespace.MyClass" ... %> 指令。 ---> System.Web.HttpException (0x80004005): 该页必须具有 <%@ webhandler class="MyNamespace.MyClass" ... %> 指令。
+   在 System.Web.UI.SimpleWebHandlerParser.ParseString(String text)
+   在 System.Web.UI.SimpleWebHandlerParser.ParseReader()
+   在 System.Web.UI.SimpleWebHandlerParser.ParseReader()
+   在 System.Web.UI.SimpleWebHandlerParser.Parse(ICollection referencedAssemblies)
+   在 System.Web.Compilation.SimpleHandlerBuildProvider.get_CodeCompilerType()
+   在 System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   在 System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   在 System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   在 System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 17:35:48,044 [6] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 17:36:08,754 [6] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpParseException (0x80004005): 该页必须具有 <%@ webhandler class="MyNamespace.MyClass" ... %> 指令。 ---> System.Web.HttpException (0x80004005): 该页必须具有 <%@ webhandler class="MyNamespace.MyClass" ... %> 指令。
+   在 System.Web.UI.SimpleWebHandlerParser.ParseString(String text)
+   在 System.Web.UI.SimpleWebHandlerParser.ParseReader()
+   在 System.Web.UI.SimpleWebHandlerParser.ParseReader()
+   在 System.Web.UI.SimpleWebHandlerParser.Parse(ICollection referencedAssemblies)
+   在 System.Web.Compilation.SimpleHandlerBuildProvider.get_CodeCompilerType()
+   在 System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   在 System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   在 System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   在 System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 17:42:14,031 [11] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpParseException (0x80004005): 该页必须具有 <%@ webhandler class="MyNamespace.MyClass" ... %> 指令。 ---> System.Web.HttpException (0x80004005): 该页必须具有 <%@ webhandler class="MyNamespace.MyClass" ... %> 指令。
+   在 System.Web.UI.SimpleWebHandlerParser.ParseString(String text)
+   在 System.Web.UI.SimpleWebHandlerParser.ParseReader()
+   在 System.Web.UI.SimpleWebHandlerParser.ParseReader()
+   在 System.Web.UI.SimpleWebHandlerParser.Parse(ICollection referencedAssemblies)
+   在 System.Web.Compilation.SimpleHandlerBuildProvider.get_CodeCompilerType()
+   在 System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   在 System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   在 System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   在 System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 17:51:16,316 [20] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法对 null 引用执行运行时绑定
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   在 ASP._Page_NewsMgr_NewsList_cshtml.Execute() 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsList.cshtml:行号 15
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy(IEnumerable`1 executors)
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.HandleError(Exception e)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.<>c__DisplayClass1.<ProcessRequest>b__0()
+   在 System.Web.WebPages.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   在 System.Web.WebPages.SecurityUtil.ProcessInApplicationTrust(Action action)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 17:54:32,695 [12] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法对 null 引用执行运行时绑定
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   在 ASP._Page_NewsMgr_NewsList_cshtml.Execute() 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsList.cshtml:行号 15
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy(IEnumerable`1 executors)
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.HandleError(Exception e)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.<>c__DisplayClass1.<ProcessRequest>b__0()
+   在 System.Web.WebPages.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   在 System.Web.WebPages.SecurityUtil.ProcessInApplicationTrust(Action action)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 17:55:48,977 [4] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法对 null 引用执行运行时绑定
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 ASP._Page_NewsMgr_NewsList_cshtml.Execute() 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsList.cshtml:行号 15
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy(IEnumerable`1 executors)
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.HandleError(Exception e)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.<>c__DisplayClass1.<ProcessRequest>b__0()
+   在 System.Web.WebPages.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   在 System.Web.WebPages.SecurityUtil.ProcessInApplicationTrust(Action action)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 17:58:44,134 [14] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法对 null 引用执行运行时绑定
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 ASP._Page_NewsMgr_NewsList_cshtml.Execute() 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsList.cshtml:行号 15
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy(IEnumerable`1 executors)
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.HandleError(Exception e)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.<>c__DisplayClass1.<ProcessRequest>b__0()
+   在 System.Web.WebPages.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   在 System.Web.WebPages.SecurityUtil.ProcessInApplicationTrust(Action action)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 17:59:42,354 [11] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: “System.Dynamic.DynamicObject”未包含“catId”的定义
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   在 CompiledRazorTemplates.Dynamic.edfbabbceccea.Execute()
+   在 RazorEngine.Templating.TemplateBase.RazorEngine.Templating.ITemplate.Run(ExecuteContext context)
+   在 RazorEngine.Templating.TemplateService.Run(ITemplate template, DynamicViewBag viewBag)
+   在 RazorEngine.Templating.TemplateService.Parse(String razorTemplate, Object model, DynamicViewBag viewBag, String cacheName)
+   在 RazorEngine.Razor.Parse(String razorTemplate, Object model, String cacheName)
+   在 RPWRazor.RPRazorHelper.ParseRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 27
+   在 RPWRazor.RPRazorHelper.OutputRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 39
+   在 RPW.Admin.NewsMgr.NewsController.newsAddnew(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsController.ashx.cs:行号 204
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 40
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 18:02:31,329 [20] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法对 null 引用执行运行时绑定
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   在 ASP._Page_NewsMgr_NewsList_cshtml.Execute() 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsList.cshtml:行号 15
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy(IEnumerable`1 executors)
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.HandleError(Exception e)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.<>c__DisplayClass1.<ProcessRequest>b__0()
+   在 System.Web.WebPages.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   在 System.Web.WebPages.SecurityUtil.ProcessInApplicationTrust(Action action)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 18:02:35,808 [17] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法对 null 引用执行运行时绑定
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 ASP._Page_NewsMgr_NewsList_cshtml.Execute() 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsList.cshtml:行号 15
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy(IEnumerable`1 executors)
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.HandleError(Exception e)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.<>c__DisplayClass1.<ProcessRequest>b__0()
+   在 System.Web.WebPages.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   在 System.Web.WebPages.SecurityUtil.ProcessInApplicationTrust(Action action)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 18:02:42,371 [16] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法对 null 引用执行运行时绑定
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 ASP._Page_NewsMgr_NewsList_cshtml.Execute() 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsList.cshtml:行号 15
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy(IEnumerable`1 executors)
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.HandleError(Exception e)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.<>c__DisplayClass1.<ProcessRequest>b__0()
+   在 System.Web.WebPages.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   在 System.Web.WebPages.SecurityUtil.ProcessInApplicationTrust(Action action)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 18:02:56,308 [12] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法对 null 引用执行运行时绑定
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 ASP._Page_NewsMgr_NewsList_cshtml.Execute() 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsList.cshtml:行号 15
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy(IEnumerable`1 executors)
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.HandleError(Exception e)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.<>c__DisplayClass1.<ProcessRequest>b__0()
+   在 System.Web.WebPages.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   在 System.Web.WebPages.SecurityUtil.ProcessInApplicationTrust(Action action)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 18:08:27,029 [6] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法对 null 引用执行运行时绑定
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   在 ASP._Page_NewsMgr_NewsList_cshtml.Execute() 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsList.cshtml:行号 15
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy(IEnumerable`1 executors)
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.HandleError(Exception e)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.<>c__DisplayClass1.<ProcessRequest>b__0()
+   在 System.Web.WebPages.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   在 System.Web.WebPages.SecurityUtil.ProcessInApplicationTrust(Action action)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 18:13:50,153 [11] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法对 null 引用执行运行时绑定
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   在 ASP._Page_NewsMgr_NewsList_cshtml.Execute() 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsList.cshtml:行号 15
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy(IEnumerable`1 executors)
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.HandleError(Exception e)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.<>c__DisplayClass1.<ProcessRequest>b__0()
+   在 System.Web.WebPages.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   在 System.Web.WebPages.SecurityUtil.ProcessInApplicationTrust(Action action)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 18:16:22,923 [12] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法对 null 引用执行运行时绑定
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   在 ASP._Page_NewsMgr_NewsList_cshtml.Execute() 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsList.cshtml:行号 15
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy(IEnumerable`1 executors)
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.HandleError(Exception e)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.<>c__DisplayClass1.<ProcessRequest>b__0()
+   在 System.Web.WebPages.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   在 System.Web.WebPages.SecurityUtil.ProcessInApplicationTrust(Action action)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 18:19:35,226 [12] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法对 null 引用执行运行时绑定
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 ASP._Page_NewsMgr_NewsList_cshtml.Execute() 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsList.cshtml:行号 15
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy(IEnumerable`1 executors)
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.HandleError(Exception e)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.<>c__DisplayClass1.<ProcessRequest>b__0()
+   在 System.Web.WebPages.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   在 System.Web.WebPages.SecurityUtil.ProcessInApplicationTrust(Action action)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 18:20:20,454 [7] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法对 null 引用执行运行时绑定
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   在 ASP._Page_NewsMgr_NewsList_cshtml.Execute() 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsList.cshtml:行号 15
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy(IEnumerable`1 executors)
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.HandleError(Exception e)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.<>c__DisplayClass1.<ProcessRequest>b__0()
+   在 System.Web.WebPages.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   在 System.Web.WebPages.SecurityUtil.ProcessInApplicationTrust(Action action)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 18:21:07,783 [7] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法对 null 引用执行运行时绑定
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 ASP._Page_NewsMgr_NewsList_cshtml.Execute() 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsList.cshtml:行号 15
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy(IEnumerable`1 executors)
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.HandleError(Exception e)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.<>c__DisplayClass1.<ProcessRequest>b__0()
+   在 System.Web.WebPages.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   在 System.Web.WebPages.SecurityUtil.ProcessInApplicationTrust(Action action)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 18:22:00,628 [6] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法对 null 引用执行运行时绑定
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   在 ASP._Page_NewsMgr_NewsList_cshtml.Execute() 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsList.cshtml:行号 15
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy(IEnumerable`1 executors)
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.HandleError(Exception e)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.<>c__DisplayClass1.<ProcessRequest>b__0()
+   在 System.Web.WebPages.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   在 System.Web.WebPages.SecurityUtil.ProcessInApplicationTrust(Action action)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 18:26:07,704 [6] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法对 null 引用执行运行时绑定
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   在 ASP._Page_NewsMgr_NewsList_cshtml.Execute() 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsList.cshtml:行号 15
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy(IEnumerable`1 executors)
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.HandleError(Exception e)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.<>c__DisplayClass1.<ProcessRequest>b__0()
+   在 System.Web.WebPages.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   在 System.Web.WebPages.SecurityUtil.ProcessInApplicationTrust(Action action)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 18:28:33,412 [11] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法对 null 引用执行运行时绑定
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 ASP._Page_NewsMgr_NewsList_cshtml.Execute() 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsList.cshtml:行号 15
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy(IEnumerable`1 executors)
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.HandleError(Exception e)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.<>c__DisplayClass1.<ProcessRequest>b__0()
+   在 System.Web.WebPages.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   在 System.Web.WebPages.SecurityUtil.ProcessInApplicationTrust(Action action)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 18:28:43,486 [11] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法对 null 引用执行运行时绑定
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 ASP._Page_NewsMgr_NewsList_cshtml.Execute() 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsList.cshtml:行号 15
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy(IEnumerable`1 executors)
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.HandleError(Exception e)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.<>c__DisplayClass1.<ProcessRequest>b__0()
+   在 System.Web.WebPages.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   在 System.Web.WebPages.SecurityUtil.ProcessInApplicationTrust(Action action)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 18:28:43,811 [4] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Net.Sockets.SocketException (0x80004005): 在一个非套接字上尝试了一个操作。
+   在 System.Net.Sockets.Socket.get_LocalEndPoint()
+   在 Microsoft.VisualStudio.WebHost.Connection.get_LocalIP()
+   在 Microsoft.VisualStudio.WebHost.Connection.get_LocalIP()
+   在 Microsoft.VisualStudio.WebHost.Request.GetLocalAddress()
+   在 System.Web.HttpRequest.FillInServerVariablesCollection()
+   在 System.Web.HttpServerVarsCollection.Populate()
+   在 System.Web.HttpServerVarsCollection.Get(String name)
+   在 System.Web.HttpRequest.get_Item(String key)
+   在 Handler.WriteJson(Object response)
+   在 ConfigHandler.Process()
+   在 UEditorHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 18:33:21,176 [5] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法对 null 引用执行运行时绑定
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   在 ASP._Page_NewsMgr_NewsList_cshtml.Execute() 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsList.cshtml:行号 15
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy(IEnumerable`1 executors)
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.HandleError(Exception e)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.<>c__DisplayClass1.<ProcessRequest>b__0()
+   在 System.Web.WebPages.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   在 System.Web.WebPages.SecurityUtil.ProcessInApplicationTrust(Action action)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 18:33:48,770 [6] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法对 null 引用执行运行时绑定
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 ASP._Page_NewsMgr_NewsList_cshtml.Execute() 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsList.cshtml:行号 15
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy(IEnumerable`1 executors)
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.HandleError(Exception e)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.<>c__DisplayClass1.<ProcessRequest>b__0()
+   在 System.Web.WebPages.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   在 System.Web.WebPages.SecurityUtil.ProcessInApplicationTrust(Action action)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 18:33:48,812 [5] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法对 null 引用执行运行时绑定
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 ASP._Page_NewsMgr_NewsList_cshtml.Execute() 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsList.cshtml:行号 15
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy(IEnumerable`1 executors)
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.HandleError(Exception e)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.<>c__DisplayClass1.<ProcessRequest>b__0()
+   在 System.Web.WebPages.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   在 System.Web.WebPages.SecurityUtil.ProcessInApplicationTrust(Action action)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 18:33:48,822 [10] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法对 null 引用执行运行时绑定
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 ASP._Page_NewsMgr_NewsList_cshtml.Execute() 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsList.cshtml:行号 15
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy(IEnumerable`1 executors)
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.HandleError(Exception e)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.<>c__DisplayClass1.<ProcessRequest>b__0()
+   在 System.Web.WebPages.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   在 System.Web.WebPages.SecurityUtil.ProcessInApplicationTrust(Action action)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 18:38:47,077 [10] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法对 null 引用执行运行时绑定
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   在 ASP._Page_NewsMgr_NewsList_cshtml.Execute() 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsList.cshtml:行号 15
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy(IEnumerable`1 executors)
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.HandleError(Exception e)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.<>c__DisplayClass1.<ProcessRequest>b__0()
+   在 System.Web.WebPages.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   在 System.Web.WebPages.SecurityUtil.ProcessInApplicationTrust(Action action)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 18:38:47,576 [6] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法对 null 引用执行运行时绑定
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 ASP._Page_NewsMgr_NewsList_cshtml.Execute() 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsList.cshtml:行号 15
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy(IEnumerable`1 executors)
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.HandleError(Exception e)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.<>c__DisplayClass1.<ProcessRequest>b__0()
+   在 System.Web.WebPages.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   在 System.Web.WebPages.SecurityUtil.ProcessInApplicationTrust(Action action)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 18:41:08,652 [14] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法对 null 引用执行运行时绑定
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   在 ASP._Page_NewsMgr_NewsList_cshtml.Execute() 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsList.cshtml:行号 15
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy(IEnumerable`1 executors)
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.HandleError(Exception e)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.<>c__DisplayClass1.<ProcessRequest>b__0()
+   在 System.Web.WebPages.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   在 System.Web.WebPages.SecurityUtil.ProcessInApplicationTrust(Action action)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 18:41:12,770 [14] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法对 null 引用执行运行时绑定
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 ASP._Page_NewsMgr_NewsList_cshtml.Execute() 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsList.cshtml:行号 15
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy(IEnumerable`1 executors)
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.HandleError(Exception e)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.<>c__DisplayClass1.<ProcessRequest>b__0()
+   在 System.Web.WebPages.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   在 System.Web.WebPages.SecurityUtil.ProcessInApplicationTrust(Action action)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 20:11:40,143 [30] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 RPW.Admin.NewsMgr.NewsController.newsEdit(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsController.ashx.cs:行号 231
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 40
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 20:11:59,295 [31] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 RPW.Admin.NewsMgr.NewsController.newsEdit(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsController.ashx.cs:行号 231
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 40
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 20:12:06,922 [34] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 RPW.Admin.NewsMgr.NewsController.newsEdit(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsController.ashx.cs:行号 231
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 40
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 20:25:05,221 [11] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法对 null 引用执行运行时绑定
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   在 ASP._Page_NewsMgr_NewsList_cshtml.Execute() 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsList.cshtml:行号 15
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy(IEnumerable`1 executors)
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.HandleError(Exception e)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.<>c__DisplayClass1.<ProcessRequest>b__0()
+   在 System.Web.WebPages.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   在 System.Web.WebPages.SecurityUtil.ProcessInApplicationTrust(Action action)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 20:25:06,950 [4] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法对 null 引用执行运行时绑定
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 ASP._Page_NewsMgr_NewsList_cshtml.Execute() 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsList.cshtml:行号 15
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy(IEnumerable`1 executors)
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.HandleError(Exception e)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.<>c__DisplayClass1.<ProcessRequest>b__0()
+   在 System.Web.WebPages.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   在 System.Web.WebPages.SecurityUtil.ProcessInApplicationTrust(Action action)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 20:25:07,788 [11] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法对 null 引用执行运行时绑定
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 ASP._Page_NewsMgr_NewsList_cshtml.Execute() 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsList.cshtml:行号 15
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy(IEnumerable`1 executors)
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.HandleError(Exception e)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.<>c__DisplayClass1.<ProcessRequest>b__0()
+   在 System.Web.WebPages.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   在 System.Web.WebPages.SecurityUtil.ProcessInApplicationTrust(Action action)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 20:25:08,289 [4] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法对 null 引用执行运行时绑定
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 ASP._Page_NewsMgr_NewsList_cshtml.Execute() 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsList.cshtml:行号 15
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy(IEnumerable`1 executors)
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.HandleError(Exception e)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.<>c__DisplayClass1.<ProcessRequest>b__0()
+   在 System.Web.WebPages.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   在 System.Web.WebPages.SecurityUtil.ProcessInApplicationTrust(Action action)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 20:25:10,066 [10] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法对 null 引用执行运行时绑定
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 ASP._Page_NewsMgr_NewsList_cshtml.Execute() 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsList.cshtml:行号 15
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy(IEnumerable`1 executors)
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.HandleError(Exception e)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.<>c__DisplayClass1.<ProcessRequest>b__0()
+   在 System.Web.WebPages.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   在 System.Web.WebPages.SecurityUtil.ProcessInApplicationTrust(Action action)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 20:36:00,499 [11] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法对 null 引用执行运行时绑定
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 ASP._Page_NewsMgr_NewsList_cshtml.Execute() 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsList.cshtml:行号 15
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy(IEnumerable`1 executors)
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.HandleError(Exception e)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.<>c__DisplayClass1.<ProcessRequest>b__0()
+   在 System.Web.WebPages.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   在 System.Web.WebPages.SecurityUtil.ProcessInApplicationTrust(Action action)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 20:36:33,500 [16] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法对 null 引用执行运行时绑定
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 ASP._Page_NewsMgr_NewsList_cshtml.Execute() 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsList.cshtml:行号 15
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy(IEnumerable`1 executors)
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.HandleError(Exception e)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.<>c__DisplayClass1.<ProcessRequest>b__0()
+   在 System.Web.WebPages.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   在 System.Web.WebPages.SecurityUtil.ProcessInApplicationTrust(Action action)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 23:07:57,389 [6] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 23:11:17,113 [7] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 RPW.Admin.NewsMgr.NewsController.newsList(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsController.ashx.cs:行号 182
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 40
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 23:15:06,306 [8] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.FormatException: 输入字符串的格式不正确。
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   在 System.Convert.ToInt64(String value)
+   在 RPW.Admin.NewsMgr.NewsController.newsList(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsController.ashx.cs:行号 177
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 40
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 23:15:43,311 [11] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.FormatException: 输入字符串的格式不正确。
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   在 System.Convert.ToInt64(String value)
+   在 RPW.Admin.NewsMgr.NewsController.newsList(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsController.ashx.cs:行号 177
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 40
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 23:15:52,429 [12] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: “System.Dynamic.DynamicObject”未包含“totalSize”的定义
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   在 CompiledRazorTemplates.Dynamic.fbdafaad.Execute()
+   在 RazorEngine.Templating.TemplateBase.RazorEngine.Templating.ITemplate.Run(ExecuteContext context)
+   在 RazorEngine.Templating.TemplateService.Run(ITemplate template, DynamicViewBag viewBag)
+   在 RazorEngine.Templating.TemplateService.Parse(String razorTemplate, Object model, DynamicViewBag viewBag, String cacheName)
+   在 RazorEngine.Razor.Parse(String razorTemplate, Object model, String cacheName)
+   在 RPWRazor.RPRazorHelper.ParseRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 27
+   在 RPWRazor.RPRazorHelper.OutputRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 39
+   在 RPW.Admin.NewsMgr.NewsController.newsList(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsController.ashx.cs:行号 184
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 40
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 23:16:47,633 [17] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: “System.Dynamic.DynamicObject”未包含“totalSize”的定义
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   在 CompiledRazorTemplates.Dynamic.fbccbbbabecdfdc.Execute()
+   在 RazorEngine.Templating.TemplateBase.RazorEngine.Templating.ITemplate.Run(ExecuteContext context)
+   在 RazorEngine.Templating.TemplateService.Run(ITemplate template, DynamicViewBag viewBag)
+   在 RazorEngine.Templating.TemplateService.Parse(String razorTemplate, Object model, DynamicViewBag viewBag, String cacheName)
+   在 RazorEngine.Razor.Parse(String razorTemplate, Object model, String cacheName)
+   在 RPWRazor.RPRazorHelper.ParseRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 27
+   在 RPWRazor.RPRazorHelper.OutputRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 39
+   在 RPW.Admin.NewsMgr.NewsController.newsList(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsController.ashx.cs:行号 184
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 40
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 23:28:19,838 [21] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 RPW.Admin.NewsMgr.NewsController.newsList(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsController.ashx.cs:行号 182
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 40
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-27 23:35:19,231 [4] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 RPW.Admin.NewsMgr.NewsController.list(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsController.ashx.cs:行号 42
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 40
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)

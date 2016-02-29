@@ -1,0 +1,12 @@
+﻿@using RPWRazor
+
+@RPRazorHelper.Include("~/head.html")
+<title>已经购买的课程</title>
+@RPRazorHelper.Include("~/link.html")
+@RPRazorHelper.Include("~/headend.html")
+@RPRazorHelper.Include("~/navbar.html")
+     <section>
+   支付成功，您可以学习这个课程了<a href='/Course@(Model).ashx'>前去学习</a>
+        </section>
+
+@RPRazorHelper.Include("~/foot.html")

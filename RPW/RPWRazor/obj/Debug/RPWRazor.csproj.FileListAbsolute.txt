@@ -1,0 +1,12 @@
+C:\Users\Administrator\Desktop\ceshi\RPW\RPWRazor\bin\Debug\RPWRazor.dll
+C:\Users\Administrator\Desktop\ceshi\RPW\RPWRazor\bin\Debug\RPWRazor.pdb
+C:\Users\Administrator\Desktop\ceshi\RPW\RPWRazor\bin\Debug\RazorEngine.dll
+C:\Users\Administrator\Desktop\ceshi\RPW\RPWRazor\obj\Debug\RPWRazor.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\ceshi\RPW\RPWRazor\obj\Debug\RPWRazor.dll
+C:\Users\Administrator\Desktop\ceshi\RPW\RPWRazor\obj\Debug\RPWRazor.pdb
+C:\Users\Administrator\Desktop\RPW\RPWRazor\bin\Debug\RPWRazor.dll
+C:\Users\Administrator\Desktop\RPW\RPWRazor\bin\Debug\RPWRazor.pdb
+C:\Users\Administrator\Desktop\RPW\RPWRazor\bin\Debug\RazorEngine.dll
+C:\Users\Administrator\Desktop\RPW\RPWRazor\obj\Debug\RPWRazor.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\RPW\RPWRazor\obj\Debug\RPWRazor.dll
+C:\Users\Administrator\Desktop\RPW\RPWRazor\obj\Debug\RPWRazor.pdb

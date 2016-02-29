@@ -1,0 +1,15 @@
+C:\Users\Administrator\Desktop\RPW\RPWDingShi\bin\Debug\RPWDingShi.exe.config
+C:\Users\Administrator\Desktop\RPW\RPWDingShi\bin\Debug\RPWDingShi.exe
+C:\Users\Administrator\Desktop\RPW\RPWDingShi\bin\Debug\RPWDingShi.pdb
+C:\Users\Administrator\Desktop\RPW\RPWDingShi\bin\Debug\Common.Logging.dll
+C:\Users\Administrator\Desktop\RPW\RPWDingShi\bin\Debug\Quartz.dll
+C:\Users\Administrator\Desktop\RPW\RPWDingShi\bin\Debug\RPWCommonts.dll
+C:\Users\Administrator\Desktop\RPW\RPWDingShi\bin\Debug\ServiceStack.Common.dll
+C:\Users\Administrator\Desktop\RPW\RPWDingShi\bin\Debug\ServiceStack.Interfaces.dll
+C:\Users\Administrator\Desktop\RPW\RPWDingShi\bin\Debug\ServiceStack.Redis.dll
+C:\Users\Administrator\Desktop\RPW\RPWDingShi\bin\Debug\ServiceStack.Text.dll
+C:\Users\Administrator\Desktop\RPW\RPWDingShi\bin\Debug\RPWCommonts.pdb
+C:\Users\Administrator\Desktop\RPW\RPWDingShi\bin\Debug\Quartz.xml
+C:\Users\Administrator\Desktop\RPW\RPWDingShi\obj\Debug\RPWNewRegDingShi.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\RPW\RPWDingShi\obj\Debug\RPWDingShi.exe
+C:\Users\Administrator\Desktop\RPW\RPWDingShi\obj\Debug\RPWDingShi.pdb

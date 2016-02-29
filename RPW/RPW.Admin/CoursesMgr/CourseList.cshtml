@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+</head>
+<body>
+	<a href="CourseController.ashx?action=addnew">新增课程</a>
+	<table border="1" cellpadding="10" >
+		<thead>
+			<tr>
+				<th>创建日期</th>
+				<th>课程编号</th>
+				<th>课程名称</th>
+				<th>操作</th>
+			</tr>
+		</thead>
+		<tbody>
+			@{
+				List<RPW.Model.Courses> courses = (List<RPW.Model.Courses>)Model;
+				foreach (var course in courses)
+				{
+					<tr>
+						<td>@course.CreateDateTime</td>
+						<td>@course.SerialNo</td>
+						<td>@course.CName</td>
+						<td><a href="CourseController.ashx?action=edit&id=@course.Id">修改</a></td>
+						<td><a href="CourseController.ashx?action=delete&id=@course.Id">删除</a></td>
+						<td><a href="ChapterController.ashx?action=list&coursesId=@course.Id">章节管理</a></td>
+					</tr>
+				}   
+			}
+
+
+		</tbody>
+	</table>
+</body>
+</html>

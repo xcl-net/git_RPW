@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <script src="/js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" >
+
+        $(function () {
+            $("#btnSave").click(function () {
+                var saveAction = $("#action").val();
+                var roleName = $("#role").val();
+                //做编辑时需要id
+                var id = $("#id").val();
+                //获取选中的权限的选项卡
+                //批量获取
+                var selectedPowerIds = new Array();
+                $(":checkbox[name=power]:checked").each(function () {
+                    selectedPowerIds.push($(this).val());
+                });
+                if (roleName.length == 0) {
+                    alert("角色名称不能为空！");
+                    return;
+                }
+                if (selectedPowerIds.length==0) {
+                    alert("您还没有选中任何权限！");
+                    return;
+                }
+               
+                //使用ajax传递到服务器端，进行保存
+                $.ajax({
+                    type: "post", url: "RoleController.ashx",
+                    data: {
+                        action: "save", saveAction: saveAction, roleName: roleName,
+                        selectedPowerIds:selectedPowerIds.join(","),id:id},//“编辑”保存，则添加id:id
+                    success: function (data) {
+                        if (data.Status=="ok") {
+                            //新增角色添加成功后
+                            window.location.href = "RoleController.ashx?action=list";
+                        } else if (data.Status=="error") {
+                            alert("出错了，" + data.Msg);
+                            return;
+                        }
+                        
+                    },
+                    error: function () {
+                        alert("请求失败！");
+                    }
+                });
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <input type="hidden" id="action" value="@Model.action" />
+    <input type="hidden" id="id" value="@Model.id" />
+    角色名称：<input type="text" id="role" value="@Model.roleName"/><br />
+    拥有的权限：<br /><br />
+    @RPWRazor.RPRazorHelper.CheckBoxListOrRadioList(Model.powers,"Id","Name",Model.selectedPowers,new{name="power",type="checkbox"})
+    <br />
+    <input type="button" id="btnSave" value="保存"/>
+</body>
+</html>

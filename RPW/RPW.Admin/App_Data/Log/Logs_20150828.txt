@@ -1,0 +1,341 @@
+2015-08-28 14:23:53,059 [6] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-28 14:58:54,765 [11] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法将类型“string”转换为“System.Collections.Generic.List<RPW.Model.News>”
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   在 CompiledRazorTemplates.Dynamic.ecfeebedfaebaff.Execute()
+   在 RazorEngine.Templating.TemplateBase.RazorEngine.Templating.ITemplate.Run(ExecuteContext context)
+   在 RazorEngine.Templating.TemplateService.Run(ITemplate template, DynamicViewBag viewBag)
+   在 RazorEngine.Templating.TemplateService.Parse(String razorTemplate, Object model, DynamicViewBag viewBag, String cacheName)
+   在 RazorEngine.Razor.Parse(String razorTemplate, Object model, String cacheName)
+   在 RPWRazor.RPRazorHelper.ParseRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 27
+   在 RPWRazor.RPRazorHelper.OutputRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 39
+   在 RPW.Admin.NewsMgr.NewsController.newsList(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsController.ashx.cs:行号 198
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 40
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-28 15:00:58,755 [12] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法对 null 引用执行运行时绑定
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   在 ASP._Page_NewsMgr_NewsList_cshtml.Execute() 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsList.cshtml:行号 15
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy(IEnumerable`1 executors)
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.HandleError(Exception e)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.<>c__DisplayClass1.<ProcessRequest>b__0()
+   在 System.Web.WebPages.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   在 System.Web.WebPages.SecurityUtil.ProcessInApplicationTrust(Action action)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-28 15:01:18,591 [11] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法对 null 引用执行运行时绑定
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 ASP._Page_NewsMgr_NewsList_cshtml.Execute() 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsList.cshtml:行号 15
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy(IEnumerable`1 executors)
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.HandleError(Exception e)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.<>c__DisplayClass1.<ProcessRequest>b__0()
+   在 System.Web.WebPages.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   在 System.Web.WebPages.SecurityUtil.ProcessInApplicationTrust(Action action)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-28 15:13:42,335 [7] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> RazorEngine.Templating.TemplateCompilationException: Unable to compile template. 当前上下文中不存在名称“RPRazorHelper”
+
+Other compilation errors may have occurred. Check the Errors property for more information.
+   在 RazorEngine.Compilation.DirectCompilerServiceBase.CompileType(TypeContext context)
+   在 RazorEngine.Templating.TemplateService.CreateTemplateType(String razorTemplate, Type modelType)
+   在 RazorEngine.Templating.TemplateService.GetTemplate[T](String razorTemplate, Object model, String cacheName)
+   在 RazorEngine.Templating.TemplateService.GetTemplate(String razorTemplate, Object model, String cacheName)
+   在 RazorEngine.Templating.TemplateService.Parse(String razorTemplate, Object model, DynamicViewBag viewBag, String cacheName)
+   在 RazorEngine.Razor.Parse(String razorTemplate, Object model, String cacheName)
+   在 RPWRazor.RPRazorHelper.ParseRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 27
+   在 RPWRazor.RPRazorHelper.OutputRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 39
+   在 RPW.Admin.NewsMgr.NewsController.newsList(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsController.ashx.cs:行号 197
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 40
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-28 15:19:59,721 [22] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> RazorEngine.Templating.TemplateCompilationException: Unable to compile template. 当前上下文中不存在名称“RPRazorHelper”
+
+Other compilation errors may have occurred. Check the Errors property for more information.
+   在 RazorEngine.Compilation.DirectCompilerServiceBase.CompileType(TypeContext context)
+   在 RazorEngine.Templating.TemplateService.CreateTemplateType(String razorTemplate, Type modelType)
+   在 RazorEngine.Templating.TemplateService.GetTemplate[T](String razorTemplate, Object model, String cacheName)
+   在 RazorEngine.Templating.TemplateService.GetTemplate(String razorTemplate, Object model, String cacheName)
+   在 RazorEngine.Templating.TemplateService.Parse(String razorTemplate, Object model, DynamicViewBag viewBag, String cacheName)
+   在 RazorEngine.Razor.Parse(String razorTemplate, Object model, String cacheName)
+   在 RPWRazor.RPRazorHelper.ParseRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 27
+   在 RPWRazor.RPRazorHelper.OutputRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 39
+   在 RPW.Admin.NewsMgr.NewsController.newsList(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsController.ashx.cs:行号 197
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 40
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-28 15:20:03,864 [22] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> RazorEngine.Templating.TemplateCompilationException: Unable to compile template. 当前上下文中不存在名称“RPRazorHelper”
+
+Other compilation errors may have occurred. Check the Errors property for more information.
+   在 RazorEngine.Compilation.DirectCompilerServiceBase.CompileType(TypeContext context)
+   在 RazorEngine.Templating.TemplateService.CreateTemplateType(String razorTemplate, Type modelType)
+   在 RazorEngine.Templating.TemplateService.GetTemplate[T](String razorTemplate, Object model, String cacheName)
+   在 RazorEngine.Templating.TemplateService.GetTemplate(String razorTemplate, Object model, String cacheName)
+   在 RazorEngine.Templating.TemplateService.Parse(String razorTemplate, Object model, DynamicViewBag viewBag, String cacheName)
+   在 RazorEngine.Razor.Parse(String razorTemplate, Object model, String cacheName)
+   在 RPWRazor.RPRazorHelper.ParseRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 27
+   在 RPWRazor.RPRazorHelper.OutputRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 39
+   在 RPW.Admin.NewsMgr.NewsController.newsList(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsController.ashx.cs:行号 197
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 40
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-28 15:21:59,858 [21] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> RazorEngine.Templating.TemplateCompilationException: Unable to compile template. 当前上下文中不存在名称“RPRazorHelper”
+
+Other compilation errors may have occurred. Check the Errors property for more information.
+   在 RazorEngine.Compilation.DirectCompilerServiceBase.CompileType(TypeContext context)
+   在 RazorEngine.Templating.TemplateService.CreateTemplateType(String razorTemplate, Type modelType)
+   在 RazorEngine.Templating.TemplateService.GetTemplate[T](String razorTemplate, Object model, String cacheName)
+   在 RazorEngine.Templating.TemplateService.GetTemplate(String razorTemplate, Object model, String cacheName)
+   在 RazorEngine.Templating.TemplateService.Parse(String razorTemplate, Object model, DynamicViewBag viewBag, String cacheName)
+   在 RazorEngine.Razor.Parse(String razorTemplate, Object model, String cacheName)
+   在 RPWRazor.RPRazorHelper.ParseRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 27
+   在 RPWRazor.RPRazorHelper.OutputRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 39
+   在 RPW.Admin.NewsMgr.NewsController.newsList(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsController.ashx.cs:行号 197
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 40
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-28 15:24:41,263 [6] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> RazorEngine.Templating.TemplateCompilationException: Unable to compile template. 当前上下文中不存在名称“RPRazorHelper”
+
+Other compilation errors may have occurred. Check the Errors property for more information.
+   在 RazorEngine.Compilation.DirectCompilerServiceBase.CompileType(TypeContext context)
+   在 RazorEngine.Templating.TemplateService.CreateTemplateType(String razorTemplate, Type modelType)
+   在 RazorEngine.Templating.TemplateService.GetTemplate[T](String razorTemplate, Object model, String cacheName)
+   在 RazorEngine.Templating.TemplateService.GetTemplate(String razorTemplate, Object model, String cacheName)
+   在 RazorEngine.Templating.TemplateService.Parse(String razorTemplate, Object model, DynamicViewBag viewBag, String cacheName)
+   在 RazorEngine.Razor.Parse(String razorTemplate, Object model, String cacheName)
+   在 RPWRazor.RPRazorHelper.ParseRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 27
+   在 RPWRazor.RPRazorHelper.OutputRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 39
+   在 RPW.Admin.NewsMgr.NewsController.newsList(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsController.ashx.cs:行号 197
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 40
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-28 15:25:17,314 [4] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.IO.FileNotFoundException: 未能找到文件“C:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\fenyezujian.html”。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   在 System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   在 System.IO.File.ReadAllText(String path, Encoding encoding)
+   在 RPWRazor.RPRazorHelper.Include(String virtualPath) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 64
+   在 CompiledRazorTemplates.Dynamic.edcbeccfcbedcc.Execute()
+   在 RazorEngine.Templating.TemplateBase.RazorEngine.Templating.ITemplate.Run(ExecuteContext context)
+   在 RazorEngine.Templating.TemplateService.Run(ITemplate template, DynamicViewBag viewBag)
+   在 RazorEngine.Templating.TemplateService.Parse(String razorTemplate, Object model, DynamicViewBag viewBag, String cacheName)
+   在 RazorEngine.Razor.Parse(String razorTemplate, Object model, String cacheName)
+   在 RPWRazor.RPRazorHelper.ParseRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 27
+   在 RPWRazor.RPRazorHelper.OutputRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 39
+   在 RPW.Admin.NewsMgr.NewsController.newsList(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsController.ashx.cs:行号 197
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 40
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-28 15:27:03,984 [10] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法对 null 引用执行运行时绑定
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   在 ASP._Page_NewsMgr_NewsList_cshtml.Execute() 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsList.cshtml:行号 15
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy(IEnumerable`1 executors)
+   在 System.Web.WebPages.WebPage.ExecutePageHierarchy()
+   在 System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.HandleError(Exception e)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.WebPages.WebPageHttpHandler.<>c__DisplayClass1.<ProcessRequest>b__0()
+   在 System.Web.WebPages.SecurityUtil.<GetCallInAppTrustThunk>b__0(Action f)
+   在 System.Web.WebPages.SecurityUtil.ProcessInApplicationTrust(Action action)
+   在 System.Web.WebPages.WebPageHttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-28 16:07:52,506 [15] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> RazorEngine.Templating.TemplateCompilationException: Unable to compile template. 应输入 ;
+
+Other compilation errors may have occurred. Check the Errors property for more information.
+   在 RazorEngine.Compilation.DirectCompilerServiceBase.CompileType(TypeContext context)
+   在 RazorEngine.Templating.TemplateService.CreateTemplateType(String razorTemplate, Type modelType)
+   在 RazorEngine.Templating.TemplateService.GetTemplate[T](String razorTemplate, Object model, String cacheName)
+   在 RazorEngine.Templating.TemplateService.GetTemplate(String razorTemplate, Object model, String cacheName)
+   在 RazorEngine.Templating.TemplateService.Parse(String razorTemplate, Object model, DynamicViewBag viewBag, String cacheName)
+   在 RazorEngine.Razor.Parse(String razorTemplate, Object model, String cacheName)
+   在 RPWRazor.RPRazorHelper.ParseRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 27
+   在 RPWRazor.RPRazorHelper.OutputRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 39
+   在 RPW.Admin.NewsMgr.NewsController.newsList(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsController.ashx.cs:行号 205
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 40
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-28 16:08:32,523 [4] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> RazorEngine.Templating.TemplateCompilationException: Unable to compile template. 只有 assignment、call、increment、decrement、await 和 new 对象表达式可用作语句
+
+Other compilation errors may have occurred. Check the Errors property for more information.
+   在 RazorEngine.Compilation.DirectCompilerServiceBase.CompileType(TypeContext context)
+   在 RazorEngine.Templating.TemplateService.CreateTemplateType(String razorTemplate, Type modelType)
+   在 RazorEngine.Templating.TemplateService.GetTemplate[T](String razorTemplate, Object model, String cacheName)
+   在 RazorEngine.Templating.TemplateService.GetTemplate(String razorTemplate, Object model, String cacheName)
+   在 RazorEngine.Templating.TemplateService.Parse(String razorTemplate, Object model, DynamicViewBag viewBag, String cacheName)
+   在 RazorEngine.Razor.Parse(String razorTemplate, Object model, String cacheName)
+   在 RPWRazor.RPRazorHelper.ParseRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 27
+   在 RPWRazor.RPRazorHelper.OutputRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 39
+   在 RPW.Admin.NewsMgr.NewsController.newsList(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsController.ashx.cs:行号 205
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 40
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-28 16:10:43,634 [12] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 RPW.Admin.NewsMgr.NewsController.newsList(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsController.ashx.cs:行号 181
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 40
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-28 16:24:09,596 [8] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> RazorEngine.Templating.TemplateCompilationException: Unable to compile template. 无效的表达式项“=”
+
+Other compilation errors may have occurred. Check the Errors property for more information.
+   在 RazorEngine.Compilation.DirectCompilerServiceBase.CompileType(TypeContext context)
+   在 RazorEngine.Templating.TemplateService.CreateTemplateType(String razorTemplate, Type modelType)
+   在 RazorEngine.Templating.TemplateService.GetTemplate[T](String razorTemplate, Object model, String cacheName)
+   在 RazorEngine.Templating.TemplateService.GetTemplate(String razorTemplate, Object model, String cacheName)
+   在 RazorEngine.Templating.TemplateService.Parse(String razorTemplate, Object model, DynamicViewBag viewBag, String cacheName)
+   在 RazorEngine.Razor.Parse(String razorTemplate, Object model, String cacheName)
+   在 RPWRazor.RPRazorHelper.ParseRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 27
+   在 RPWRazor.RPRazorHelper.OutputRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 39
+   在 RPW.Admin.NewsMgr.NewsController.newsList(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsController.ashx.cs:行号 205
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 40
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-28 16:24:40,964 [13] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 RPW.Admin.NewsMgr.NewsController.newsList(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsController.ashx.cs:行号 181
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 40
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-28 16:24:46,895 [13] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.ArgumentNullException: 值不能为 null。
+参数名: name
+   在 System.Type.GetMethod(String name)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 32
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-28 16:24:55,677 [13] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> RazorEngine.Templating.TemplateCompilationException: Unable to compile template. 无效的表达式项“=”
+
+Other compilation errors may have occurred. Check the Errors property for more information.
+   在 RazorEngine.Compilation.DirectCompilerServiceBase.CompileType(TypeContext context)
+   在 RazorEngine.Templating.TemplateService.CreateTemplateType(String razorTemplate, Type modelType)
+   在 RazorEngine.Templating.TemplateService.GetTemplate[T](String razorTemplate, Object model, String cacheName)
+   在 RazorEngine.Templating.TemplateService.GetTemplate(String razorTemplate, Object model, String cacheName)
+   在 RazorEngine.Templating.TemplateService.Parse(String razorTemplate, Object model, DynamicViewBag viewBag, String cacheName)
+   在 RazorEngine.Razor.Parse(String razorTemplate, Object model, String cacheName)
+   在 RPWRazor.RPRazorHelper.ParseRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 27
+   在 RPWRazor.RPRazorHelper.OutputRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 39
+   在 RPW.Admin.NewsMgr.NewsController.newsList(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsController.ashx.cs:行号 205
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 40
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-28 16:25:24,437 [13] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 RPW.Admin.NewsMgr.NewsController.newsList(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\NewsMgr\NewsController.ashx.cs:行号 181
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 40
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-28 17:59:06,828 [11] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)

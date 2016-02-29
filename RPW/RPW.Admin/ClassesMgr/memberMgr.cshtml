@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="/js/member.css" rel="stylesheet" />
+    <script src="/js/jquery-1.4.2.min.js"></script>
+    <script src="/js/loadStudents.js"></script><!--加载学生列表的js-->
+    <script type="text/javascript">
+        $(function () {
+
+            //页面，加载的时候班级成员
+            loadStudents();
+
+            //点击搜索按钮查询
+            $("#search").click(function () {
+                var txt = $("#searchOpt").val();
+                if (txt.length == 0) {
+                    $('#ul_1 li').remove();
+                    alert("请输入搜索条件");
+                    return;
+                }
+                $.ajax({
+                    type: "post", url: "/ClassesMgr/ClassesConroller.ashx",
+                    dataType: "json",
+                    data: { action: "ListResult", txt: txt },
+                    success: function (data) {
+                        if (data.Status == "ok") {
+                            //先把旧的数据，删除
+                            $("#listResult").val("");
+                            //加载出来多条相似条件的学生
+                            var members = data.Data;
+                            $("#listResultDiv").append("<ul id='ul_1' >");
+                            for (var i = 0; i < members.length; i++) {
+                                var member = members[i];
+                                var li = "<li id='" + member.Id + "'>" + member.Name + "(" + member.Telephone + ")" + "</li>";
+                               
+                                $("#ul_1").append(li);
+                            }
+                            $("#listResultDiv").append("</ul>");
+
+                            //搜索结果列表显示成功，给动态的li标签，添加事件
+                            $("#listResultDiv").find('li').mouseover(function () {
+                                $(this).css('background', 'blue');
+                            }).mouseout(function () {
+                                $(this).css('background', '');
+                            }).click(function () {  //li的单击事件
+
+                                //读取li标签的值
+                                //alert($(this).text());
+                                var name = $(this).text();
+                                var classId = $("#ClassId").val();
+                                //进行ajax的请求，，这个用户要添加到班级中
+                                $.ajax({
+                                    type: "post", url: "/ClassesMgr/ClassesConroller.ashx",
+                                    dataType: "json",
+                                    data: { action: "AddToClass", name: name, classId: classId },
+                                    success: function (data) {
+                                        if (data.Status == "ok") {
+                                            
+                                            // 1.界面显示，添加到了班级成员列表
+                                            // 2.显示之前，将旧的数据节点，首先清除
+                                            deleteChildNode();
+                                            //通过刷新班级列表函数执行
+                                            loadStudents();
+                                        }
+                                    },
+                                    error: function () {
+                                        alert("添加学生请求失败");
+                                        return;  //如果添加错误，就不再执行
+                                    }
+
+                                });
+                                //$(this).appendTo($("#listMembersDiv"));
+                            });
+
+                        } else if (data.Status == "error") {
+                            $('#ul_1 li').remove();
+                            alert("出错" + data.Msg);
+                        }
+                    }, error: function () {
+                        alert("请求失败");
+                    }
+                });
+
+            });
+
+            //问题是怎么给加载成功的成员裂变添加事件
+        });
+    </script>
+    
+</head>
+<body>
+   
+    <input type="hidden" id="ClassId" value="@Model.ClassId" />
+    <strong>当前班级是：</strong><h1>@Model.currentClassName</h1>
+    <input type="text" placeholder="请输入姓名、或手机号、或QQ号"  id="searchOpt"/>&nbsp<input type="button" id="search" value="搜索" />
+    <br /><br />
+     <h3>*单击搜索到的结果：添加到班级成员；单击班级成员的结果：从班级成员列表中删除该成员*</h3>
+    <div id="listResultDiv">
+     
+    </div>
+   
+    <div id="btnComOut">
+    <div id="btnComeInDiv">
+         <input type="button" id="btnComeIn" disabled="disabled" value=">" />
+
+    </div>
+    <div id="btnComeOutDiv">
+           <input type="button" id="btnComeOut" disabled="disabled"  value="<" />
+
+    </div>
+    </div>
+    
+    <div id="listMembersDiv" >
+      
+    </div>
+     
+
+   
+</body>
+</html>

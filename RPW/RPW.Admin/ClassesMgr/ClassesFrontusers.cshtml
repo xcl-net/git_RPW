@@ -1,0 +1,33 @@
+﻿@using RPW.Model
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>班级管理</title>
+</head>
+<body>
+    
+    <table>
+        <thead><tr><th>班级</th><th>操作</th></tr></thead>
+        <tbody>
+            @{
+                
+                List<ClassRooms> classModels = (List<ClassRooms>)Model;
+                foreach (var classModel in classModels)
+                {
+                    <tr>
+                        <td><a href="ClassesConroller.ashx?action=ListClasses">@classModel.ClassRoom</a></td>
+                        <td><a href="ClassesConroller.ashx?action=MemberMgr&id=@classModel.Id">班级成员管理</a></td>
+
+                    </tr>
+                    
+                }
+                }
+  
+
+        </tbody>
+
+    </table>
+</body>
+</html>

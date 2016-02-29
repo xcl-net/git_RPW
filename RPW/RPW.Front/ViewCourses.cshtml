@@ -1,0 +1,100 @@
+﻿@using RPW.Model
+@using RPW.Front
+
+@using RPWRazor
+
+@RPRazorHelper.Include("~/head.html")
+<title>@Model.course.CName</title>
+@RPRazorHelper.Include("~/link.html")
+@RPRazorHelper.Include("~/headend.html")
+@RPRazorHelper.Include("~/navbar.html")
+
+    
+        <section>
+            
+<link href="css/course.css" rel="stylesheet">
+<script type="text/javascript">
+    $(function () {
+        $("a[myname=chapter]:first").click();//默认让第一章展开
+    });
+</script>
+            <!--标题，加课程描述-->
+<div class="pmb-jumbotron">
+    <div class="container">
+        <h1>@Model.course.CName</h1>
+
+        <p>
+            <p>@Model.course.DescriptionCourses</p>
+        <p>
+        <ul class="nav nav-tabs pmb-nav-tabs">
+            <li class="active" target="#tab1"><a target="#tab1"><i class="fa"></i>课程内容</a></li>
+           
+        </ul>
+    </div>
+</div>
+    <div>
+    <h2><a href="/BuyCourse/BuyCourseController.ashx?action=BuyCourse&courseId=@Model.course.Id">@Model.buyInfo</a></h2>
+    </div>
+             
+        <div class="container pmb-container">
+    <div class="row" id="tab1">
+        <div class="col-md-8 col-sm-7 pmb-table">
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                
+            <!--读取出章节列表-->
+         @{
+             // 章节的集合
+             List<Chapters> chapters = Model.chapters;
+             foreach (Chapters chapter in chapters)
+             {
+
+                  <div class="panel panel-default">
+                      <!--章节名字-->
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" myname="chapter" data-parent="#accordion" href="#collapse_@(chapter.Id)" aria-expanded="true" aria-controls="collapse_17">
+                          @chapter.Name
+                        </a>
+                      </h4>
+                    </div>
+                   
+                      <div id="collapse_@(chapter.Id)" class="panel-collapse collapse" role="tabpanel">
+                      <div class="panel-body">
+                          <ul>
+                             @{
+                               <!--每个章节下的段落,在FrontHelper中写一个方法-->
+                 List<Segments> segments = FrontHelper.GetSegments(chapter.Id);
+                 foreach (Segments segment in segments)
+                 {
+                            <li class="d">
+                                <div class="count col-md-2"><a href="Segment@(segment.Id).ashx">第@(segment.SerialNo)节：</a></div>
+                                 <div class="lt col-md-6"><a href="Segment@(segment.Id).ashx">@segment.Name</a></div>
+                                <div class="rate col-md-2"> </div>
+                                <div class="col-md-2">      
+                                        <span class="status btn btn-default pull-right">
+                                            <a href="Segment@(segment.Id).ashx">免费</a>
+                                        </span>
+
+                                </div>
+                            </li>
+                 }
+                              }
+                          </ul>
+                      </div>
+                    </div>
+                            
+                     
+                       
+                  </div>    
+             
+             } 
+      
+             
+        }                    
+            </div>
+        </div>
+    </div>
+</div>
+        
+              </section>
+@RPRazorHelper.Include("~/foot.html")

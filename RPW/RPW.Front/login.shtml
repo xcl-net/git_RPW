@@ -1,0 +1,83 @@
+﻿<!--#include file="/head.html"-->
+    <title>如鹏--登录</title>
+    <!--#include file="/link.html"-->
+        
+    <script type="text/javascript">
+
+        <!--项目任务：点击按钮刷新-->
+        function refreshYZM() {
+            var imgYZM = document.getElementById("verificationCode123");
+            imgYZM.src = "verificationCode.ashx?t=" + new Date();
+        }
+        $(function () {
+            document.getElementById("verificationCode123").style.cursor ="pointer";
+            document.getElementById("kanbuqing").style.cursor = "pointer";
+
+           
+            $("#btnLogin").click(function () {
+                var username = $("#username").val();
+                var password = $("#password").val();
+                var autologin = $("#autologin").val();
+                var verificationCode = $("#verificationCode").val();
+                //判断自动登录是否是勾选
+                if ( $("#autologin").attr("checked") == true)
+                {
+                    var autologin = $("#autologin").val();
+                    //alert(autologin);//测试，如果选中时传递的on
+                }
+
+                if (username.length==0) {
+                    alert("用户名不能为空！");
+                    return;
+                }
+                if (password.length==0) {
+                    alert("密码不能为空！");
+                    return;
+                }
+                if (verificationCode.length==0) {
+                    alert("验证码不能为空！");
+                    return;
+                }
+                $.ajax({
+                    type: "post", url: "FrontUserController.ashx",
+                    data: { action: "login", username: username, password: password, validCode: verificationCode, autologin: autologin },
+                    success: function (data) {
+                        if (data.Status=="ok") {
+                            // 重定主页
+                            window.location.href = "index.shtml";
+                        } else if (data.Status == "error") {
+                            //如果是错误的，就将验证码重置
+                            $("#verificationCode123").attr("src", "verificationCode.ashx?id=" + new Date());
+                            alert(data.Msg);
+                        }
+
+                    },
+                    error: function () { alert("网络请求失败！")}
+                });
+            });
+        });
+    </script>
+    <!--#include file="/headend.html"-->
+
+   <!--#include file="/navbar.html"-->
+    <h1>欢迎，登录如鹏网站</h1>
+    <br /><br />
+    <label>用户名：<input type="text" id="username" /></label><br /><br />
+    <label>密     码： <input type="password" id="password" /></label><br /><br />
+    <label> 验证码：<input type="text" id="verificationCode" /></label>
+    <label for="verificationCode123">
+        <span onclick="refreshYZM()" id="kanbuqing">
+        <img src="verificationCode.ashx" id="verificationCode123"/>看不清，点我</span>
+    </label>
+
+    <br />
+         <input type="checkbox" id="autologin" /><label for="autologin">下次自动登录</label>
+         <br />   <br />
+         <a href="Register.shtml">立即注册</a> &nbsp| &nbsp<a href="forget.shtml">忘了密码？</a> &nbsp| &nbsp<a href="#">意见反馈</a>
+         
+    <br /><br />
+    <input type="button"id="btnLogin" value="登录" />
+    <br /><br />
+
+
+ <!--#include file="/foot.html"-->

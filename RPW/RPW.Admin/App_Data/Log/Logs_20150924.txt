@@ -1,0 +1,22 @@
+2015-09-24 00:07:15,933 [10] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-09-24 00:24:48,891 [7] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Exception: action不能为空
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 34
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-09-24 00:24:58,879 [8] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Exception: action不能为空
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 34
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-09-24 00:36:00,731 [7] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Exception: action不能为空
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 34
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)

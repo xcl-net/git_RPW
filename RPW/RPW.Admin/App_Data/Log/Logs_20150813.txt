@@ -1,0 +1,355 @@
+2015-08-13 01:23:07,612 [15] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-13 01:25:43,599 [16] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Data.SqlClient.SqlException (0x80131904): 在应使用条件的上下文(在 ',' 附近)中指定了非布尔类型的表达式。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   在 Maticsoft.DBUtility.DbHelperSQL.Query(String SQLString) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\DbHelperSQL.cs:行号 511
+   在 RPW.Dal.RolesDal.GetList(String strWhere) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\RolesDal.cs:行号 204
+   在 RPW.Bll.RolesBll.GetModelList(String strWhere) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Bll\RolesBll.cs:行号 125
+   在 RPW.Admin.AdminUser.AdminHelper.RoleIdsToNames(String roleIdList) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\AdminHelper.cs:行号 268
+   在 RPW.Admin.AdminUser.RoleController.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\RoleController.ashx.cs:行号 264
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:7a33615d-1628-4eaa-88c3-8a095c7298a7
+2015-08-13 01:26:17,743 [8] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Data.SqlClient.SqlException (0x80131904): 在应使用条件的上下文(在 ',' 附近)中指定了非布尔类型的表达式。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   在 Maticsoft.DBUtility.DbHelperSQL.Query(String SQLString) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\DbHelperSQL.cs:行号 511
+   在 RPW.Dal.RolesDal.GetList(String strWhere) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\RolesDal.cs:行号 204
+   在 RPW.Bll.RolesBll.GetModelList(String strWhere) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Bll\RolesBll.cs:行号 125
+   在 RPW.Admin.AdminUser.AdminHelper.RoleIdsToNames(String roleIdList) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\AdminHelper.cs:行号 268
+   在 RPW.Admin.AdminUser.RoleController.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\RoleController.ashx.cs:行号 264
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:7a33615d-1628-4eaa-88c3-8a095c7298a7
+2015-08-13 01:26:27,714 [12] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Data.SqlClient.SqlException (0x80131904): 在应使用条件的上下文(在 ',' 附近)中指定了非布尔类型的表达式。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   在 Maticsoft.DBUtility.DbHelperSQL.Query(String SQLString) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\DbHelperSQL.cs:行号 511
+   在 RPW.Dal.RolesDal.GetList(String strWhere) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\RolesDal.cs:行号 204
+   在 RPW.Bll.RolesBll.GetModelList(String strWhere) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Bll\RolesBll.cs:行号 125
+   在 RPW.Admin.AdminUser.AdminHelper.RoleIdsToNames(String roleIdList) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\AdminHelper.cs:行号 268
+   在 RPW.Admin.AdminUser.RoleController.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\RoleController.ashx.cs:行号 264
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:7a33615d-1628-4eaa-88c3-8a095c7298a7
+2015-08-13 01:27:27,252 [8] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Data.SqlClient.SqlException (0x80131904): 在应使用条件的上下文(在 ',' 附近)中指定了非布尔类型的表达式。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   在 Maticsoft.DBUtility.DbHelperSQL.Query(String SQLString) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\DbHelperSQL.cs:行号 511
+   在 RPW.Dal.RolesDal.GetList(String strWhere) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\RolesDal.cs:行号 204
+   在 RPW.Bll.RolesBll.GetModelList(String strWhere) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Bll\RolesBll.cs:行号 125
+   在 RPW.Admin.AdminUser.AdminHelper.RoleIdsToNames(String roleIdList) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\AdminHelper.cs:行号 268
+   在 RPW.Admin.AdminUser.RoleController.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\RoleController.ashx.cs:行号 264
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:7a33615d-1628-4eaa-88c3-8a095c7298a7
+2015-08-13 01:32:05,429 [11] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Data.SqlClient.SqlException (0x80131904): 在应使用条件的上下文(在 ',' 附近)中指定了非布尔类型的表达式。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   在 Maticsoft.DBUtility.DbHelperSQL.Query(String SQLString) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\DbHelperSQL.cs:行号 511
+   在 RPW.Dal.RolesDal.GetList(String strWhere) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\RolesDal.cs:行号 204
+   在 RPW.Bll.RolesBll.GetModelList(String strWhere) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Bll\RolesBll.cs:行号 125
+   在 RPW.Admin.AdminUser.AdminHelper.RoleIdsToNames(String roleIdList) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\AdminHelper.cs:行号 268
+   在 RPW.Admin.AdminUser.RoleController.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\RoleController.ashx.cs:行号 264
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:5c947649-5972-4b45-9d2b-1987670206ed
+2015-08-13 01:33:00,774 [11] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Data.SqlClient.SqlException (0x80131904): 在应使用条件的上下文(在 ',' 附近)中指定了非布尔类型的表达式。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   在 Maticsoft.DBUtility.DbHelperSQL.Query(String SQLString) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\DbHelperSQL.cs:行号 511
+   在 RPW.Dal.RolesDal.GetList(String strWhere) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\RolesDal.cs:行号 204
+   在 RPW.Bll.RolesBll.GetModelList(String strWhere) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Bll\RolesBll.cs:行号 125
+   在 RPW.Admin.AdminUser.AdminHelper.RoleIdsToNames(String roleIdList) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\AdminHelper.cs:行号 268
+   在 RPW.Admin.AdminUser.RoleController.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\RoleController.ashx.cs:行号 264
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:57ecf28a-4130-46d7-801f-43287ca3e507
+2015-08-13 01:35:42,113 [11] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Data.SqlClient.SqlException (0x80131904): 在应使用条件的上下文(在 ',' 附近)中指定了非布尔类型的表达式。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   在 Maticsoft.DBUtility.DbHelperSQL.Query(String SQLString) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\DbHelperSQL.cs:行号 511
+   在 RPW.Dal.RolesDal.GetList(String strWhere) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\RolesDal.cs:行号 204
+   在 RPW.Bll.RolesBll.GetModelList(String strWhere) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Bll\RolesBll.cs:行号 125
+   在 RPW.Admin.AdminUser.AdminHelper.RoleIdsToNames(String roleIdList) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\AdminHelper.cs:行号 268
+   在 RPW.Admin.AdminUser.RoleController.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\RoleController.ashx.cs:行号 264
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:36dbcc4f-1b10-4064-93f0-f60417e7b889
+2015-08-13 01:38:23,689 [14] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Data.SqlClient.SqlException (0x80131904): “,”附近有语法错误。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   在 Maticsoft.DBUtility.DbHelperSQL.Query(String SQLString) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\DbHelperSQL.cs:行号 511
+   在 RPW.Dal.RolesDal.GetList(String strWhere) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\RolesDal.cs:行号 204
+   在 RPW.Bll.RolesBll.GetModelList(String strWhere) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Bll\RolesBll.cs:行号 125
+   在 RPW.Admin.AdminUser.AdminHelper.RoleIdsToNames(String roleIdList) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\AdminHelper.cs:行号 268
+   在 RPW.Admin.AdminUser.RoleController.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\RoleController.ashx.cs:行号 265
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:91706784-def5-4309-9cb7-9357f675b491
+2015-08-13 01:39:31,747 [12] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Data.SqlClient.SqlException (0x80131904): 在应使用条件的上下文(在 'in20' 附近)中指定了非布尔类型的表达式。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   在 Maticsoft.DBUtility.DbHelperSQL.Query(String SQLString) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\DbHelperSQL.cs:行号 511
+   在 RPW.Dal.RolesDal.GetList(String strWhere) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\RolesDal.cs:行号 204
+   在 RPW.Bll.RolesBll.GetModelList(String strWhere) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Bll\RolesBll.cs:行号 125
+   在 RPW.Admin.AdminUser.AdminHelper.RoleIdsToNames(String roleIdList) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\AdminHelper.cs:行号 268
+   在 RPW.Admin.AdminUser.RoleController.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\RoleController.ashx.cs:行号 265
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:769abebc-65bc-40cd-a6bc-70fb015a9ab1
+2015-08-13 02:01:58,734 [17] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 RPW.Bll.AdministorOperationLogsBll.GetUserNameId(String username) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Bll\AdministorOperationLogsBll.Ext.cs:行号 154
+   在 RPW.Bll.AdministorOperationLogsBll.SearchByUsername(String username) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Bll\AdministorOperationLogsBll.Ext.cs:行号 39
+   在 RPW.Admin.AdminUser.LookUpLogSystem.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\LookUpLogSystem.ashx.cs:行号 167
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-13 02:16:15,940 [13] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 RPW.Bll.AdministorOperationLogsBll.GetUserNameId(String username) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Bll\AdministorOperationLogsBll.Ext.cs:行号 154
+   在 RPW.Bll.AdministorOperationLogsBll.SearchByUsername(String username) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Bll\AdministorOperationLogsBll.Ext.cs:行号 39
+   在 RPW.Admin.AdminUser.LookUpLogSystem.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\LookUpLogSystem.ashx.cs:行号 167
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-13 02:23:58,734 [13] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 RPW.Bll.AdministorOperationLogsBll.GetUserNameId(String username) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Bll\AdministorOperationLogsBll.Ext.cs:行号 154
+   在 RPW.Bll.AdministorOperationLogsBll.SearchByUsername(String username) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Bll\AdministorOperationLogsBll.Ext.cs:行号 39
+   在 RPW.Admin.AdminUser.LookUpLogSystem.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\LookUpLogSystem.ashx.cs:行号 167
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-13 09:43:37,350 [6] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-13 09:46:42,258 [17] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 RPW.Bll.AdministorOperationLogsBll.GetUserNameId(String username) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Bll\AdministorOperationLogsBll.Ext.cs:行号 154
+   在 RPW.Bll.AdministorOperationLogsBll.SearchByUsername(String username) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Bll\AdministorOperationLogsBll.Ext.cs:行号 39
+   在 RPW.Admin.AdminUser.LookUpLogSystem.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\LookUpLogSystem.ashx.cs:行号 167
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-13 09:55:35,703 [6] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 RPW.Bll.AdministorOperationLogsBll.GetUserNameId(String username) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Bll\AdministorOperationLogsBll.Ext.cs:行号 154
+   在 RPW.Bll.AdministorOperationLogsBll.SearchByUsername(String username) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Bll\AdministorOperationLogsBll.Ext.cs:行号 39
+   在 RPW.Admin.AdminUser.LookUpLogSystem.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\LookUpLogSystem.ashx.cs:行号 167
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-13 10:30:00,724 [47] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 RPW.Bll.AdministorOperationLogsBll.GetUserNameId(String username) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Bll\AdministorOperationLogsBll.Ext.cs:行号 156
+   在 RPW.Bll.AdministorOperationLogsBll.SearchByUsername(String username) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Bll\AdministorOperationLogsBll.Ext.cs:行号 35
+   在 RPW.Admin.AdminUser.LookUpLogSystem.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\LookUpLogSystem.ashx.cs:行号 164
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-13 10:30:53,552 [6] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-13 10:34:03,829 [11] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 RPW.Bll.AdministorOperationLogsBll.GetUserNameId(String username) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Bll\AdministorOperationLogsBll.Ext.cs:行号 156
+   在 RPW.Bll.AdministorOperationLogsBll.SearchByUsername(String username) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Bll\AdministorOperationLogsBll.Ext.cs:行号 35
+   在 RPW.Admin.AdminUser.LookUpLogSystem.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\LookUpLogSystem.ashx.cs:行号 164
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-13 16:06:15,808 [13] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-13 20:57:27,536 [13] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.FormatException: 输入字符串的格式不正确。
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   在 System.Convert.ToInt64(String value)
+   在 RPW.Admin.AdminUser.LookUpLogSystem.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\LookUpLogSystem.ashx.cs:行号 76
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-13 20:57:27,871 [15] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.FormatException: 输入字符串的格式不正确。
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   在 System.Convert.ToInt64(String value)
+   在 RPW.Admin.AdminUser.LookUpLogSystem.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\LookUpLogSystem.ashx.cs:行号 76
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-13 22:02:26,748 [10] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-13 22:23:00,231 [16] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 RPW.Admin.AdminUser.AdminHelper.GetUserIdInSession(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\AdminHelper.cs:行号 51
+   在 RPW.Admin.AdminUser.AdminHelper.CheckAccess(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\AdminHelper.cs:行号 148
+   在 RPW.Admin.AdminUser.LookUpLogSystem.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\LookUpLogSystem.ashx.cs:行号 19
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-13 22:23:00,250 [16] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 RPW.Admin.AdminUser.AdminHelper.GetUserIdInSession(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\AdminHelper.cs:行号 51
+   在 RPW.Admin.AdminUser.AdminHelper.CheckAccess(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\AdminHelper.cs:行号 148
+   在 RPW.Admin.AdminUser.LookUpLogSystem.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\LookUpLogSystem.ashx.cs:行号 19
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-13 22:40:05,034 [6] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)

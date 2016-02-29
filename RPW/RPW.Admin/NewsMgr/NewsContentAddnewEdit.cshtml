@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <script src="/js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="/UEditor/ueditor.config.js"></script>
+    <script type="text/javascript" src="/UEditor/ueditor.all.js"></script>
+    <script type="text/javascript">
+        $(function () {
+
+            //页面加载时候，实例化富文本编辑器 
+            var ue = UE.getEditor('container');
+
+            $("#btnSave").click(function () {
+                var editorhtml = ue.getContent(); //获取带格式的富文本内容
+                var title = $("#title").val();
+                var saveAction = $("#saveAction").val();
+                var catId = $("#catId").val();
+                var id = $("#id").val();
+                if (title.length==0) {
+                    alert("标题内容不能为空");
+                    return;
+                }
+                if (title.length>250) {
+                    alert("标题最长不能超过250个字符");
+                    return;
+                }
+                if (editorhtml.length==0) {
+                    alert("新闻内容不能为空");
+                    return;
+                }
+                $.ajax({
+                    type: "post", url: "NewsController.ashx?",
+                    data: { action: "newsSave", saveAction: saveAction, title: title, newsContent: editorhtml,catId:catId,id:id},
+                    success: function (data) {
+                        if (data.Status == "ok") {
+                            window.location.href = "NewsController.ashx?action=newsList&catId="+catId;
+                        } else if (data.Status == "error") {
+                            alert(data.Msg);
+                        }                                  
+                        
+                    },
+                    error: function () {
+                        alert("请求失败！");
+                    }
+                });
+            });
+        });
+  </script>
+</head>
+<body>
+    <input type="hidden" id="saveAction" value="@Model.saveAction" />
+    <input type="hidden" id="catId" value="@Model.categoryId" />
+    <input type="hidden" id="id" value="@Model.id" />
+   <h3> 新闻类别：@Model.catName</h3>
+    <br />
+    <label for="title">标题：</label>：<input type="text" id="title" value="@Model.title"/>
+    <br /><br />
+    内容：  <!-- 加载编辑器的容器 -->
+    <script id="container" name="Note" type="text/plain">
+         @RPWRazor.RPRazorHelper.Raw(Model.contentBody)
+    </script><br />
+    <input type="button" id="btnSave" value="保存" />
+</body>
+</html>

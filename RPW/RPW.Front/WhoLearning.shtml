@@ -1,0 +1,53 @@
+﻿<!--#include file="/head.html"-->
+<title>他们正在学...</title>
+<script src="/js/jquery-1.4.2.min.js"></script>
+<!--#include file="/link.html"-->
+<script type="text/javascript">
+    var queryData = function () {
+        $.ajax({
+            type: "post", url: "/FrontUserController.ashx?action=WhoLearning",
+            dataType: "json",
+            success: function (data) {
+                //如果加载的数据，成功接收，就移除，“加载中。。。”这个li
+                $("#wholearningloading").remove();
+                var recordsData = data.Data;
+                for (var i = recordsData.length - 1; i >= 0; i--)
+                {
+                    var record = recordsData[i];
+                    //查看这个li标签是否已经存在了，不存在再动画效果添加
+                    if ($("li[rid=" + record.Id + "]").length <= 0) {//jquery判断不存在这个li
+                        var li = (record.SchoolName ? record.SchoolName + "的" : "") + "【<strong>" + record.Name + "</strong>】在" +
+                            record.LearningTime + " 开始学习【<strong>" + record.SegmentName + "</strong>】";
+                        $("<li style='display:none' rid='" + record.Id + "'>" + li + "</li>").prependTo($("#wholearning")).slideDown();
+
+                    }
+                }
+
+            }
+        });
+    };
+    queryData();
+    //设定一个定时器
+    setInterval(queryData, 10000);//定时取数据
+
+
+</script>
+<!--#include file="/headend.html"-->
+
+<!--#include file="/navbar.html"-->
+<div class="container">
+    <div class="row">
+        <h1>他们正在如鹏网上学习</h1>
+    </div>
+    <div class="row">
+        <h4><strong>如鹏在线学习管理系统可以实时反馈学生的学习状态，从而可以帮助我们更好的服务学生，下面的数据来自于后台监控的实时数据。</strong></h4>
+    </div>
+    <div class="row">
+    <ul id="wholearning" class="list-unstyled learnList">
+        <li id="wholearningloading">加载中……</li>
+    </ul>
+    </div>
+</div>
+
+
+<!--#include file="/foot.html"-->

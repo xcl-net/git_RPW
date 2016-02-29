@@ -1,0 +1,470 @@
+2015-08-08 08:39:57,555 [10] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-08 09:01:01,397 [6] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Exception: 查询条件未知！
+   在 RPW.Admin.AdminUser.LookUpLogSystem.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\LookUpLogSystem.ashx.cs:行号 99
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-08 09:06:24,263 [16] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Exception: 查询条件未知！
+   在 RPW.Admin.AdminUser.LookUpLogSystem.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\LookUpLogSystem.ashx.cs:行号 99
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-08 09:12:16,178 [12] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Net.Sockets.SocketException (0x80004005): 在一个非套接字上尝试了一个操作。
+   在 System.Net.Sockets.Socket.get_LocalEndPoint()
+   在 Microsoft.VisualStudio.WebHost.Connection.get_LocalIP()
+   在 Microsoft.VisualStudio.WebHost.Connection.get_LocalIP()
+   在 Microsoft.VisualStudio.WebHost.Request.GetLocalAddress()
+   在 System.Web.HttpRequest.FillInServerVariablesCollection()
+   在 System.Web.HttpServerVarsCollection.Populate()
+   在 System.Web.HttpServerVarsCollection.Get(String name)
+   在 System.Web.HttpRequest.get_Item(String key)
+   在 RPW.Admin.AdminUser.LookUpLogSystem.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\LookUpLogSystem.ashx.cs:行号 39
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-08 09:12:48,577 [6] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-08 09:38:30,231 [20] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-08 09:38:30,338 [21] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-08 10:45:51,423 [5] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: “System.Dynamic.DynamicObject”未包含“Record”的定义
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   在 CompiledRazorTemplates.Dynamic.cddccabdefaced.Execute()
+   在 RazorEngine.Templating.TemplateBase.RazorEngine.Templating.ITemplate.Run(ExecuteContext context)
+   在 RazorEngine.Templating.TemplateService.Run(ITemplate template, DynamicViewBag viewBag)
+   在 RazorEngine.Templating.TemplateService.Parse(String razorTemplate, Object model, DynamicViewBag viewBag, String cacheName)
+   在 RazorEngine.Razor.Parse(String razorTemplate, Object model, String cacheName)
+   在 RPWRazor.RPRazorHelper.ParseRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 27
+   在 RPWRazor.RPRazorHelper.OutputRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 39
+   在 RPW.Admin.AdminUser.LookUpLogSystem.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\LookUpLogSystem.ashx.cs:行号 36
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-08 10:45:51,510 [10] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-08 10:51:35,022 [11] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法将类型“string”转换为“System.Collections.Generic.List<string>”
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 CompiledRazorTemplates.Dynamic.eeacceeadbecec.Execute()
+   在 RazorEngine.Templating.TemplateBase.RazorEngine.Templating.ITemplate.Run(ExecuteContext context)
+   在 RazorEngine.Templating.TemplateService.Run(ITemplate template, DynamicViewBag viewBag)
+   在 RazorEngine.Templating.TemplateService.Parse(String razorTemplate, Object model, DynamicViewBag viewBag, String cacheName)
+   在 RazorEngine.Razor.Parse(String razorTemplate, Object model, String cacheName)
+   在 RPWRazor.RPRazorHelper.ParseRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 27
+   在 RPWRazor.RPRazorHelper.OutputRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 39
+   在 RPW.Admin.AdminUser.LookUpLogSystem.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\LookUpLogSystem.ashx.cs:行号 36
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-08 10:51:35,022 [4] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法将类型“string”转换为“System.Collections.Generic.List<string>”
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   在 CompiledRazorTemplates.Dynamic.eeacceeadbecec.Execute()
+   在 RazorEngine.Templating.TemplateBase.RazorEngine.Templating.ITemplate.Run(ExecuteContext context)
+   在 RazorEngine.Templating.TemplateService.Run(ITemplate template, DynamicViewBag viewBag)
+   在 RazorEngine.Templating.TemplateService.Parse(String razorTemplate, Object model, DynamicViewBag viewBag, String cacheName)
+   在 RazorEngine.Razor.Parse(String razorTemplate, Object model, String cacheName)
+   在 RPWRazor.RPRazorHelper.ParseRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 27
+   在 RPWRazor.RPRazorHelper.OutputRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 39
+   在 RPW.Admin.AdminUser.LookUpLogSystem.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\LookUpLogSystem.ashx.cs:行号 36
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-08 10:53:17,001 [4] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法将类型“string”转换为“System.Collections.Generic.List<string>”
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   在 CompiledRazorTemplates.Dynamic.fbdefafffbbad.Execute()
+   在 RazorEngine.Templating.TemplateBase.RazorEngine.Templating.ITemplate.Run(ExecuteContext context)
+   在 RazorEngine.Templating.TemplateService.Run(ITemplate template, DynamicViewBag viewBag)
+   在 RazorEngine.Templating.TemplateService.Parse(String razorTemplate, Object model, DynamicViewBag viewBag, String cacheName)
+   在 RazorEngine.Razor.Parse(String razorTemplate, Object model, String cacheName)
+   在 RPWRazor.RPRazorHelper.ParseRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 27
+   在 RPWRazor.RPRazorHelper.OutputRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 39
+   在 RPW.Admin.AdminUser.LookUpLogSystem.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\LookUpLogSystem.ashx.cs:行号 36
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-08 10:57:29,428 [4] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法将类型“string”转换为“System.Collections.Generic.List<string>”
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   在 CompiledRazorTemplates.Dynamic.ebededf.Execute()
+   在 RazorEngine.Templating.TemplateBase.RazorEngine.Templating.ITemplate.Run(ExecuteContext context)
+   在 RazorEngine.Templating.TemplateService.Run(ITemplate template, DynamicViewBag viewBag)
+   在 RazorEngine.Templating.TemplateService.Parse(String razorTemplate, Object model, DynamicViewBag viewBag, String cacheName)
+   在 RazorEngine.Razor.Parse(String razorTemplate, Object model, String cacheName)
+   在 RPWRazor.RPRazorHelper.ParseRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 27
+   在 RPWRazor.RPRazorHelper.OutputRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 39
+   在 RPW.Admin.AdminUser.LookUpLogSystem.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\LookUpLogSystem.ashx.cs:行号 36
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-08 13:16:59,631 [4] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法将类型“int”转换为“System.Collections.Generic.List<string>”
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   在 CompiledRazorTemplates.Dynamic.adffbfddddf.Execute()
+   在 RazorEngine.Templating.TemplateBase.RazorEngine.Templating.ITemplate.Run(ExecuteContext context)
+   在 RazorEngine.Templating.TemplateService.Run(ITemplate template, DynamicViewBag viewBag)
+   在 RazorEngine.Templating.TemplateService.Parse(String razorTemplate, Object model, DynamicViewBag viewBag, String cacheName)
+   在 RazorEngine.Razor.Parse(String razorTemplate, Object model, String cacheName)
+   在 RPWRazor.RPRazorHelper.ParseRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 27
+   在 RPWRazor.RPRazorHelper.OutputRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 39
+   在 RPW.Admin.AdminUser.LookUpLogSystem.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\LookUpLogSystem.ashx.cs:行号 39
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-08 13:22:00,010 [5] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法将类型“int”转换为“System.Collections.Generic.List<RPW.Model.AdministorOperationLogs>”
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   在 CompiledRazorTemplates.Dynamic.dbadbefdec.Execute()
+   在 RazorEngine.Templating.TemplateBase.RazorEngine.Templating.ITemplate.Run(ExecuteContext context)
+   在 RazorEngine.Templating.TemplateService.Run(ITemplate template, DynamicViewBag viewBag)
+   在 RazorEngine.Templating.TemplateService.Parse(String razorTemplate, Object model, DynamicViewBag viewBag, String cacheName)
+   在 RazorEngine.Razor.Parse(String razorTemplate, Object model, String cacheName)
+   在 RPWRazor.RPRazorHelper.ParseRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 27
+   在 RPWRazor.RPRazorHelper.OutputRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 39
+   在 RPW.Admin.AdminUser.LookUpLogSystem.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\LookUpLogSystem.ashx.cs:行号 39
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-08 13:43:14,572 [19] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: “System.Dynamic.DynamicObject”未包含“KeyOfSerchs”的定义
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 CompiledRazorTemplates.Dynamic.eedebabeadac.Execute()
+   在 RazorEngine.Templating.TemplateBase.RazorEngine.Templating.ITemplate.Run(ExecuteContext context)
+   在 RazorEngine.Templating.TemplateService.Run(ITemplate template, DynamicViewBag viewBag)
+   在 RazorEngine.Templating.TemplateService.Parse(String razorTemplate, Object model, DynamicViewBag viewBag, String cacheName)
+   在 RazorEngine.Razor.Parse(String razorTemplate, Object model, String cacheName)
+   在 RPWRazor.RPRazorHelper.ParseRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 27
+   在 RPWRazor.RPRazorHelper.OutputRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 39
+   在 RPW.Admin.AdminUser.LookUpLogSystem.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\LookUpLogSystem.ashx.cs:行号 110
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-08 13:50:33,173 [11] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: “System.Dynamic.DynamicObject”未包含“KeyOfSerchs”的定义
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 CompiledRazorTemplates.Dynamic.ceecaaaedca.Execute()
+   在 RazorEngine.Templating.TemplateBase.RazorEngine.Templating.ITemplate.Run(ExecuteContext context)
+   在 RazorEngine.Templating.TemplateService.Run(ITemplate template, DynamicViewBag viewBag)
+   在 RazorEngine.Templating.TemplateService.Parse(String razorTemplate, Object model, DynamicViewBag viewBag, String cacheName)
+   在 RazorEngine.Razor.Parse(String razorTemplate, Object model, String cacheName)
+   在 RPWRazor.RPRazorHelper.ParseRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 27
+   在 RPWRazor.RPRazorHelper.OutputRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 39
+   在 RPW.Admin.AdminUser.LookUpLogSystem.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\LookUpLogSystem.ashx.cs:行号 112
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-08 14:05:58,157 [22] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: “System.Dynamic.DynamicObject”未包含“KeyOfSerchs”的定义
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 CompiledRazorTemplates.Dynamic.ceecaaaedca.Execute()
+   在 RazorEngine.Templating.TemplateBase.RazorEngine.Templating.ITemplate.Run(ExecuteContext context)
+   在 RazorEngine.Templating.TemplateService.Run(ITemplate template, DynamicViewBag viewBag)
+   在 RazorEngine.Templating.TemplateService.Parse(String razorTemplate, Object model, DynamicViewBag viewBag, String cacheName)
+   在 RazorEngine.Razor.Parse(String razorTemplate, Object model, String cacheName)
+   在 RPWRazor.RPRazorHelper.ParseRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 27
+   在 RPWRazor.RPRazorHelper.OutputRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 39
+   在 RPW.Admin.AdminUser.LookUpLogSystem.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\LookUpLogSystem.ashx.cs:行号 112
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-08 14:20:24,447 [6] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: “System.Dynamic.DynamicObject”未包含“list”的定义
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 CompiledRazorTemplates.Dynamic.eaccebfdbbaeb.Execute()
+   在 RazorEngine.Templating.TemplateBase.RazorEngine.Templating.ITemplate.Run(ExecuteContext context)
+   在 RazorEngine.Templating.TemplateService.Run(ITemplate template, DynamicViewBag viewBag)
+   在 RazorEngine.Templating.TemplateService.Parse(String razorTemplate, Object model, DynamicViewBag viewBag, String cacheName)
+   在 RazorEngine.Razor.Parse(String razorTemplate, Object model, String cacheName)
+   在 RPWRazor.RPRazorHelper.ParseRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 27
+   在 RPWRazor.RPRazorHelper.OutputRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 39
+   在 RPW.Admin.AdminUser.LookUpLogSystem.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\LookUpLogSystem.ashx.cs:行号 114
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-08 14:21:16,765 [5] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: “System.Dynamic.DynamicObject”未包含“Record”的定义
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   在 CompiledRazorTemplates.Dynamic.ebfafcbfbee.Execute()
+   在 RazorEngine.Templating.TemplateBase.RazorEngine.Templating.ITemplate.Run(ExecuteContext context)
+   在 RazorEngine.Templating.TemplateService.Run(ITemplate template, DynamicViewBag viewBag)
+   在 RazorEngine.Templating.TemplateService.Parse(String razorTemplate, Object model, DynamicViewBag viewBag, String cacheName)
+   在 RazorEngine.Razor.Parse(String razorTemplate, Object model, String cacheName)
+   在 RPWRazor.RPRazorHelper.ParseRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 27
+   在 RPWRazor.RPRazorHelper.OutputRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 39
+   在 RPW.Admin.AdminUser.LookUpLogSystem.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\LookUpLogSystem.ashx.cs:行号 45
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-08 14:21:24,907 [4] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: “System.Dynamic.DynamicObject”未包含“Record”的定义
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   在 CompiledRazorTemplates.Dynamic.ddacbabaeddbedd.Execute()
+   在 RazorEngine.Templating.TemplateBase.RazorEngine.Templating.ITemplate.Run(ExecuteContext context)
+   在 RazorEngine.Templating.TemplateService.Run(ITemplate template, DynamicViewBag viewBag)
+   在 RazorEngine.Templating.TemplateService.Parse(String razorTemplate, Object model, DynamicViewBag viewBag, String cacheName)
+   在 RazorEngine.Razor.Parse(String razorTemplate, Object model, String cacheName)
+   在 RPWRazor.RPRazorHelper.ParseRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 27
+   在 RPWRazor.RPRazorHelper.OutputRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 39
+   在 RPW.Admin.AdminUser.LookUpLogSystem.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\LookUpLogSystem.ashx.cs:行号 45
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-08 14:23:11,180 [4] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-08 14:38:49,194 [5] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+RazorEngine.Templating.TemplateCompilationException: Unable to compile template. 当前上下文中不存在名称“log”
+
+Other compilation errors may have occurred. Check the Errors property for more information.
+   在 RazorEngine.Compilation.DirectCompilerServiceBase.CompileType(TypeContext context)
+   在 RazorEngine.Templating.TemplateService.CreateTemplateType(String razorTemplate, Type modelType)
+   在 RazorEngine.Templating.TemplateService.GetTemplate[T](String razorTemplate, Object model, String cacheName)
+   在 RazorEngine.Templating.TemplateService.GetTemplate(String razorTemplate, Object model, String cacheName)
+   在 RazorEngine.Templating.TemplateService.Parse(String razorTemplate, Object model, DynamicViewBag viewBag, String cacheName)
+   在 RazorEngine.Razor.Parse(String razorTemplate, Object model, String cacheName)
+   在 RPWRazor.RPRazorHelper.ParseRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 27
+   在 RPWRazor.RPRazorHelper.OutputRazor(HttpContext context, String csHtmlVirtualPath, Object model) 位置 c:\Users\Administrator\Desktop\RPW\RPWRazor\RPRazorHelper.cs:行号 39
+   在 RPW.Admin.AdminUser.LookUpLogSystem.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\LookUpLogSystem.ashx.cs:行号 42
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-08 15:42:20,995 [10] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-08 15:54:24,534 [6] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-08 15:54:33,161 [10] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件“/AdminUser/Index.ashx”不存在。
+   在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   在 System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-08 16:08:21,122 [24] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-08 16:08:33,027 [24] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Exception: action错误！
+   在 RPW.Admin.AdminUser.LookUpLogSystem.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\LookUpLogSystem.ashx.cs:行号 154
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-08 16:08:44,865 [24] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Exception: action错误！
+   在 RPW.Admin.AdminUser.LookUpLogSystem.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\LookUpLogSystem.ashx.cs:行号 154
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-08 16:08:48,951 [6] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Exception: action错误！
+   在 RPW.Admin.AdminUser.LookUpLogSystem.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\LookUpLogSystem.ashx.cs:行号 154
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-08 16:09:07,828 [26] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Exception: action错误！
+   在 RPW.Admin.AdminUser.LookUpLogSystem.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\LookUpLogSystem.ashx.cs:行号 154
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-08 16:09:10,466 [19] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Exception: action错误！
+   在 RPW.Admin.AdminUser.LookUpLogSystem.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\LookUpLogSystem.ashx.cs:行号 154
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-08 16:09:16,800 [19] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Exception: action错误！
+   在 RPW.Admin.AdminUser.LookUpLogSystem.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\LookUpLogSystem.ashx.cs:行号 154
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-08 16:31:17,865 [6] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-08 17:03:46,705 [10] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-08 17:05:50,283 [6] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-08 17:50:10,614 [14] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Runtime.Remoting.RemotingException: 对象“/be87a68d_52aa_4dd2_9b22_568b144d503c/2ghuqvkv7s0ocul70d7ep_jp_36.rem”已断开连接或不在该服务器上。
+   在 Microsoft.VisualStudio.WebHost.Connection.get_LocalIP()
+   在 Microsoft.VisualStudio.WebHost.Request.GetLocalAddress()
+   在 System.Web.HttpRequest.FillInServerVariablesCollection()
+   在 System.Web.HttpServerVarsCollection.Populate()
+   在 System.Web.HttpServerVarsCollection.Get(String name)
+   在 System.Web.HttpRequest.get_Item(String key)
+   在 RPW.Admin.AdminUser.LookUpLogSystem.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\LookUpLogSystem.ashx.cs:行号 63
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-08 18:15:25,947 [4] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-08 18:33:52,552 [12] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-08 20:13:45,243 [4] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-08 20:45:40,818 [11] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Data.SqlClient.SqlException (0x80131904): “1”附近有语法错误。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   在 Maticsoft.DBUtility.DbHelperSQL.Query(String SQLString) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\DbHelperSQL.cs:行号 511
+   在 RPW.Dal.AdministorOperationLogsDal.GetList(String strWhere) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\AdministorOperationLogsDal.cs:行号 222
+   在 RPW.Bll.AdministorOperationLogsBll.GetModelList(String strWhere) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Bll\AdministorOperationLogsBll.cs:行号 125
+   在 RPW.Bll.AdministorOperationLogsBll.SearchByKeyWord(String keyWord) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Bll\AdministorOperationLogsBll.Ext.cs:行号 50
+   在 RPW.Admin.AdminUser.LookUpLogSystem.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\LookUpLogSystem.ashx.cs:行号 124
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:c7a798fb-40fa-4d37-8e2b-f8cd6f68b5b2
+2015-08-08 21:39:45,384 [11] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-08 21:51:55,739 [10] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-08-08 21:52:30,411 [10] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Data.SqlClient.SqlException (0x80131904): “批量禁用”附近有语法错误。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   在 Maticsoft.DBUtility.DbHelperSQL.Query(String SQLString) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\DbHelperSQL.cs:行号 511
+   在 RPW.Dal.AdministorOperationLogsDal.GetList(String strWhere) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\AdministorOperationLogsDal.cs:行号 222
+   在 RPW.Bll.AdministorOperationLogsBll.GetModelList(String strWhere) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Bll\AdministorOperationLogsBll.cs:行号 125
+   在 RPW.Bll.AdministorOperationLogsBll.SearchByKeyWord(Int64 keyId) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Bll\AdministorOperationLogsBll.Ext.cs:行号 58
+   在 RPW.Admin.AdminUser.LookUpLogSystem.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\LookUpLogSystem.ashx.cs:行号 134
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:c0d373a0-3be8-478b-8503-d5325660c4e2
+2015-08-08 21:58:17,894 [6] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Data.SqlClient.SqlException (0x80131904): “删除”附近有语法错误。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   在 Maticsoft.DBUtility.DbHelperSQL.Query(String SQLString) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\DbHelperSQL.cs:行号 511
+   在 RPW.Dal.AdministorOperationLogsDal.GetList(String strWhere) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\AdministorOperationLogsDal.cs:行号 222
+   在 RPW.Bll.AdministorOperationLogsBll.GetModelList(String strWhere) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Bll\AdministorOperationLogsBll.cs:行号 125
+   在 RPW.Bll.AdministorOperationLogsBll.SearchByKeyWord(Int64 keyId) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Bll\AdministorOperationLogsBll.Ext.cs:行号 58
+   在 RPW.Admin.AdminUser.LookUpLogSystem.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\AdminUser\LookUpLogSystem.ashx.cs:行号 134
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:60c4d30f-1d95-4abf-b8ef-4f24af063b21
+2015-08-08 23:28:22,705 [6] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)

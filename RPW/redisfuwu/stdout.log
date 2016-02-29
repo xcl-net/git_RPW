@@ -1,0 +1,38 @@
+[3180] 04 Oct 10:30:01.947 # Warning: no config file specified, using the default config. In order to specify a config file use C:\Users\Administrator\Desktop\RPW\redisfuwu\redis-server.exe /path/to/redis.conf
+[3180] 04 Oct 10:30:01.960 # Warning: 32 bit instance detected but no memory limit set. Setting 3 GB maxmemory limit with 'noeviction' policy now.
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 2.6.12 (00000000/0) 32 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in stand alone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 3180
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+[3180] 04 Oct 10:30:01.961 # Server started, Redis version 2.6.12
+[3180] 04 Oct 10:30:02.719 * DB loaded from disk: 0.758 seconds
+[3180] 04 Oct 10:30:02.719 * The server is now ready to accept connections on port 6379
+[3180] 04 Oct 12:12:30.675 * 1 changes in 3600 seconds. Saving...
+[3180] 04 Oct 12:12:30.703 * cowBkgdSaveReset deleting 0 SDS and 0 obj items
+[3180] 04 Oct 12:12:30.800 * DB saved on disk
+[3180] 04 Oct 12:12:30.804 * Background saving terminated with success
+[3180] 04 Oct 12:12:30.804 * cowBkgdSaveReset deleting 0 SDS and 0 obj items
+[3180] 04 Oct 13:12:31.079 * 1 changes in 3600 seconds. Saving...
+[3180] 04 Oct 13:12:31.152 * cowBkgdSaveReset deleting 0 SDS and 0 obj items
+[3180] 04 Oct 13:12:31.248 * DB saved on disk
+[3180] 04 Oct 13:12:31.252 * Background saving terminated with success
+[3180] 04 Oct 13:12:31.252 * cowBkgdSaveReset deleting 0 SDS and 0 obj items
+[3180] 04 Oct 15:58:12.039 * 1 changes in 3600 seconds. Saving...
+[3180] 04 Oct 15:58:12.081 * cowBkgdSaveReset deleting 0 SDS and 0 obj items
+[3180] 04 Oct 15:58:12.264 * DB saved on disk
+[3180] 04 Oct 15:58:12.281 * Background saving terminated with success
+[3180] 04 Oct 15:58:12.281 * cowBkgdSaveReset deleting 0 SDS and 0 obj items

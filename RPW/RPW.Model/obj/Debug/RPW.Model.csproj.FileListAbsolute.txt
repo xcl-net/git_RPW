@@ -1,0 +1,10 @@
+C:\Users\Administrator\Desktop\ceshi\RPW\RPW.Model\bin\Debug\RPW.Model.dll
+C:\Users\Administrator\Desktop\ceshi\RPW\RPW.Model\bin\Debug\RPW.Model.pdb
+C:\Users\Administrator\Desktop\ceshi\RPW\RPW.Model\obj\Debug\RPW.Model.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\ceshi\RPW\RPW.Model\obj\Debug\RPW.Model.dll
+C:\Users\Administrator\Desktop\ceshi\RPW\RPW.Model\obj\Debug\RPW.Model.pdb
+C:\Users\Administrator\Desktop\RPW\RPW.Model\bin\Debug\RPW.Model.dll
+C:\Users\Administrator\Desktop\RPW\RPW.Model\bin\Debug\RPW.Model.pdb
+C:\Users\Administrator\Desktop\RPW\RPW.Model\obj\Debug\RPW.Model.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\RPW\RPW.Model\obj\Debug\RPW.Model.dll
+C:\Users\Administrator\Desktop\RPW\RPW.Model\obj\Debug\RPW.Model.pdb

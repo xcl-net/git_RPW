@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <script src="/js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+
+            $("#btnSave").click(function () {
+
+                var catName = $("#catName").val();
+                var parentId = $("#parentId").val();
+                var saveAction = $("#saveAction").val();
+                var catId = $("#catId").val();
+                if (catName.length == 0) {
+                    alert("类别名称不能为空！");
+                    return;
+                }
+                if (catName.length == 250) {
+                    alert("类别名称过长！");
+                    return;
+                }
+                $.ajax({
+
+                    type: "post", url: "NewsController.ashx",
+                    data: { action: "save", saveAction: saveAction, catName: catName, parentId: parentId, id: catId },
+                    success: function (data) {
+                        if (data.Status == "ok") {
+                            window.location.href = "NewsController.ashx?action=list&parentId=" + parentId;
+                        } else if(data.Status=="error") {
+                            alert(data.Msg);
+                        }
+                    },
+                    error: function () {
+                        alert("请求出错！");
+                    }
+                });
+            });
+          
+        });
+    </script>
+</head>
+<body>
+    <input type="hidden" id="parentId" value="@Model.parentId" />
+    <input type="hidden" id="saveAction" value="@Model.saveAction" />
+    <input type="hidden" id="catId" value="@Model.catId" />
+    类别名称：<input id="catName" type="text" value="@Model.catName" />
+    <br />
+    <input type="button" id="btnSave" value="保存" />
+
+</body>
+</html>

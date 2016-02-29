@@ -1,0 +1,234 @@
+2015-09-22 01:07:35,466 [5] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-09-22 01:08:17,557 [6] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-09-22 10:31:17,293 [7] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-09-22 14:35:43,712 [7] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Web.HttpException (0x80004005): 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-09-22 16:43:58,542 [72] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.ArgumentNullException: 值不能为 null。
+参数名: name
+   在 System.Type.GetMethod(String name)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 32
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-09-22 16:43:59,967 [67] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.ArgumentNullException: 值不能为 null。
+参数名: name
+   在 System.Type.GetMethod(String name)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 32
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-09-22 21:03:17,485 [68] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.ArgumentNullException: 值不能为 null。
+参数名: name
+   在 System.Type.GetMethod(String name)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 32
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-09-22 21:03:18,521 [11] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Exception: 关键字 'where' 附近有语法错误。
+   在 Maticsoft.DBUtility.DbHelperSQL.Query(String SQLString, SqlParameter[] cmdParms) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\DbHelperSQL.cs:行号 842
+   在 RPW.Dal.AdministorOperationLogsDal.GetModelListByAjax(String where, List`1 parameters) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\AdministorOperationLogsDal.Ext.cs:行号 98
+   在 RPW.Bll.AdministorOperationLogsBll.GetModelListByAjax(String where, List`1 parameters) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Bll\AdministorOperationLogsBll.Ext.cs:行号 178
+   在 RPW.Admin.LookUpLogs.AdminOperaLogController.SerchAllLogs(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\LookUpLogs\AdminOperaLogController.ashx.cs:行号 76
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 40
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-09-22 21:03:18,994 [68] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.ArgumentNullException: 值不能为 null。
+参数名: name
+   在 System.Type.GetMethod(String name)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 32
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-09-22 21:03:19,011 [11] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.ArgumentNullException: 值不能为 null。
+参数名: name
+   在 System.Type.GetMethod(String name)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 32
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-09-22 21:03:19,027 [11] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.ArgumentNullException: 值不能为 null。
+参数名: name
+   在 System.Type.GetMethod(String name)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 32
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-09-22 21:03:19,037 [11] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.ArgumentNullException: 值不能为 null。
+参数名: name
+   在 System.Type.GetMethod(String name)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 32
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-09-22 21:03:19,070 [11] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.ArgumentNullException: 值不能为 null。
+参数名: name
+   在 System.Type.GetMethod(String name)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 32
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-09-22 21:03:39,534 [22] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.ArgumentNullException: 值不能为 null。
+参数名: name
+   在 System.Type.GetMethod(String name)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 32
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-09-22 21:06:08,008 [68] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Exception: 关键字 'where' 附近有语法错误。
+   在 Maticsoft.DBUtility.DbHelperSQL.Query(String SQLString, SqlParameter[] cmdParms) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\DbHelperSQL.cs:行号 842
+   在 RPW.Dal.AdministorOperationLogsDal.GetModelListByAjax(String where, List`1 parameters) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\AdministorOperationLogsDal.Ext.cs:行号 98
+   在 RPW.Bll.AdministorOperationLogsBll.GetModelListByAjax(String where, List`1 parameters) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Bll\AdministorOperationLogsBll.Ext.cs:行号 178
+   在 RPW.Admin.LookUpLogs.AdminOperaLogController.SerchAllLogs(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\LookUpLogs\AdminOperaLogController.ashx.cs:行号 76
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 40
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-09-22 21:06:25,669 [68] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Exception: 关键字 'where' 附近有语法错误。
+   在 Maticsoft.DBUtility.DbHelperSQL.Query(String SQLString, SqlParameter[] cmdParms) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\DbHelperSQL.cs:行号 842
+   在 RPW.Dal.AdministorOperationLogsDal.GetModelListByAjax(String where, List`1 parameters) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\AdministorOperationLogsDal.Ext.cs:行号 98
+   在 RPW.Bll.AdministorOperationLogsBll.GetModelListByAjax(String where, List`1 parameters) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Bll\AdministorOperationLogsBll.Ext.cs:行号 178
+   在 RPW.Admin.LookUpLogs.AdminOperaLogController.SerchAllLogs(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\LookUpLogs\AdminOperaLogController.ashx.cs:行号 76
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 40
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-09-22 21:09:02,479 [22] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Exception: 关键字 'where' 附近有语法错误。
+   在 Maticsoft.DBUtility.DbHelperSQL.Query(String SQLString, SqlParameter[] cmdParms) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\DbHelperSQL.cs:行号 842
+   在 RPW.Dal.AdministorOperationLogsDal.GetModelListByAjax(String where, List`1 parameters) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\AdministorOperationLogsDal.Ext.cs:行号 98
+   在 RPW.Bll.AdministorOperationLogsBll.GetModelListByAjax(String where, List`1 parameters) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Bll\AdministorOperationLogsBll.Ext.cs:行号 178
+   在 RPW.Admin.LookUpLogs.AdminOperaLogController.SerchAllLogs(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\LookUpLogs\AdminOperaLogController.ashx.cs:行号 76
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 45
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-09-22 21:10:17,400 [22] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.ArgumentNullException: 值不能为 null。
+参数名: name
+   在 System.Type.GetMethod(String name)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 32
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-09-22 21:10:19,823 [16] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.ArgumentNullException: 值不能为 null。
+参数名: name
+   在 System.Type.GetMethod(String name)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 32
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-09-22 21:10:20,522 [68] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.ArgumentNullException: 值不能为 null。
+参数名: name
+   在 System.Type.GetMethod(String name)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 32
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-09-22 21:10:20,739 [61] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.ArgumentNullException: 值不能为 null。
+参数名: name
+   在 System.Type.GetMethod(String name)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 32
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-09-22 21:10:20,993 [59] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.ArgumentNullException: 值不能为 null。
+参数名: name
+   在 System.Type.GetMethod(String name)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 32
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-09-22 21:10:28,806 [57] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.ArgumentNullException: 值不能为 null。
+参数名: name
+   在 System.Type.GetMethod(String name)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 32
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-09-22 21:10:54,175 [58] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Exception: 关键字 'where' 附近有语法错误。
+   在 Maticsoft.DBUtility.DbHelperSQL.Query(String SQLString, SqlParameter[] cmdParms) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\DbHelperSQL.cs:行号 842
+   在 RPW.Dal.AdministorOperationLogsDal.GetModelListByAjax(String where, List`1 parameters) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\AdministorOperationLogsDal.Ext.cs:行号 98
+   在 RPW.Bll.AdministorOperationLogsBll.GetModelListByAjax(String where, List`1 parameters) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Bll\AdministorOperationLogsBll.Ext.cs:行号 178
+   在 RPW.Admin.LookUpLogs.AdminOperaLogController.SerchAllLogs(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\LookUpLogs\AdminOperaLogController.ashx.cs:行号 76
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 45
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-09-22 21:16:14,588 [12] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Exception: 关键字 'where' 附近有语法错误。
+   在 Maticsoft.DBUtility.DbHelperSQL.Query(String SQLString, SqlParameter[] cmdParms) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\DbHelperSQL.cs:行号 842
+   在 RPW.Dal.AdministorOperationLogsDal.GetModelListByAjax(String where, List`1 parameters) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Dal\AdministorOperationLogsDal.Ext.cs:行号 98
+   在 RPW.Bll.AdministorOperationLogsBll.GetModelListByAjax(String where, List`1 parameters) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Bll\AdministorOperationLogsBll.Ext.cs:行号 178
+   在 RPW.Admin.LookUpLogs.AdminOperaLogController.SerchAllLogs(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\LookUpLogs\AdminOperaLogController.ashx.cs:行号 76
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 45
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-09-22 21:19:35,955 [12] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.ArgumentNullException: 值不能为 null。
+参数名: name
+   在 System.Type.GetMethod(String name)
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 32
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-09-22 21:20:12,975 [5] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Exception: action不能为空
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 34
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2015-09-22 21:20:38,649 [18] ERROR RPW.Admin.Global - 系统发生了未经处理的异常
+System.Exception: action不能为空
+   在 RPW.Admin.BaseHandler.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\BaseHandler.cs:行号 34
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)

@@ -1,0 +1,701 @@
+﻿<!--#include file="/head.html"-->
+    <title>课程列表页</title>
+    <!--#include file="/link.html"-->
+    <!--#include file="/headend.html"-->
+    <!--#include file="/navbar.html"-->
+
+  
+
+        <section>
+            
+<link href="css/course.css" rel="stylesheet">
+<script type="text/javascript">
+    $(function () {
+        $("a[myname=chapter]:first").click();//默认让第一章展开
+    });
+</script>
+
+<div class="pmb-jumbotron">
+    <div class="container">
+        <h1>C语言也能干大事第三版</h1>
+
+        <p><p>
+    难道学C语言只能用printf打印黑底白字的DOS程序？难道学习C语言开发不了什么有用的程序？《C语言也能干大事》教你用C语言开发漂亮的窗口界面程序，教你用C语言开发数据库程序，更教你用C语言开发网站，没错，用C语言开发网站！
+</p>
+<p>
+<img src="http://static.rupeng.com/static/imgs/ckecheng2.png"/>
+</p>
+<p>
+    《C语言也能干大事第三版》持续更新中，每次发布新课程都会通过微信、微博、QQ群、QQ空间等进行通知，请<a href="/yuema.shtml" target="_blank" style="color:black">点击此处关注杨中科老师的微信、微博、QQ群</a>等。<br/>
+</p>
+<p>学习中遇到问题、有作品想和大家分享，可以随时<a href="http://www.rupeng.com/forum/forum.php?mod=forumdisplay&fid=69" class="btn btn-primary btn-lg" role="button" target="_blank">访问论坛</a></p></p>
+        <ul class="nav nav-tabs pmb-nav-tabs">
+            <li class="active" target="#tab1"><a target="#tab1"><i class="fa"></i>课程内容</a></li>
+            <!--<li target="#tab2"><a target="#tab2"><i class="fa"></i>其他内容</a></li>-->
+        </ul>
+    </div>
+</div>
+<div class="container pmb-container">
+    <div class="row" id="tab1">
+        <div class="col-md-8 col-sm-7 pmb-table">
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" myname="chapter" data-parent="#accordion" href="#collapse_17" aria-expanded="true" aria-controls="collapse_17">
+                          第一章环境配置
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapse_17" class="panel-collapse collapse" role="tabpanel">
+                      <div class="panel-body">
+                          <ul>
+                            <li class="d">
+                                <div class="count col-md-2"><a href="/Segments/Index/192" target="_blank">第 1 节</a></div>
+                                <div class="lt col-md-6"><a href="/Segments/Index/192" target="_blank">课前说明</a></div>
+                                <div class="rate col-md-2"> </div>
+                                <div class="col-md-2">      
+                                        <span class="status btn btn-default pull-right">
+                                            <a href="/Segments/Index/192" target="_blank">免费</a>
+                                        </span>
+
+                                </div>
+                            </li>
+                            <li class="d">
+                                <div class="count col-md-2"><a href="/Segments/Index/193" target="_blank">第 2 节</a></div>
+                                <div class="lt col-md-6"><a href="/Segments/Index/193" target="_blank">学习C之前需要去避免的误区</a></div>
+                                <div class="rate col-md-2"> </div>
+                                <div class="col-md-2">      
+                                        <span class="status btn btn-default pull-right">
+                                            <a href="/Segments/Index/193" target="_blank">免费</a>
+                                        </span>
+
+                                </div>
+                            </li>
+                            <li class="d">
+                                <div class="count col-md-2"><a href="/Segments/Index/194" target="_blank">第 3 节</a></div>
+                                <div class="lt col-md-6"><a href="/Segments/Index/194" target="_blank">关于开发工具的说明</a></div>
+                                <div class="rate col-md-2"> </div>
+                                <div class="col-md-2">      
+                                        <span class="status btn btn-default pull-right">
+                                            <a href="/Segments/Index/194" target="_blank">免费</a>
+                                        </span>
+
+                                </div>
+                            </li>
+                            <li class="d">
+                                <div class="count col-md-2"><a href="/Segments/Index/195" target="_blank">第 4 节</a></div>
+                                <div class="lt col-md-6"><a href="/Segments/Index/195" target="_blank">gcc编译第一个c程序</a></div>
+                                <div class="rate col-md-2"> </div>
+                                <div class="col-md-2">      
+                                        <span class="status btn btn-default pull-right">
+                                            <a href="/Segments/Index/195" target="_blank">免费</a>
+                                        </span>
+
+                                </div>
+                            </li>
+                            <li class="d">
+                                <div class="count col-md-2"><a href="/Segments/Index/196" target="_blank">第 5 节</a></div>
+                                <div class="lt col-md-6"><a href="/Segments/Index/196" target="_blank">EditPlus搭建GCC开发环境</a></div>
+                                <div class="rate col-md-2"> </div>
+                                <div class="col-md-2">      
+                                        <span class="status btn btn-default pull-right">
+                                            <a href="/Segments/Index/196" target="_blank">免费</a>
+                                        </span>
+
+                                </div>
+                            </li>
+                            <li class="d">
+                                <div class="count col-md-2"><a href="/Segments/Index/198" target="_blank">第 6 节</a></div>
+                                <div class="lt col-md-6"><a href="/Segments/Index/198" target="_blank">编写第一个GTK程序</a></div>
+                                <div class="rate col-md-2"> </div>
+                                <div class="col-md-2">      
+                                        <span class="status btn btn-default pull-right">
+                                            <a href="/Segments/Index/198" target="_blank">免费</a>
+                                        </span>
+
+                                </div>
+                            </li>
+                            <li class="d">
+                                <div class="count col-md-2"><a href="/Segments/Index/199" target="_blank">第 7 节</a></div>
+                                <div class="lt col-md-6"><a href="/Segments/Index/199" target="_blank">解释第一个GTK程序</a></div>
+                                <div class="rate col-md-2"> </div>
+                                <div class="col-md-2">      
+                                        <span class="status btn btn-default pull-right">
+                                            <a href="/Segments/Index/199" target="_blank">免费</a>
+                                        </span>
+
+                                </div>
+                            </li>
+
+                          </ul>
+                      </div>
+                    </div>
+                  </div>   
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" myname="chapter" data-parent="#accordion" href="#collapse_17" aria-expanded="true" aria-controls="collapse_17">
+                          第一章环境配置
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="Div1" class="panel-collapse collapse" role="tabpanel">
+                      <div class="panel-body">
+                          <ul>
+                            <li class="d">
+                                <div class="count col-md-2"><a href="/Segments/Index/192" target="_blank">第 1 节</a></div>
+                                <div class="lt col-md-6"><a href="/Segments/Index/192" target="_blank">课前说明</a></div>
+                                <div class="rate col-md-2"> </div>
+                                <div class="col-md-2">      
+                                        <span class="status btn btn-default pull-right">
+                                            <a href="/Segments/Index/192" target="_blank">免费</a>
+                                        </span>
+
+                                </div>
+                            </li>
+                            <li class="d">
+                                <div class="count col-md-2"><a href="/Segments/Index/193" target="_blank">第 2 节</a></div>
+                                <div class="lt col-md-6"><a href="/Segments/Index/193" target="_blank">学习C之前需要去避免的误区</a></div>
+                                <div class="rate col-md-2"> </div>
+                                <div class="col-md-2">      
+                                        <span class="status btn btn-default pull-right">
+                                            <a href="/Segments/Index/193" target="_blank">免费</a>
+                                        </span>
+
+                                </div>
+                            </li>
+                            <li class="d">
+                                <div class="count col-md-2"><a href="/Segments/Index/194" target="_blank">第 3 节</a></div>
+                                <div class="lt col-md-6"><a href="/Segments/Index/194" target="_blank">关于开发工具的说明</a></div>
+                                <div class="rate col-md-2"> </div>
+                                <div class="col-md-2">      
+                                        <span class="status btn btn-default pull-right">
+                                            <a href="/Segments/Index/194" target="_blank">免费</a>
+                                        </span>
+
+                                </div>
+                            </li>
+                            <li class="d">
+                                <div class="count col-md-2"><a href="/Segments/Index/195" target="_blank">第 4 节</a></div>
+                                <div class="lt col-md-6"><a href="/Segments/Index/195" target="_blank">gcc编译第一个c程序</a></div>
+                                <div class="rate col-md-2"> </div>
+                                <div class="col-md-2">      
+                                        <span class="status btn btn-default pull-right">
+                                            <a href="/Segments/Index/195" target="_blank">免费</a>
+                                        </span>
+
+                                </div>
+                            </li>
+                            <li class="d">
+                                <div class="count col-md-2"><a href="/Segments/Index/196" target="_blank">第 5 节</a></div>
+                                <div class="lt col-md-6"><a href="/Segments/Index/196" target="_blank">EditPlus搭建GCC开发环境</a></div>
+                                <div class="rate col-md-2"> </div>
+                                <div class="col-md-2">      
+                                        <span class="status btn btn-default pull-right">
+                                            <a href="/Segments/Index/196" target="_blank">免费</a>
+                                        </span>
+
+                                </div>
+                            </li>
+                            <li class="d">
+                                <div class="count col-md-2"><a href="/Segments/Index/198" target="_blank">第 6 节</a></div>
+                                <div class="lt col-md-6"><a href="/Segments/Index/198" target="_blank">编写第一个GTK程序</a></div>
+                                <div class="rate col-md-2"> </div>
+                                <div class="col-md-2">      
+                                        <span class="status btn btn-default pull-right">
+                                            <a href="/Segments/Index/198" target="_blank">免费</a>
+                                        </span>
+
+                                </div>
+                            </li>
+                            <li class="d">
+                                <div class="count col-md-2"><a href="/Segments/Index/199" target="_blank">第 7 节</a></div>
+                                <div class="lt col-md-6"><a href="/Segments/Index/199" target="_blank">解释第一个GTK程序</a></div>
+                                <div class="rate col-md-2"> </div>
+                                <div class="col-md-2">      
+                                        <span class="status btn btn-default pull-right">
+                                            <a href="/Segments/Index/199" target="_blank">免费</a>
+                                        </span>
+
+                                </div>
+                            </li>
+
+                          </ul>
+                      </div>
+                    </div>
+                  </div>      
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" myname="chapter" data-parent="#accordion" href="#collapse_17" aria-expanded="true" aria-controls="collapse_17">
+                          第一章环境配置
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="Div2" class="panel-collapse collapse" role="tabpanel">
+                      <div class="panel-body">
+                          <ul>
+                            <li class="d">
+                                <div class="count col-md-2"><a href="/Segments/Index/192" target="_blank">第 1 节</a></div>
+                                <div class="lt col-md-6"><a href="/Segments/Index/192" target="_blank">课前说明</a></div>
+                                <div class="rate col-md-2"> </div>
+                                <div class="col-md-2">      
+                                        <span class="status btn btn-default pull-right">
+                                            <a href="/Segments/Index/192" target="_blank">免费</a>
+                                        </span>
+
+                                </div>
+                            </li>
+                            <li class="d">
+                                <div class="count col-md-2"><a href="/Segments/Index/193" target="_blank">第 2 节</a></div>
+                                <div class="lt col-md-6"><a href="/Segments/Index/193" target="_blank">学习C之前需要去避免的误区</a></div>
+                                <div class="rate col-md-2"> </div>
+                                <div class="col-md-2">      
+                                        <span class="status btn btn-default pull-right">
+                                            <a href="/Segments/Index/193" target="_blank">免费</a>
+                                        </span>
+
+                                </div>
+                            </li>
+                            <li class="d">
+                                <div class="count col-md-2"><a href="/Segments/Index/194" target="_blank">第 3 节</a></div>
+                                <div class="lt col-md-6"><a href="/Segments/Index/194" target="_blank">关于开发工具的说明</a></div>
+                                <div class="rate col-md-2"> </div>
+                                <div class="col-md-2">      
+                                        <span class="status btn btn-default pull-right">
+                                            <a href="/Segments/Index/194" target="_blank">免费</a>
+                                        </span>
+
+                                </div>
+                            </li>
+                            <li class="d">
+                                <div class="count col-md-2"><a href="/Segments/Index/195" target="_blank">第 4 节</a></div>
+                                <div class="lt col-md-6"><a href="/Segments/Index/195" target="_blank">gcc编译第一个c程序</a></div>
+                                <div class="rate col-md-2"> </div>
+                                <div class="col-md-2">      
+                                        <span class="status btn btn-default pull-right">
+                                            <a href="/Segments/Index/195" target="_blank">免费</a>
+                                        </span>
+
+                                </div>
+                            </li>
+                            <li class="d">
+                                <div class="count col-md-2"><a href="/Segments/Index/196" target="_blank">第 5 节</a></div>
+                                <div class="lt col-md-6"><a href="/Segments/Index/196" target="_blank">EditPlus搭建GCC开发环境</a></div>
+                                <div class="rate col-md-2"> </div>
+                                <div class="col-md-2">      
+                                        <span class="status btn btn-default pull-right">
+                                            <a href="/Segments/Index/196" target="_blank">免费</a>
+                                        </span>
+
+                                </div>
+                            </li>
+                            <li class="d">
+                                <div class="count col-md-2"><a href="/Segments/Index/198" target="_blank">第 6 节</a></div>
+                                <div class="lt col-md-6"><a href="/Segments/Index/198" target="_blank">编写第一个GTK程序</a></div>
+                                <div class="rate col-md-2"> </div>
+                                <div class="col-md-2">      
+                                        <span class="status btn btn-default pull-right">
+                                            <a href="/Segments/Index/198" target="_blank">免费</a>
+                                        </span>
+
+                                </div>
+                            </li>
+                            <li class="d">
+                                <div class="count col-md-2"><a href="/Segments/Index/199" target="_blank">第 7 节</a></div>
+                                <div class="lt col-md-6"><a href="/Segments/Index/199" target="_blank">解释第一个GTK程序</a></div>
+                                <div class="rate col-md-2"> </div>
+                                <div class="col-md-2">      
+                                        <span class="status btn btn-default pull-right">
+                                            <a href="/Segments/Index/199" target="_blank">免费</a>
+                                        </span>
+
+                                </div>
+                            </li>
+
+                          </ul>
+                      </div>
+                    </div>
+                  </div>      
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" myname="chapter" data-parent="#accordion" href="#collapse_17" aria-expanded="true" aria-controls="collapse_17">
+                          第一章环境配置
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="Div3" class="panel-collapse collapse" role="tabpanel">
+                      <div class="panel-body">
+                          <ul>
+                            <li class="d">
+                                <div class="count col-md-2"><a href="/Segments/Index/192" target="_blank">第 1 节</a></div>
+                                <div class="lt col-md-6"><a href="/Segments/Index/192" target="_blank">课前说明</a></div>
+                                <div class="rate col-md-2"> </div>
+                                <div class="col-md-2">      
+                                        <span class="status btn btn-default pull-right">
+                                            <a href="/Segments/Index/192" target="_blank">免费</a>
+                                        </span>
+
+                                </div>
+                            </li>
+                            <li class="d">
+                                <div class="count col-md-2"><a href="/Segments/Index/193" target="_blank">第 2 节</a></div>
+                                <div class="lt col-md-6"><a href="/Segments/Index/193" target="_blank">学习C之前需要去避免的误区</a></div>
+                                <div class="rate col-md-2"> </div>
+                                <div class="col-md-2">      
+                                        <span class="status btn btn-default pull-right">
+                                            <a href="/Segments/Index/193" target="_blank">免费</a>
+                                        </span>
+
+                                </div>
+                            </li>
+                            <li class="d">
+                                <div class="count col-md-2"><a href="/Segments/Index/194" target="_blank">第 3 节</a></div>
+                                <div class="lt col-md-6"><a href="/Segments/Index/194" target="_blank">关于开发工具的说明</a></div>
+                                <div class="rate col-md-2"> </div>
+                                <div class="col-md-2">      
+                                        <span class="status btn btn-default pull-right">
+                                            <a href="/Segments/Index/194" target="_blank">免费</a>
+                                        </span>
+
+                                </div>
+                            </li>
+                            <li class="d">
+                                <div class="count col-md-2"><a href="/Segments/Index/195" target="_blank">第 4 节</a></div>
+                                <div class="lt col-md-6"><a href="/Segments/Index/195" target="_blank">gcc编译第一个c程序</a></div>
+                                <div class="rate col-md-2"> </div>
+                                <div class="col-md-2">      
+                                        <span class="status btn btn-default pull-right">
+                                            <a href="/Segments/Index/195" target="_blank">免费</a>
+                                        </span>
+
+                                </div>
+                            </li>
+                            <li class="d">
+                                <div class="count col-md-2"><a href="/Segments/Index/196" target="_blank">第 5 节</a></div>
+                                <div class="lt col-md-6"><a href="/Segments/Index/196" target="_blank">EditPlus搭建GCC开发环境</a></div>
+                                <div class="rate col-md-2"> </div>
+                                <div class="col-md-2">      
+                                        <span class="status btn btn-default pull-right">
+                                            <a href="/Segments/Index/196" target="_blank">免费</a>
+                                        </span>
+
+                                </div>
+                            </li>
+                            <li class="d">
+                                <div class="count col-md-2"><a href="/Segments/Index/198" target="_blank">第 6 节</a></div>
+                                <div class="lt col-md-6"><a href="/Segments/Index/198" target="_blank">编写第一个GTK程序</a></div>
+                                <div class="rate col-md-2"> </div>
+                                <div class="col-md-2">      
+                                        <span class="status btn btn-default pull-right">
+                                            <a href="/Segments/Index/198" target="_blank">免费</a>
+                                        </span>
+
+                                </div>
+                            </li>
+                            <li class="d">
+                                <div class="count col-md-2"><a href="/Segments/Index/199" target="_blank">第 7 节</a></div>
+                                <div class="lt col-md-6"><a href="/Segments/Index/199" target="_blank">解释第一个GTK程序</a></div>
+                                <div class="rate col-md-2"> </div>
+                                <div class="col-md-2">      
+                                        <span class="status btn btn-default pull-right">
+                                            <a href="/Segments/Index/199" target="_blank">免费</a>
+                                        </span>
+
+                                </div>
+                            </li>
+
+                          </ul>
+                      </div>
+                    </div>
+                  </div>      
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" myname="chapter" data-parent="#accordion" href="#collapse_17" aria-expanded="true" aria-controls="collapse_17">
+                          第一章环境配置
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="Div4" class="panel-collapse collapse" role="tabpanel">
+                      <div class="panel-body">
+                          <ul>
+                            <li class="d">
+                                <div class="count col-md-2"><a href="/Segments/Index/192" target="_blank">第 1 节</a></div>
+                                <div class="lt col-md-6"><a href="/Segments/Index/192" target="_blank">课前说明</a></div>
+                                <div class="rate col-md-2"> </div>
+                                <div class="col-md-2">      
+                                        <span class="status btn btn-default pull-right">
+                                            <a href="/Segments/Index/192" target="_blank">免费</a>
+                                        </span>
+
+                                </div>
+                            </li>
+                            <li class="d">
+                                <div class="count col-md-2"><a href="/Segments/Index/193" target="_blank">第 2 节</a></div>
+                                <div class="lt col-md-6"><a href="/Segments/Index/193" target="_blank">学习C之前需要去避免的误区</a></div>
+                                <div class="rate col-md-2"> </div>
+                                <div class="col-md-2">      
+                                        <span class="status btn btn-default pull-right">
+                                            <a href="/Segments/Index/193" target="_blank">免费</a>
+                                        </span>
+
+                                </div>
+                            </li>
+                            <li class="d">
+                                <div class="count col-md-2"><a href="/Segments/Index/194" target="_blank">第 3 节</a></div>
+                                <div class="lt col-md-6"><a href="/Segments/Index/194" target="_blank">关于开发工具的说明</a></div>
+                                <div class="rate col-md-2"> </div>
+                                <div class="col-md-2">      
+                                        <span class="status btn btn-default pull-right">
+                                            <a href="/Segments/Index/194" target="_blank">免费</a>
+                                        </span>
+
+                                </div>
+                            </li>
+                            <li class="d">
+                                <div class="count col-md-2"><a href="/Segments/Index/195" target="_blank">第 4 节</a></div>
+                                <div class="lt col-md-6"><a href="/Segments/Index/195" target="_blank">gcc编译第一个c程序</a></div>
+                                <div class="rate col-md-2"> </div>
+                                <div class="col-md-2">      
+                                        <span class="status btn btn-default pull-right">
+                                            <a href="/Segments/Index/195" target="_blank">免费</a>
+                                        </span>
+
+                                </div>
+                            </li>
+                            <li class="d">
+                                <div class="count col-md-2"><a href="/Segments/Index/196" target="_blank">第 5 节</a></div>
+                                <div class="lt col-md-6"><a href="/Segments/Index/196" target="_blank">EditPlus搭建GCC开发环境</a></div>
+                                <div class="rate col-md-2"> </div>
+                                <div class="col-md-2">      
+                                        <span class="status btn btn-default pull-right">
+                                            <a href="/Segments/Index/196" target="_blank">免费</a>
+                                        </span>
+
+                                </div>
+                            </li>
+                            <li class="d">
+                                <div class="count col-md-2"><a href="/Segments/Index/198" target="_blank">第 6 节</a></div>
+                                <div class="lt col-md-6"><a href="/Segments/Index/198" target="_blank">编写第一个GTK程序</a></div>
+                                <div class="rate col-md-2"> </div>
+                                <div class="col-md-2">      
+                                        <span class="status btn btn-default pull-right">
+                                            <a href="/Segments/Index/198" target="_blank">免费</a>
+                                        </span>
+
+                                </div>
+                            </li>
+                            <li class="d">
+                                <div class="count col-md-2"><a href="/Segments/Index/199" target="_blank">第 7 节</a></div>
+                                <div class="lt col-md-6"><a href="/Segments/Index/199" target="_blank">解释第一个GTK程序</a></div>
+                                <div class="rate col-md-2"> </div>
+                                <div class="col-md-2">      
+                                        <span class="status btn btn-default pull-right">
+                                            <a href="/Segments/Index/199" target="_blank">免费</a>
+                                        </span>
+
+                                </div>
+                            </li>
+
+                          </ul>
+                      </div>
+                    </div>
+                  </div>      
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" myname="chapter" data-parent="#accordion" href="#collapse_17" aria-expanded="true" aria-controls="collapse_17">
+                          第一章环境配置
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="Div5" class="panel-collapse collapse" role="tabpanel">
+                      <div class="panel-body">
+                          <ul>
+                            <li class="d">
+                                <div class="count col-md-2"><a href="/Segments/Index/192" target="_blank">第 1 节</a></div>
+                                <div class="lt col-md-6"><a href="/Segments/Index/192" target="_blank">课前说明</a></div>
+                                <div class="rate col-md-2"> </div>
+                                <div class="col-md-2">      
+                                        <span class="status btn btn-default pull-right">
+                                            <a href="/Segments/Index/192" target="_blank">免费</a>
+                                        </span>
+
+                                </div>
+                            </li>
+                            <li class="d">
+                                <div class="count col-md-2"><a href="/Segments/Index/193" target="_blank">第 2 节</a></div>
+                                <div class="lt col-md-6"><a href="/Segments/Index/193" target="_blank">学习C之前需要去避免的误区</a></div>
+                                <div class="rate col-md-2"> </div>
+                                <div class="col-md-2">      
+                                        <span class="status btn btn-default pull-right">
+                                            <a href="/Segments/Index/193" target="_blank">免费</a>
+                                        </span>
+
+                                </div>
+                            </li>
+                            <li class="d">
+                                <div class="count col-md-2"><a href="/Segments/Index/194" target="_blank">第 3 节</a></div>
+                                <div class="lt col-md-6"><a href="/Segments/Index/194" target="_blank">关于开发工具的说明</a></div>
+                                <div class="rate col-md-2"> </div>
+                                <div class="col-md-2">      
+                                        <span class="status btn btn-default pull-right">
+                                            <a href="/Segments/Index/194" target="_blank">免费</a>
+                                        </span>
+
+                                </div>
+                            </li>
+                            <li class="d">
+                                <div class="count col-md-2"><a href="/Segments/Index/195" target="_blank">第 4 节</a></div>
+                                <div class="lt col-md-6"><a href="/Segments/Index/195" target="_blank">gcc编译第一个c程序</a></div>
+                                <div class="rate col-md-2"> </div>
+                                <div class="col-md-2">      
+                                        <span class="status btn btn-default pull-right">
+                                            <a href="/Segments/Index/195" target="_blank">免费</a>
+                                        </span>
+
+                                </div>
+                            </li>
+                            <li class="d">
+                                <div class="count col-md-2"><a href="/Segments/Index/196" target="_blank">第 5 节</a></div>
+                                <div class="lt col-md-6"><a href="/Segments/Index/196" target="_blank">EditPlus搭建GCC开发环境</a></div>
+                                <div class="rate col-md-2"> </div>
+                                <div class="col-md-2">      
+                                        <span class="status btn btn-default pull-right">
+                                            <a href="/Segments/Index/196" target="_blank">免费</a>
+                                        </span>
+
+                                </div>
+                            </li>
+                            <li class="d">
+                                <div class="count col-md-2"><a href="/Segments/Index/198" target="_blank">第 6 节</a></div>
+                                <div class="lt col-md-6"><a href="/Segments/Index/198" target="_blank">编写第一个GTK程序</a></div>
+                                <div class="rate col-md-2"> </div>
+                                <div class="col-md-2">      
+                                        <span class="status btn btn-default pull-right">
+                                            <a href="/Segments/Index/198" target="_blank">免费</a>
+                                        </span>
+
+                                </div>
+                            </li>
+                            <li class="d">
+                                <div class="count col-md-2"><a href="/Segments/Index/199" target="_blank">第 7 节</a></div>
+                                <div class="lt col-md-6"><a href="/Segments/Index/199" target="_blank">解释第一个GTK程序</a></div>
+                                <div class="rate col-md-2"> </div>
+                                <div class="col-md-2">      
+                                        <span class="status btn btn-default pull-right">
+                                            <a href="/Segments/Index/199" target="_blank">免费</a>
+                                        </span>
+
+                                </div>
+                            </li>
+
+                          </ul>
+                      </div>
+                    </div>
+                  </div>      
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" myname="chapter" data-parent="#accordion" href="#collapse_17" aria-expanded="true" aria-controls="collapse_17">
+                          第一章环境配置
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="Div6" class="panel-collapse collapse" role="tabpanel">
+                      <div class="panel-body">
+                          <ul>
+                            <li class="d">
+                                <div class="count col-md-2"><a href="/Segments/Index/192" target="_blank">第 1 节</a></div>
+                                <div class="lt col-md-6"><a href="/Segments/Index/192" target="_blank">课前说明</a></div>
+                                <div class="rate col-md-2"> </div>
+                                <div class="col-md-2">      
+                                        <span class="status btn btn-default pull-right">
+                                            <a href="/Segments/Index/192" target="_blank">免费</a>
+                                        </span>
+
+                                </div>
+                            </li>
+                            <li class="d">
+                                <div class="count col-md-2"><a href="/Segments/Index/193" target="_blank">第 2 节</a></div>
+                                <div class="lt col-md-6"><a href="/Segments/Index/193" target="_blank">学习C之前需要去避免的误区</a></div>
+                                <div class="rate col-md-2"> </div>
+                                <div class="col-md-2">      
+                                        <span class="status btn btn-default pull-right">
+                                            <a href="/Segments/Index/193" target="_blank">免费</a>
+                                        </span>
+
+                                </div>
+                            </li>
+                            <li class="d">
+                                <div class="count col-md-2"><a href="/Segments/Index/194" target="_blank">第 3 节</a></div>
+                                <div class="lt col-md-6"><a href="/Segments/Index/194" target="_blank">关于开发工具的说明</a></div>
+                                <div class="rate col-md-2"> </div>
+                                <div class="col-md-2">      
+                                        <span class="status btn btn-default pull-right">
+                                            <a href="/Segments/Index/194" target="_blank">免费</a>
+                                        </span>
+
+                                </div>
+                            </li>
+                            <li class="d">
+                                <div class="count col-md-2"><a href="/Segments/Index/195" target="_blank">第 4 节</a></div>
+                                <div class="lt col-md-6"><a href="/Segments/Index/195" target="_blank">gcc编译第一个c程序</a></div>
+                                <div class="rate col-md-2"> </div>
+                                <div class="col-md-2">      
+                                        <span class="status btn btn-default pull-right">
+                                            <a href="/Segments/Index/195" target="_blank">免费</a>
+                                        </span>
+
+                                </div>
+                            </li>
+                            <li class="d">
+                                <div class="count col-md-2"><a href="/Segments/Index/196" target="_blank">第 5 节</a></div>
+                                <div class="lt col-md-6"><a href="/Segments/Index/196" target="_blank">EditPlus搭建GCC开发环境</a></div>
+                                <div class="rate col-md-2"> </div>
+                                <div class="col-md-2">      
+                                        <span class="status btn btn-default pull-right">
+                                            <a href="/Segments/Index/196" target="_blank">免费</a>
+                                        </span>
+
+                                </div>
+                            </li>
+                            <li class="d">
+                                <div class="count col-md-2"><a href="/Segments/Index/198" target="_blank">第 6 节</a></div>
+                                <div class="lt col-md-6"><a href="/Segments/Index/198" target="_blank">编写第一个GTK程序</a></div>
+                                <div class="rate col-md-2"> </div>
+                                <div class="col-md-2">      
+                                        <span class="status btn btn-default pull-right">
+                                            <a href="/Segments/Index/198" target="_blank">免费</a>
+                                        </span>
+
+                                </div>
+                            </li>
+                            <li class="d">
+                                <div class="count col-md-2"><a href="/Segments/Index/199" target="_blank">第 7 节</a></div>
+                                <div class="lt col-md-6"><a href="/Segments/Index/199" target="_blank">解释第一个GTK程序</a></div>
+                                <div class="rate col-md-2"> </div>
+                                <div class="col-md-2">      
+                                        <span class="status btn btn-default pull-right">
+                                            <a href="/Segments/Index/199" target="_blank">免费</a>
+                                        </span>
+
+                                </div>
+                            </li>
+
+                          </ul>
+                      </div>
+                    </div>
+                  </div>                           
+            </div>
+        </div>
+    </div>
+</div>
+
+        </section>
+     <!--#include file="/foot.html"-->
+
+

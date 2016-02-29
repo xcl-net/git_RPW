@@ -1,0 +1,73 @@
+﻿        /*去掉浏览器的默认样式*/
+        * {padding:0;margin:0}
+        /*导入到班级*/
+        #btnComeInDiv {
+        margin-top:90px;
+        margin-left:5px;
+        width:30px;
+         height:80px;
+        
+        }
+        /*导出到班级*/
+         #btnComeOutDiv {
+        margin-left:5px;
+        width:30px;
+        height:50px;
+        
+        }
+         /*按钮层*/
+        #btnComOut {
+
+        float:left;
+        margin-left:10px;
+        width:50px;
+        height:100px;
+        
+        }
+        /*搜索结果*/
+        #listResultDiv {
+            margin:0px;
+            margin-left:3px;
+             padding:18px;
+        float:left;
+        border:solid 1px;
+        border-color:blue;
+        height:500px;
+        width:300px;
+        
+        }
+        /*班级成员*/
+        #listMembersDiv {
+            margin:0px;
+            
+            max-height:600px;
+            padding:18px;
+        float:left;
+        border:solid 1px;
+        border-color:blue;
+        height:500px;
+        width:300px;
+        
+        }
+        #btnComeIn {
+        padding:6px;
+
+        }
+
+         #btnComeOut {
+        padding:6px;
+
+        }
+
+
+
+h3 {
+
+    font-style:italic ;
+    color:red;
+}
+
+#searchOpt {
+
+width:200px;
+}

@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <script src="/js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#btnSave").click(function () {
+                var courseName = $("#CourseName").val();
+                var descrCourse = $("#CourseDes").val();
+                var serialNo = $("#SerialNo").val();
+                var saveAction = $("#saveAction").val();
+                var id = $("#id").val();
+                //验证..
+                if (courseName.length == 0) {
+                    alert("课程名称不能为空");
+                }
+                if (serialNo.length == 0) {
+                    alert("课程序号不能为空");
+                }
+                $.ajax({
+                    type: "post", url: "CourseController.ashx",
+                    data: { action: "save", saveAction: saveAction, courseName: courseName, descrCourse: descrCourse, serialNo: serialNo, id: id },
+                    success: function (data) {
+                        if (data.Status == "ok") {
+                            window.location.href = "CourseController.ashx?action=list";
+                        } else if (data.Status == "error") {
+                            alert(data.Msg);
+                        }
+                    },
+                    error: function () {
+                        alert("请求失败！");
+                    }
+                });
+
+
+            });
+        });
+
+    </script>
+</head>
+<body>
+    <input type="hidden" id="saveAction" value="@Model.action" />
+    <input type="hidden" id="id" value="@Model.id" />
+    课程名称：<input type="text" id="CourseName" value="@Model.courseName" />
+    <br /><br />
+    课程描述：<br />
+    <textarea id="CourseDes" rows="5" cols="35" >@Model.description</textarea>
+    <br />  <br />
+    课程序号：<input type="text" id="SerialNo" value="@Model.serialNo" />
+    <input type="button" id="btnSave" value="保存" />
+
+
+</body>
+</html>

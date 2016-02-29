@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+</head>
+<body>
+
+	<a href="ChapterController.ashx?action=addnew&id=@Model.coursesId">新增章节</a>
+	<br /><br />
+	课程名称：<input type="text" disabled="disabled" value="@Model.courseName" /><br /><br />
+
+	<table border="1" cellpadding="10" >
+		<thead>
+			
+			<tr>
+
+				<th>创建日期</th>
+				<th>章节编号</th>
+				<th>章节名称</th>
+				<th>操作</th>
+			</tr>
+		</thead>
+		<tbody>
+			@{
+				List<RPW.Model.Chapters> chapts = (List<RPW.Model.Chapters>)Model.chapters;
+				foreach (var chapter in chapts)
+				{
+					<tr>
+						<td>@chapter.CreateDateTime</td>
+						<td>@chapter.SerialNo</td>
+						<td>@chapter.Name</td>
+						<td><a href="ChapterController.ashx?action=edit&id=@chapter.Id&courseIdd=@Model.coursesId">修改</a></td>
+						<td><a href="ChapterController.ashx?action=delete&id=@chapter.Id">删除</a></td>
+						<td><a href="SegmentController.ashx?action=list&chapterId=@chapter.Id">段落管理</a></td>
+					</tr>
+				}   
+			}
+
+
+		</tbody>
+	</table>
+</body>
+</html>

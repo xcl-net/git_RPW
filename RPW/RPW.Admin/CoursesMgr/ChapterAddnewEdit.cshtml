@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <script src="/js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#btnSave").click(function () {
+                var chapterName = $("#ChapterName").val();
+                var descrChapter = $("#ChapterDes").val();
+                var serialNo = $("#SerialNo").val();
+                var saveAction = $("#saveAction").val();
+                var id = $("#id").val();
+                //课程的id
+                var coursesId = $("#coursesId").val();
+                //验证..
+                if (chapterName.length == 0) {
+                    alert("课程名称不能为空");
+                    return;
+                }
+                if (serialNo.length == 0) {
+                    alert("课程序号不能为空");
+                    return;
+                }
+                $.ajax({
+                    type: "post", url: "ChapterController.ashx",
+                    data: {
+                        action: "save", saveAction: saveAction,
+                        chapterName: chapterName,
+                        descrChapter: descrChapter,
+                        serialNo: serialNo,
+                        id: id,
+                        coursesId:coursesId
+                    },
+                    success: function (data) {
+                        if (data.Status == "ok") {
+                            window.location.href = "ChapterController.ashx?action=list&coursesId=" + coursesId;
+                        } else if (data.Status == "error") {
+                            alert(data.Msg);
+                        }
+                    },
+                    error: function () {
+                        alert("请求失败！");
+                    }
+                });
+
+
+            });
+        });
+
+    </script>
+</head>
+<body>
+    <input type="hidden" id="saveAction" value="@Model.action" />
+    <input type="hidden" id="id" value="@Model.id" />
+    <input type="hidden" id="coursesId" value="@Model.coursesId" /><!--课程的id-->
+    课程名称：<input type="text" disabled="disabled" value="@Model.courseName" /><!--课程的名称-->
+    <br /><br />
+    @(Model.label)章节名称：<input type="text" id="ChapterName" value="@Model.chapterName" />
+    <br /><br />
+    章节课程描述：<br />
+    <textarea id="ChapterDes" rows="5" cols="35" >@Model.description</textarea>
+    <br />  <br />
+    章节序号：<input type="text" id="SerialNo" value="@Model.serialNo" />
+    <input type="button" id="btnSave" value="保存" />
+
+
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <script src="/js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript">
+
+        $(function () {
+
+            $("#batchGenerateStatic").click(function () {
+                $.ajax({
+
+                    type: "post", url: "NewsController.ashx",
+                    data: { action: "rebuildStatic",catId: 86},
+                    success:function(data){
+                        if (data.Status=="ok") {
+                            alert("静态生成成功");
+                        }else if (data.Status=="error") {
+                            alert("静态生成失败");
+                        }
+                    },
+                    error:function(){
+                    
+                        alert("请求出错");
+                    }
+
+                });
+
+            });
+        });
+
+    </script>
+    <style type="text/css">
+        .tab {
+            border: thin solid;
+            border-color: blue;
+        }
+
+        .thh {
+            border: thin  solid ;
+            border-color: red;
+        }
+        .trr {
+             border: thin  solid ;
+            border-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h3> 新闻类别：娱乐</h3>
+    <a href="/NewsMgr/NewsController.ashx?action=newsAddnew&catId=86">新增新闻</a>
+    <br /><br />
+    <table class="tab">
+        <thead>
+            <tr>
+                <th class="thh">新闻标题</th>
+                <th class="thh">发布日期</th>
+                <th class="thh">操作</th>
+            </tr>
+        </thead>
+        <tbody>
+
+                <tr class="trr">
+                    <td class="tdd">填入</td>
+                    <td class="tdd">2015/8/27 17:27:25</td>
+                    <td class="tdd"><a href="/NewsMgr/NewsController.ashx?action=newsDelete&id=13512&catId=86">删除</a></td>
+                    <td class="tdd"><a href="/NewsMgr/NewsController.ashx?action=newsEdit&id=13512&catId=86">编辑</a></td>
+                </tr>
+                <tr class="trr">
+                    <td class="tdd">填入</td>
+                    <td class="tdd">2015/8/27 17:27:26</td>
+                    <td class="tdd"><a href="/NewsMgr/NewsController.ashx?action=newsDelete&id=13513&catId=86">删除</a></td>
+                    <td class="tdd"><a href="/NewsMgr/NewsController.ashx?action=newsEdit&id=13513&catId=86">编辑</a></td>
+                </tr>
+                <tr class="trr">
+                    <td class="tdd">填入</td>
+                    <td class="tdd">2015/8/27 17:27:27</td>
+                    <td class="tdd"><a href="/NewsMgr/NewsController.ashx?action=newsDelete&id=13514&catId=86">删除</a></td>
+                    <td class="tdd"><a href="/NewsMgr/NewsController.ashx?action=newsEdit&id=13514&catId=86">编辑</a></td>
+                </tr>
+                <tr class="trr">
+                    <td class="tdd">填入</td>
+                    <td class="tdd">2015/8/27 17:27:27</td>
+                    <td class="tdd"><a href="/NewsMgr/NewsController.ashx?action=newsDelete&id=13515&catId=86">删除</a></td>
+                    <td class="tdd"><a href="/NewsMgr/NewsController.ashx?action=newsEdit&id=13515&catId=86">编辑</a></td>
+                </tr>
+                <tr class="trr">
+                    <td class="tdd">填入</td>
+                    <td class="tdd">2015/8/27 17:29:59</td>
+                    <td class="tdd"><a href="/NewsMgr/NewsController.ashx?action=newsDelete&id=13516&catId=86">删除</a></td>
+                    <td class="tdd"><a href="/NewsMgr/NewsController.ashx?action=newsEdit&id=13516&catId=86">编辑</a></td>
+                </tr>
+                <tr class="trr">
+                    <td class="tdd">丫头探讨探讨探讨</td>
+                    <td class="tdd">2015/8/27 17:30:08</td>
+                    <td class="tdd"><a href="/NewsMgr/NewsController.ashx?action=newsDelete&id=13517&catId=86">删除</a></td>
+                    <td class="tdd"><a href="/NewsMgr/NewsController.ashx?action=newsEdit&id=13517&catId=86">编辑</a></td>
+                </tr>
+                <tr class="trr">
+                    <td class="tdd">2341</td>
+                    <td class="tdd">2015/8/27 17:36:03</td>
+                    <td class="tdd"><a href="/NewsMgr/NewsController.ashx?action=newsDelete&id=13518&catId=86">删除</a></td>
+                    <td class="tdd"><a href="/NewsMgr/NewsController.ashx?action=newsEdit&id=13518&catId=86">编辑</a></td>
+                </tr>
+                <tr class="trr">
+                    <td class="tdd">12121</td>
+                    <td class="tdd">2015/8/27 17:42:13</td>
+                    <td class="tdd"><a href="/NewsMgr/NewsController.ashx?action=newsDelete&id=13519&catId=86">删除</a></td>
+                    <td class="tdd"><a href="/NewsMgr/NewsController.ashx?action=newsEdit&id=13519&catId=86">编辑</a></td>
+                </tr>
+                <tr class="trr">
+                    <td class="tdd">2士大夫撒</td>
+                    <td class="tdd">2015/8/27 20:11:30</td>
+                    <td class="tdd"><a href="/NewsMgr/NewsController.ashx?action=newsDelete&id=13520&catId=86">删除</a></td>
+                    <td class="tdd"><a href="/NewsMgr/NewsController.ashx?action=newsEdit&id=13520&catId=86">编辑</a></td>
+                </tr>
+                <tr class="trr">
+                    <td class="tdd">3222222222222</td>
+                    <td class="tdd">2015/8/27 18:01:08</td>
+                    <td class="tdd"><a href="/NewsMgr/NewsController.ashx?action=newsDelete&id=13521&catId=86">删除</a></td>
+                    <td class="tdd"><a href="/NewsMgr/NewsController.ashx?action=newsEdit&id=13521&catId=86">编辑</a></td>
+                </tr>
+
+
+
+
+        </tbody>
+    </table>
+
+     <ul class='pagination col-md-12' >              
+               <li><a href='/NewsMgr/NewsList/86/index_1.html'>首页</a></li>
+<li><a href='/NewsMgr/NewsList/86/index_79.html'>上一页</a></li>
+<li><a href='/NewsMgr/NewsList/86/index_75.html'>75</a></li><li><a href='/NewsMgr/NewsList/86/index_76.html'>76</a></li><li><a href='/NewsMgr/NewsList/86/index_77.html'>77</a></li><li><a href='/NewsMgr/NewsList/86/index_78.html'>78</a></li><li><a href='/NewsMgr/NewsList/86/index_79.html'>79</a></li><li class='active'><a>80</a></li>
+            </ul>
+    <br /> <br />
+    <a href="#" id="batchGenerateStatic">一键重新生成静态页面</a>
+</body>
+</html>

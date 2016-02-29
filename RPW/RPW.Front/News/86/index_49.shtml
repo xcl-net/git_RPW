@@ -1,0 +1,91 @@
+<!--#include file="/head.html"-->
+    <title>新闻列表</title>
+    <!--#include file="/link.html"-->
+    <!--#include file="/headend.html"-->
+
+    <!--#include file="/navbar.html"-->
+
+<style type="text/css">
+.defaultLink a{color:#555;}/*修改链接的默认颜色*/
+.articleList li { margin-top:5px;}/*设置ul中li的间距*/
+</style>
+<main id="post-page" class="container   mainContent" role="main">
+    <div class="row">
+        <div class="col-md-10 col-md-push-1">
+            <article class="panel post tag-promise tag-javascript">
+              <header class="panel-heading post-header">
+                        <h1 class="post-title">
+                            <span>娱乐</span>
+                        </h1>
+                    </header>
+                    <section class="panel-body post-content">
+                        <ul class="defaultLink list-unstyled articleList">
+                                    <div class='row'>
+                                    <li>
+                                     <a href='/News/86/13382.shtml' target='_blank'>333333333333333</a>
+                                    </li>
+                                    </div>
+                                    <div class='row'>
+                                    <li>
+                                     <a href='/News/86/13383.shtml' target='_blank'>4444444444444444444444</a>
+                                    </li>
+                                    </div>
+                                    <div class='row'>
+                                    <li>
+                                     <a href='/News/86/13384.shtml' target='_blank'>55555555555555555</a>
+                                    </li>
+                                    </div>
+                                    <div class='row'>
+                                    <li>
+                                     <a href='/News/86/13385.shtml' target='_blank'>6666666666666</a>
+                                    </li>
+                                    </div>
+                                    <div class='row'>
+                                    <li>
+                                     <a href='/News/86/13386.shtml' target='_blank'>777777777777777</a>
+                                    </li>
+                                    </div>
+                                    <div class='row'>
+                                    <li>
+                                     <a href='/News/86/13387.shtml' target='_blank'>88888888888888888888</a>
+                                    </li>
+                                    </div>
+                                    <div class='row'>
+                                    <li>
+                                     <a href='/News/86/13388.shtml' target='_blank'>999999999999999999999</a>
+                                    </li>
+                                    </div>
+                                    <div class='row'>
+                                    <li>
+                                     <a href='/News/86/13389.shtml' target='_blank'>10</a>
+                                    </li>
+                                    </div>
+                                    <div class='row'>
+                                    <li>
+                                     <a href='/News/86/13390.shtml' target='_blank'>111111111111111111111111111000</a>
+                                    </li>
+                                    </div>
+                                    <div class='row'>
+                                    <li>
+                                     <a href='/News/86/13391.shtml' target='_blank'>及浓缩的</a>
+                                    </li>
+                                    </div>
+
+                        
+                        </ul>
+                    </section>
+            </article>
+
+            <ul class='pagination col-md-12' >
+               <li><a href='/News/86/index_1.shtml'>首页</a></li>
+<li><a href='/News/86/index_48.shtml'>上一页</a></li>
+<li><a href='/News/86/index_44.shtml'>44</a></li><li><a href='/News/86/index_45.shtml'>45</a></li><li><a href='/News/86/index_46.shtml'>46</a></li><li><a href='/News/86/index_47.shtml'>47</a></li><li><a href='/News/86/index_48.shtml'>48</a></li><li class='active'><a>49</a></li><li><a href='/News/86/index_50.shtml'>50</a></li><li><a href='/News/86/index_51.shtml'>51</a></li><li><a href='/News/86/index_52.shtml'>52</a></li><li><a href='/News/86/index_53.shtml'>53</a></li><li><a href='/News/86/index_54.shtml'>54</a></li><li><a href='/News/86/index_50.shtml'>下一页</a></li>
+<li><a href='/News/86/index_62.shtml'>尾页</a></li>
+
+            </ul>
+
+        </div>
+    </div>
+</main>
+
+ <!--#include file="/foot.html"-->

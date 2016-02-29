@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>后台系统登录</title>
+    <script src="/js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript">
+
+        <!--项目任务：点击按钮刷新-->
+        function refreshYZM() {
+            var imgYZM = document.getElementById("verificationCode123");
+            imgYZM.src = "verificationCode.ashx?t=" + new Date();
+        }
+        $(function () {
+            $("#btnLogin").click(function () {
+                var username = $("#username").val();
+                var password = $("#password").val();
+                var verificationCode = $("#verificationCode").val();
+                //判断自动登录是否是勾选
+                if ( $("#autologin").attr("checked") == true)
+                {
+                    var autologin = $("#autologin").val();
+                    //alert(autologin);//测试，如果选中时传递的on
+                }
+
+                if (username.length==0) {
+                    alert("用户名不能为空！");
+                    return;
+                }
+                if (password.length==0) {
+                    alert("密码不能为空！");
+                    return;
+                }
+                if (verificationCode.length==0) {
+                    alert("验证码不能为空！");
+                    return;
+                }
+                $.ajax({
+                    type: "post", url: "Login.ashx",
+                    data: { action: "login", username: username, password: password, verificationCode: verificationCode, autologin: autologin },
+                    success: function (data) {
+                        if (data.Status=="ok") {
+                            // 重定向到顶级目录
+                            top.location.href = "/Index.ashx";
+                        } else if (data.Status == "error") {
+                            //如果是错误的，就将验证码重置
+                            $("#verificationCode123").attr("src", "verificationCode.ashx?id=" + new Date());
+                            alert(data.Msg);
+                        }
+
+                    },
+                    error: function () { alert("请求失败！")}
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <!--如果是模板文件，虽然没有占位符，一般都是使用cshtml文件-->
+    用户名：<input type="text" id="username" /><br /><br />
+    密    码： <input type="password" id="password" /><br />
+    验证码：<input type="text" id="verificationCode" /><img src="verificationCode.ashx" id="verificationCode123"/>
+    <label for="verificationCode123"><span onclick="refreshYZM()">看不清，点我</span></label><br />
+    <input type="checkbox" id="autologin" /><label for="autologin">下次自动登录</label>
+    <input type="button"id="btnLogin" value="登录" />
+</body>
+</html>

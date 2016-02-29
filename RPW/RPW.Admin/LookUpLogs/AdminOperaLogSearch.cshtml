@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>查看日志</title>
+    <script src="/js/jquery-1.4.2.min.js"></script>
+    <script src="/AdminUser/My97DatePicker/WdatePicker.js"></script>
+    <script src="/js/common.js"></script>
+    <script type="text/javascript">
+        //页面加载的时候，将显示所有的日志信息；
+        $(function () {
+            //点击“搜索”按钮，将加载所有的，日志信息
+            $("#btnSearch").click(function () {
+                var data = $("#formQuery").serialize();
+                //alert(data);
+                //data+="&action=search"; //这个在F12开发者工具，看formData就可以看出这个拼接规则
+
+                rpajax("/LookUpLogs/AdminOperaLogController.ashx",
+                    data,
+                    function (data) { //这里传递的是成功的方法
+                        if (data.Status!="ok") {
+                            alert("加载数据失败！"+data.Msg)
+                        }
+                       $("#tbody").empty();//清空旧的数据
+                        var logsList = data.Data;  //对象是list集合
+                        for (var i = 0; i < logsList.length; i++) {
+                            var logModel = logsList[i];
+                            $("#tbody").append($("<tr><td>" + logModel.name + "</td><td>" + logModel.time + "</td><td>" + logModel.opre + "</td></tr>"));
+                        }
+
+
+
+                    });
+            });
+        });
+
+    </script>
+
+</head>
+<body>
+    <form id="formQuery">
+    <input type="hidden" name="action" value="SerchAllLogs" /><!--通过表单序列化，将action同时也序列化在表单中-->
+    <br /><br />
+    <input type="checkbox" name="cbByUserName"  />用户名：<input type="text" id="name" name="name" />
+    <br /><br />
+    <input type="checkbox" id="opeTime" name="cbByOpDateTime" />
+    <label for="opeTime">操作时间：</label><input type="text" id="time001" name="timeStart" onclick="WdatePicker()" />
+        到
+    <input type="text" id="time002" name="timeEnd" onclick="WdatePicker()" /><br />
+    <br /><br />
+    <input type="checkbox" name="cbByDesc" />操作描述包含：<input type="text" id="keyword" name="desc" />
+    <br /><br />
+    <input type="button" id="btnSearch"  value="搜索" />
+    </form>
+    <table >
+          <thead>
+              <tr><th>用户</th><th>操作时间</th><th>操作</th></tr>
+
+          </thead>
+          <tbody id="tbody">
+
+
+          </tbody>
+    </table>
+</body>
+</html>

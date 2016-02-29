@@ -1,0 +1,36 @@
+﻿<!--#include file="/head.html"-->
+    <title>文章列表</title>
+    <!--#include file="/link.html"-->
+    <!--#include file="/headend.html"-->
+
+    <!--#include file="/navbar.html"-->
+
+<style type="text/css">
+.defaultLink a{color:#555;}/*修改链接的默认颜色*/
+.articleList li { margin-top:5px;}/*设置ul中li的间距*/
+</style>
+<main id="post-page" class="container   mainContent" role="main">
+    <div class="row">
+        <div class="col-md-10 col-md-push-1">
+            <article class="panel post tag-promise tag-javascript">
+              <header class="panel-heading post-header">
+                        <h1 class="post-title">
+                            <span>如鹏消息</span>
+                        </h1>
+                    </header>
+                    <section class="panel-body post-content">
+                        <ul class="defaultLink list-unstyled articleList">
+                        <div class='row'><li><a href='http://www.rupeng.com/News/9/82.shtml' target='_blank'>如鹏网在线编程训练营“汤圆班”开班了</a></li></div><div class='row'><li><a href='http://www.rupeng.com/News/9/74.shtml' target='_blank'>我们没有什么不同——献给考研过线或者没过线的同学！</a></li></div><div class='row'><li><a href='http://www.rupeng.com/News/9/66.shtml' target='_blank'>大一大三都在学习，让大四还在迷茫、打副本的同学情何以堪！</a></li></div><div class='row'><li><a href='http://www.rupeng.com/News/9/68.shtml' target='_blank'>如鹏过年不放假，撸着代码过除夕</a></li></div><div class='row'><li><a href='http://www.rupeng.com/News/9/65.shtml' target='_blank'>如鹏网参加上海张江高新区“移动互联网企业创业招聘沙龙”</a></li></div><div class='row'><li><a href='http://www.rupeng.com/News/9/63.shtml' target='_blank'>你想年入100万、50万还是20万，都能满足你</a></li></div><div class='row'><li><a href='http://www.rupeng.com/News/9/61.shtml' target='_blank'>训练营叶昭良同学的研究成果</a></li></div><div class='row'><li><a href='http://www.rupeng.com/News/9/58.shtml' target='_blank'>让大四还在迷茫的同学情何以堪，0120班开班了</a></li></div><div class='row'><li><a href='http://www.rupeng.com/News/9/54.shtml' target='_blank'>如鹏网在线编程训练营2015年第一个班开班啦</a></li></div><div class='row'><li><a href='http://www.rupeng.com/News/9/51.shtml' target='_blank'>我已离开传智播客，回归如鹏网</a></li></div>
+                        </ul>
+                    </section>
+            </article>
+            <ul class='pagination col-md-12' style='width'><li class='active'><a>1</a></li>
+<li>&nbsp;<a href='list_2.shtml' title='第2页'>2</a>&nbsp;</li>
+<li><a href='list_2.shtml' title='下页'>下页</a></li>
+<li><a href='list_2.shtml' title='尾页'>尾页</a></li>
+</ul>
+        </div>
+    </div>
+</main>
+
+ <!--#include file="/foot.html"-->

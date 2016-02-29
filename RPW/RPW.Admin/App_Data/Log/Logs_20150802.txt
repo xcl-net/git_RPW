@@ -1,0 +1,17 @@
+2015-08-02 17:51:14,789 [6] ERROR RPW.Admin.Test1 - 这是错误信息
+2015-08-02 17:51:14,806 [6] FATAL RPW.Admin.Test1 - 这是严重错误信息
+2015-08-02 17:55:46,032 [13] WARN  RPW.Admin.Test1 - 这是警告信息
+2015-08-02 17:55:46,042 [13] ERROR RPW.Admin.Test1 - 这是错误信息
+2015-08-02 17:55:46,042 [13] FATAL RPW.Admin.Test1 - 这是严重错误信息
+2015-08-02 18:03:54,206 [15] WARN  RPW.Admin.Test1 - 这是警告信息
+2015-08-02 18:03:54,206 [15] ERROR RPW.Admin.Test1 - 这是错误信息
+2015-08-02 18:03:54,206 [15] FATAL RPW.Admin.Test1 - 这是严重错误信息
+2015-08-02 18:04:24,322 [15] WARN  RPW.Admin.Test1 - 这是警告信息
+2015-08-02 18:04:24,331 [15] ERROR RPW.Admin.Test1 - 这是错误信息
+2015-08-02 18:04:24,331 [15] FATAL RPW.Admin.Test1 - 这是严重错误信息
+2015-08-02 18:04:27,415 [15] ERROR RPW.Admin.Test1 - 下载失败
+System.Net.WebException: 远程服务器返回错误: (401) 未经授权。
+   在 System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   在 System.Net.WebClient.DownloadString(Uri address)
+   在 System.Net.WebClient.DownloadString(String address)
+   在 RPW.Admin.Test1.ProcessRequest(HttpContext context) 位置 c:\Users\Administrator\Desktop\RPW\RPW.Admin\Test1.ashx.cs:行号 32

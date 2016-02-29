@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+</head>
+<body>
+
+    <ul>
+        @{
+            //遍历出每条新闻标题
+            
+            foreach (var i in Model.nums)
+            {
+                <li>第@(i)条新闻</li>
+            }
+            
+            }
+
+        </ul>
+    <br /><br />
+
+    @RPWRazor.RPRazorHelper.Paging("Paging.ashx?pagenum={pageNum}",1000,10,Model.pageNum)<!--1000条信息，每页10条记录，当前页码-->
+
+</body>
+</html>

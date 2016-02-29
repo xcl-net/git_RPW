@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <style type="text/css">
+        .tab {
+            border: thin solid;
+            border-color: blue;
+        }
+         .thh {
+            border: thin  solid ;
+            border-color: red;
+            text-transform:full-width;
+        }
+    </style>
+
+</head>
+<body>
+    
+    @Model.label<a id="back" href="NewsController.ashx?action=list&parentId=@Model.backId">@Model.nameParent</a>
+    <br /> <br />
+    <table class="tab">
+        <thead>
+            <tr>
+                <th class="thh">新闻类别</th>
+                <th class="thh">操作</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @{
+                List<RPW.Model.NewsCategories> newscategories = (List<RPW.Model.NewsCategories>)Model.categories;
+                foreach (var newscategory in newscategories)
+                {
+                <tr>
+                    <td><a href="NewsController.ashx?action=list&parentId=@newscategory.Id">@newscategory.Name</a></td>
+                    <td><a href="NewsController.ashx?action=delete&id=@newscategory.Id&parentId=@Model.parentId">删除</a></td>
+                    <td><a href="NewsController.ashx?action=edit&id=@newscategory.Id&parentId=@Model.parentId">编辑</a></td>
+                    <td><a href="NewsController.ashx?action=newsList&catId=@newscategory.Id&catIdParentId=@Model.parentId&pageNow=1">文章管理</a></td>
+                </tr>
+                             
+                } 
+            }
+
+
+
+        </tbody>
+    </table>
+    <br />
+    <a href="NewsController.ashx?action=addnew&parentId=@Model.parentId">新增类别</a><br /><br />
+
+    <a href="NewsController.ashx?action=list&parentId=0">返回顶级</a>  <a  href="NewsController.ashx?action=list&parentId=@Model.backId">返回上级</a>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+﻿<!--#include file="/head.html"-->
+    <title>新闻列表</title>
+    <!--#include file="/link.html"-->
+    <!--#include file="/headend.html"-->
+
+    <!--#include file="/navbar.html"-->
+
+<style type="text/css">
+.defaultLink a{color:#555;}/*修改链接的默认颜色*/
+.articleList li { margin-top:5px;}/*设置ul中li的间距*/
+</style>
+<main id="post-page" class="container   mainContent" role="main">
+    <div class="row">
+        <div class="col-md-10 col-md-push-1">
+            <article class="panel post tag-promise tag-javascript">
+              <header class="panel-heading post-header">
+                        <h1 class="post-title">
+                            <span>@Model.CatgoryName</span>
+                        </h1>
+                    </header>
+                    <section class="panel-body post-content">
+                        <ul class="defaultLink list-unstyled articleList">
+                            @{
+                                
+                                List<RPW.Model.News> newss = Model.news;
+                                foreach (RPW.Model.News item in newss)
+                                {
+                                    <div class='row'>
+                                    <li>
+                                     <a href='/News/@(item.CategoryId)/@(item.Id).shtml' target='_blank'>@item.Title</a>
+                                    </li>
+                                    </div>
+                                }
+                                     }
+                        
+                        </ul>
+                    </section>
+            </article>
+
+            <ul class='pagination col-md-12' >
+               @RPWRazor.RPRazorHelper.Paging("/News/"+Model.CatId+"/index_{pageNum}.shtml",
+                        Model.totalSize, Model.NumPerPage, Model.currentPage)
+            </ul>
+
+        </div>
+    </div>
+</main>
+
+ <!--#include file="/foot.html"-->

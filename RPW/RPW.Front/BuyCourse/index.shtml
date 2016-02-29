@@ -1,0 +1,94 @@
+﻿
+<!--#include file="/head.html"-->
+    <title>课程购买</title>
+ <!--#include file="/link.html"-->
+<script src="/js/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript">
+        <!--项目任务：点击按钮刷新-->
+    function refreshYZM() {
+        var imgYZM = document.getElementById("verificationCode123");
+        imgYZM.src = "verificationCode.ashx?t=" + new Date();
+    }
+
+      $(function () {
+          document.getElementById("verificationCode123").style.cursor = "pointer";
+          document.getElementById("kanbuqing").style.cursor = "pointer";
+
+          $("#Activation").click(function () {
+              //获取
+              var learnCardNum = $("#LearningCarNum").val();
+              var learnCarPass = $("#LearningCarPass").val();
+              var verificationCode = $("#verificationCode").val();
+              //验证
+              if (learnCardNum.length == 0) {
+                  alert("学习卡号不能为空");
+                  return;
+              };
+              if (learnCarPass.length == 0) {
+                  alert("学习卡密码不能为空！");
+                  return;
+              }
+              if (verificationCode.length == 0) {
+                  alert("验证码不能为空！");
+                  return;
+              }
+              //请求
+              $.ajax({
+                  type: "post", url: "ActiveCourse.ashx",
+                  dataType: "json",
+                  data: {
+                      action: "actveCourse", learnCardNum: learnCardNum, learnCarPass: learnCarPass, validCode: verificationCode
+                  },
+                  success: function (data) {
+                      if (data.Status == "ok") {
+                          
+                          alert(data.Msg);
+                          window.location.href = "/BuyCourse/ActiveCourse.ashx?action=MycourseOfBuy";
+                      } else if (data.Status == "error") {
+                          alert("系统提示："+data.Msg);
+                      }
+                         
+                      },
+                
+                  error: function () {
+                      alert("请求失败！");
+                  }
+              });
+
+          });
+      });
+
+  </script>
+    
+
+ <!--#include file="/headend.html"-->
+
+    <!--#include file="/navbar.html"-->
+   <br />    <br />
+
+             <label >学习卡号：
+         
+                 <input type="text" id="LearningCarNum" placeholder="输入您的学习卡卡号" />
+              
+             </label>
+
+   <br />    <br />
+            <label>学习卡密码：
+                  
+                 <input type="password" name="LearningCarPass" id="LearningCarPass" placeholder="输入您的学习卡密码" />
+                     
+             </label>
+   <br />    <br />
+              <label> 请输入图形验证码：<input type="text" id="verificationCode" placeholder="输入验证码"  /></label>
+    <label for="verificationCode123">
+        <span onclick="refreshYZM()" id="kanbuqing">
+        <img src="/verificationCode.ashx" id="verificationCode123"/>看不清，点我</span>
+    </label>
+
+   <br />    <br />                  
+             <input type="button" name="Activation" id="Activation" value="激 活">
+   <br />    <br />  
+
+    
+
+ <!--#include file="/foot.html"-->

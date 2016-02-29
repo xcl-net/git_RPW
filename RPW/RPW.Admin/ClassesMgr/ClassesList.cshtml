@@ -1,0 +1,54 @@
+﻿
+@using RPW.Model
+@using RPW.Bll
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <style type="text/css">
+
+        .odd {  background-color: #bbf; }
+        .even{  background-color:#ffc;  }
+        /*.thh {  background-color: hotpink  }*/
+
+    </style>
+
+    <script src="/js/jquery-1.4.2.min.js"></script>
+   
+       
+       <script type="text/javascript">
+           $(document).ready(function () {
+               //奇偶行不同颜色
+               $("#table2 thead ").addClass("thh"),
+               $("#table2 tbody tr:odd").addClass("odd"),
+               $("#table2 tbody tr:even").addClass("even")
+               //或者
+               //$("#table2 tbody tr:odd").css("background-color", "#bbf"),
+               //$("#table2 tbody tr:even").css("background-color", "#ffc")
+           });
+
+    </script>
+</head>
+<body>
+    <a href="/ClassesMgr/ClassesConroller.ashx?action=AddClass">新增班级</a><br />
+    <table id="table2">
+        <thead><tr><th>班级名称</th><th>操作管理</th></tr></thead>
+        <tbody>
+
+              @{
+             List<ClassRooms> classRooms = (List < ClassRooms >) Model;
+             foreach (ClassRooms classRoom in classRooms)
+             {
+                 <tr>
+                     <td>@classRoom.ClassRoom</td><td><a href="/ClassesMgr/ClassesConroller.ashx?action=DeleteClass&id=@classRoom.Id">删除</a></td>
+                     <td><a href="/ClassesMgr/ClassesConroller.ashx?action=EditClass&id=@classRoom.Id">编辑</a></td>
+
+                 </tr>
+             }
+            }
+        </tbody>
+    </table>
+     
+</body>
+</html>

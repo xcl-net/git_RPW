@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>权限@(Model.title)</title>
+    <script src="/js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+           
+            $("#btnSave").click(function () {
+                var power = $("#power").val();
+                var action = $("#action").val();
+                var id = $("#id").val();
+                if (power.length <= 0 ) {
+                    alert("权限名称必填！");
+                    return;
+                }
+                $.ajax({
+                    type: "post", url: "PowerController.ashx",
+                    data: { action: "save", saveAction: action, power: power ,id:id},
+                    success: function (data) {
+                        if (data.Status=="ok") {
+                            window.location.href = "PowerController.ashx?action=list";
+                        } else if (data.Status=="error") {
+                            alert("出错了，" + data.Msg);
+                            return;
+                        }
+                    },
+                    error: function () {
+                        alert("请求失败！");
+                    }
+                });
+
+            });
+          
+
+        });
+    </script>
+</head>
+<body>
+              <input type="hidden" id="action" value="@Model.action" />
+               <input type="hidden" id="id" value="@Model.id" />
+    权限名称：<input type="text" id="power" value="@Model.powerName" />
+              <input type="button" id="btnSave" value="保存"/>
+
+</body>
+</html>

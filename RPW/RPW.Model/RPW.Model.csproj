@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{65CBA8C5-803B-4C9C-9BE9-147DCC6B6C12}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RPW.Model</RootNamespace>
+    <AssemblyName>RPW.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActiveCodes.cs" />
+    <Compile Include="AdministorOperationLogs.cs" />
+    <Compile Include="AdminOperationLogSearchOption.cs" />
+    <Compile Include="AdminOpreResultLogs.cs" />
+    <Compile Include="AdminUserRoles.cs" />
+    <Compile Include="AdminUsers.cs" />
+    <Compile Include="Applications.cs" />
+    <Compile Include="Chapters.cs" />
+    <Compile Include="ClassRooms.cs" />
+    <Compile Include="CourseOrders.cs" />
+    <Compile Include="Courses.cs" />
+    <Compile Include="EnrolYears.cs" />
+    <Compile Include="FrontUserClassRooms.cs" />
+    <Compile Include="FrontUsers.cs" />
+    <Compile Include="Graduates.cs" />
+    <Compile Include="KeyWords.cs" />
+    <Compile Include="LearningCards.cs" />
+    <Compile Include="News.cs" />
+    <Compile Include="NewsCategories.cs" />
+    <Compile Include="Powers.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RolePowes.cs" />
+    <Compile Include="Roles.cs" />
+    <Compile Include="Segments.cs" />
+    <Compile Include="UserCourses.cs" />
+    <Compile Include="WhoLernings.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

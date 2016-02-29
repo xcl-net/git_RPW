@@ -1,0 +1,16 @@
+C:\Users\Administrator\Desktop\ceshi\RPW\RPW.Dal\bin\Debug\RPW.Dal.dll
+C:\Users\Administrator\Desktop\ceshi\RPW\RPW.Dal\bin\Debug\RPW.Dal.pdb
+C:\Users\Administrator\Desktop\ceshi\RPW\RPW.Dal\bin\Debug\RPW.Model.dll
+C:\Users\Administrator\Desktop\ceshi\RPW\RPW.Dal\bin\Debug\RPW.Model.pdb
+C:\Users\Administrator\Desktop\ceshi\RPW\RPW.Dal\obj\Debug\RPW.Dal.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\ceshi\RPW\RPW.Dal\obj\Debug\RPW.Dal.dll
+C:\Users\Administrator\Desktop\ceshi\RPW\RPW.Dal\obj\Debug\RPW.Dal.pdb
+C:\Users\Administrator\Desktop\ceshi\RPW\RPW.Dal\bin\Debug\Maticsoft.Common.dll
+C:\Users\Administrator\Desktop\RPW\RPW.Dal\bin\Debug\RPW.Dal.dll
+C:\Users\Administrator\Desktop\RPW\RPW.Dal\bin\Debug\RPW.Dal.pdb
+C:\Users\Administrator\Desktop\RPW\RPW.Dal\bin\Debug\Maticsoft.Common.dll
+C:\Users\Administrator\Desktop\RPW\RPW.Dal\bin\Debug\RPW.Model.dll
+C:\Users\Administrator\Desktop\RPW\RPW.Dal\bin\Debug\RPW.Model.pdb
+C:\Users\Administrator\Desktop\RPW\RPW.Dal\obj\Debug\RPW.Dal.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\RPW\RPW.Dal\obj\Debug\RPW.Dal.dll
+C:\Users\Administrator\Desktop\RPW\RPW.Dal\obj\Debug\RPW.Dal.pdb

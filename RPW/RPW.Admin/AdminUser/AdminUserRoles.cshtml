@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>新增</title>
+    <script src="/js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+
+            //1.1 点击”保存“按钮后，实用ajax进行请求
+            $("#btnSave").click(function () {
+                var username = $("#username").val();
+                var saveAction = $("#action").val();
+                //批量获取选中的角色id的集合，放到一个数组中
+              
+                var selectedRoles = new Array();
+                //项目任务：用这个方法来升级“批量删除”
+                $(":checkbox[name=role]:checked").each(function () {
+                    selectedRoles.push($(this).val());
+                });
+                if (selectedRoles.length == 0) {
+                    alert("至少选择一个角色！");
+                    return;
+                }
+               
+
+                //1.1.1.1 添加“编辑保存”选项时候增加这个选项
+                var id = $("#id").val();
+
+                //1.2 对”名字“和”密码“验证
+                if (username.length <= 0 ) {
+                    alert("用户为必填！");
+                    return;
+                }                   
+                //1.3 用ajax进行请求
+                $.ajax({
+                    type: "post", url: "AdminUserController.ashx",
+                    data: { action: "save", saveAction: saveAction, username: username, id: id, selectedRoles: selectedRoles.join(',') },//id作为编辑
+                    success: function (data) {
+                        //1.5 通讯成功后，根据服务器返回的json开始判断
+                        if ("error" == data.Status) {
+                            alert("出错了，" + data.Msg);
+                            return;
+                        } else if ("ok" == data.Status) {//添加成功，不提示，执行跳转到管理员列表页
+                            window.location.href = "AdminUserController.ashx?action=list";
+
+                        }
+                    },
+                    errot: function () {
+                        alert("请求出错！");
+                    }
+                });
+                ///1.4 接下来，写服务器端处理json
+            });
+            
+        });//页面加载函数
+
+    </script>
+</head>
+<body>
+    <input type="hidden" id="id" value="@Model.id" />
+    <input type="hidden" id="action" value="@Model.action" />
+    <table>
+        <tr><td>用户名</td><td><input type="text" id="username"  value="@Model.userName" /></td></tr>  
+    </table>
+    <br />
+    @Model.lable<br /><br />
+    <!--用写的checkbox标签来绑定“角色”数据-->
+    @RPWRazor.RPRazorHelper.CheckBoxListOrRadioList(Model.roles, "Id", "Name", Model.selectedRoles, new  { name = "role",type="checkbox" })
+    <br /><br />
+    <input type="button" value="保存" id="btnSave" />
+</body>
+</html>
